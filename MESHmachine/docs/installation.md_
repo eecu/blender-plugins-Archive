@@ -1,0 +1,109 @@
+#
+## Requirements
+
+* Windows, MacOS, Linux
+* Blender 3.6 LTS, 4.1 Stable
+
+
+!!! danger "Experimental Builds"
+    [Experimental](https://builder.blender.org/download/daily/) Blender builds such as 4.2-alpha are **not supported**, and fixing any issues related to them, will not be a priority, but [reporting them](faq.md#get-support) is still encouraged.  
+
+
+### Blender on MacOS
+
+MacOS users should install Blender properly, by following the [official instructions](https://docs.blender.org/manual/en/dev/getting_started/installing/macos.html).  
+Avoid running it just from the Downloads folder!  
+Note that, for **dragging** of files and folders, you need to hold down the `COMMAND` key.  
+This will ensure [AppTranslocation](img/installation/apptranslocation.jpg)[^1] is avoided. 
+
+[^1]: Learn more about [AppTranslocation](https://lapcatsoftware.com/articles/app-translocation.html).
+
+
+### Blender on Arch Linux
+
+Arch Linux users and users of other Arch based or similar rolling release distros are advised to use the [official Blender builds](https://blender.org/download).  
+The Blender package in the [Community repository](https://www.archlinux.org/packages/community/x86_64/blender/) does not supply its own Python, and does not follow [official recommendations](https://docs.blender.org/api/current/info_tips_and_tricks.html#bundled-python-extensions).  
+As a consequence, the system's python version may not work with MESHmachine.
+
+
+### Latest MESHmachine
+
+The latest version of MESHmachine is 0.15.2 - available on [Gumroad](https://gumroad.com/a/164689011/Gwgt) and [Blender Market](https://www.blendermarket.com/products/MESHmachine?ref=1051).  
+See [this page](whatsnew.md) the learn what's new in the latest versions, or see the [changelog](changelog.md) for the full release history.
+
+
+## Updating
+
+### Plug Backup
+
+!!! danger "Attention"
+    If you are updating from a previous version, you are at **risk of loosing** any [Plugs](plug_creation.md) you may have created.  
+
+If you have not chosen a plug assets location outside the MESHmachine folder in [Blender's addons folder](#blenders-addons-folder), you should backup your plugs as described in the video, and outlined below.
+
+
+## Installation
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
+<iframe src="https://www.youtube.com/embed/2l7JCNG54sQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen seamless frameBorder="0"></iframe>
+</div>
+
+---
+
+The same instructions as in the video, but in text form:
+
+
+### 1. Fresh Installation
+> NO previous version of MESHmachine installed
+
+* start Blender, bring up preferences
+* switch to the *Add-ons* tab and click the **Install...** button at the top right 
+* locate the downloaded MESHmachine_0.15.2.zip file and double-click it
+* activate the addon by ticking the checkbox
+* ensure your preferences are saved (by default done automatically)
+* close preferences and in the 3D View press the `Y` key to bring up the MESHmachine menu
+
+
+<!-- TODO: with the next 0.16 update, replace the manual installation section with the "integrated updater" solution, couple images should be enough -->
+
+### 2. Update Installation
+> previous version of MESHmachine installed already
+
+#### 2a. Update Installation in the File Browser
+
+!!! danger "Attention"
+    **Never** install MESHmachine in Blender's program folder.  
+    On Windows, that would be `C:\Program Files\...`
+    MESHmachine needs write access to its installation folder, so you need to install it into [Blender's addons folder](#blenders-addons-folder).
+
+* with Blender closed, navigate to [Blender's addons folder](#blenders-addons-folder)
+* find MESHmachine, and copy the MESHmachine/assets/Plugs folder to a save location to backup any custom Plugs you may have created
+* remove the MESHmachine folder
+* in your Downloads location, extract the MESHmachine_0.15.2.zip file
+* copy the MESHmachine folder from the zip file to [Blender's addons folder](#blenders-addons-folder)
+    - note, if you have a MESHmachine_0.15.2 folder after extraction, don't copy this one, instead copy the MESHmachine folder contained in it
+* start Blender and check if the menu (`Y` key) comes up
+
+
+#### 2b. Update Installation in Blender
+
+* start Blender, bring up preferences
+* switch to the *Add-ons* tab and use the search input at the top right to find your currently installed MESHmachine version
+* unfold MESHmachine, go to the Plugs tab, and shift click on the folder icon of the assets path
+* in your filebrowser copy any custom plugs you may have to a safe location
+* back Blender, first deactivate MESHmachine, then click the Remove button
+* with MM uninstalled, click the **Install...** button at the top right 
+* locate the downloaded MESHmachine_0.15.2.zip file and double-click it
+* activate the addon by ticking the checkbox
+* ensure your preferences are saved (by default done automatically)
+* close preferences and in the 3D View press the `Y` key to bring up the MESHmachine menu
+
+
+### Blender's addons folder
+
+!!! note "Addons Folder (in user scripts)"
+    **Linux**: `/home/name/.config/blender/3.6/scripts/addons`  
+    **MacOS**: `/Users/name/Library/Application Support/Blender/3.6/scripts/addons`  
+    **Windows**: `C:\Users\name\AppData\Roaming\Blender Foundation\Blender\3.6\scripts\addons`  
+
+    <!-- Depending on your Blender version, replace `3.3` accordingly. -->

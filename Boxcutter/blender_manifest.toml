@@ -1,0 +1,15 @@
+schema_version = "1.0.0"
+blender_version_min = "4.2.0"
+
+id = "BoxCutter"
+name = "BoxCutter"
+version = "7.20.8"
+tagline = "BoxCutter"
+maintainer = "TeamC"
+type = "add-on"
+
+tags = ["Modeling", "3D View", "Mesh"]
+
+license = [
+  "SPDX:GPL-3.0-or-later",
+]

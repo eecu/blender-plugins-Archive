@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://machin3.io/MACHIN3tools/docs/toggle_region.html" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Toggle Region - MACHIN3tools</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Toggle Region";
+        var mkdocs_page_input_path = "toggle_region.md";
+        var mkdocs_page_url = "/MACHIN3tools/docs/toggle_region.html";
+      </script>
+    
+    <script src="js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> MACHIN3tools
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Get Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="index.html">MACHIN3tools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="whatsnew.html">What's new?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Objects</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="quad_sphere.html">Quad Sphere</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tools</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="smart_vert.html">Smart Vert</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="smart_edge.html">Smart Edge</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="smart_face.html">Smart Face</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="clean_up.html">Clean Up</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="edge_constrained_transform.html">Edge Constrained Transform <sup>Deus Ex</sup></a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="extrude.html">Extrude <sup>partly Deus Ex</sup></a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="focus.html">Focus</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="mirror.html">Mirror</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="align.html">Align</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="group_tools.html">Group Tools <sup>partly Deus Ex</sup></a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="smart_drive.html">Smart Drive</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="assetbrowser_tools.html">Assetbrowser Tools<sup>partly Deus Ex</sup></a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="filebrowser_tools.html">Filebrowser Tools</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="toggle_region.html">Toggle Region</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#preferences">Preferences</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#using-toggle-region">Using Toggle Region</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#3d-view">3D View</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#issues">Issues</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#node-editor-and-imageuv-editor">Node Editor and Image/UV Editor</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="render.html">Render</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="smooth.html">Smooth</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="clipping_toggle.html">Clipping Toggle</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="surface_slide.html">Surface Slide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="material_picker.html">Material Picker</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="apply_transformation.html">Apply Transform</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="select.html">Select</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="mesh_cut.html">Mesh Cut</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="thread.html">Thread</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="unity.html">Unity</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="customize.html">Customize</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Pie Menus</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_modes.html">Modes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_save.html">Save</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_shading.html">Shading</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_views.html">Views</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_align.html">Align</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_cursor_origin.html">Cursor and Origin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_transform.html">Transform</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_snapping.html">Snapping</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_collections.html">Collections</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_workspace.html">Workspace</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_tools.html">Tools</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Development</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">MACHIN3tools</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Tools &raquo;</li>
+      <li>Toggle Region</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="toggle-region">Toggle Region</h2>
+<p><strong>shortcut</strong> <code>T</code> <em>in 3D View, Asset Browser and Node Editors</em></p>
+<p><strong>Toggle Region</strong> toggles the toolbar and sidebar both via a single <code>T</code> key, depending on mouse position.<br />
+This works on the <a href="#3d-view">3D View</a> and as of version 1.7 also on <a href="#node-editor-and-imageuv-editor">Node Editors and Image/UV</a> editors.</p>
+<p>In the 3D View you can also optionally toggle two Asset Browser splits - one at the top, and one at the bottom.<br />
+Toggling the Asset Shelf is supported too, IF a Shelf is present on the 3D view, and IF toggling the shelf is enabled in the <em>Toggle Region</em> <a href="#preferences">addon prefs</a>.</p>
+<h3 id="preferences">Preferences</h3>
+<p><a href="img/toggle_region/preferences.png"><img alt="ToggleRegionPreferences" src="img/toggle_region/preferences.png" /></a></p>
+<h3 id="using-toggle-region">Using Toggle Region</h3>
+<h4 id="3d-view">3D View</h4>
+<div class="video">
+  <iframe src="https://www.youtube.com/embed/Gj_V-3fF5UE?rel=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen seamless frameBorder="0"></iframe>
+</div>
+
+<h5 id="issues">Issues</h5>
+<div class="admonition danger">
+<p class="admonition-title">Attention</p>
+<p>There is one small issue you will encounter on a new 3D view, where the tool has never before created an asset browser split.</p>
+<p>A hint with instructions about how to fix it, will be drawn in the 3D view.
+<a href="img/toggle_region/hints.jpg"><img alt="Hints" src="img/toggle_region/hints.jpg" /></a></p>
+<p>Fixing this is only required once per 3D View or workspace, if you save your .blend file.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Keep in mind</p>
+<p>There is a second potential issue, if you have an area above your 3D view, that has exactly the same width.<br />
+Closing your asset browser may then result in that other area growing, instead of your 3D View.<br />
+The way to deal with this, is by simply closing that other area, and opening it again manually.   </p>
+<p>This too is only required once.</p>
+</div>
+<h4 id="node-editor-and-imageuv-editor">Node Editor and Image/UV Editor</h4>
+<p>As of version 1.7, <em>Toggle Region</em> works in all node editors and in the Image/UV editor, to toggle either the tool bar or the side bar with a single <code>T</code> key.</p>
+<p><img alt="ToggleRegionNodeEditor" src="img/toggle_region/node_editor.gif" />
+<em>Toggle tool bar or sidebar in node editor via single <code>T</code> keymap</em></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="filebrowser_tools.html" class="btn btn-neutral float-left" title="Filebrowser Tools"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="render.html" class="btn btn-neutral float-right" title="Render">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="filebrowser_tools.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="render.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme_extra.js" defer></script>
+    <script src="js/theme.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

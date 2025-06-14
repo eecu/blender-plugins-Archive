@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://machin3.io/MACHIN3tools/docs/assetbrowser_tools.html" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Assetbrowser Tools<sup>partly Deus Ex</sup> - MACHIN3tools</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Assetbrowser Tools\u003csup\u003epartly Deus Ex\u003c/sup\u003e";
+        var mkdocs_page_input_path = "assetbrowser_tools.md";
+        var mkdocs_page_url = "/MACHIN3tools/docs/assetbrowser_tools.html";
+      </script>
+    
+    <script src="js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> MACHIN3tools
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Get Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="index.html">MACHIN3tools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="whatsnew.html">What's new?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Objects</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="quad_sphere.html">Quad Sphere</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tools</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="smart_vert.html">Smart Vert</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="smart_edge.html">Smart Edge</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="smart_face.html">Smart Face</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="clean_up.html">Clean Up</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="edge_constrained_transform.html">Edge Constrained Transform <sup>Deus Ex</sup></a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="extrude.html">Extrude <sup>partly Deus Ex</sup></a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="focus.html">Focus</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="mirror.html">Mirror</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="align.html">Align</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="group_tools.html">Group Tools <sup>partly Deus Ex</sup></a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="smart_drive.html">Smart Drive</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="assetbrowser_tools.html">Assetbrowser Tools<sup>partly Deus Ex</sup></a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#assembly-assets">Assembly Assets</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#menu">Menu</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#create-and-disassemble-assemblies">Create and Disassemble Assemblies</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#severely-hidden-objects">Severely Hidden Objects</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#decal-backups-and-stash-objects">Decal Backups and Stash Objects</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#skip-duplication">Skip Duplication</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#sub-assembly-assets">Sub-Assembly Assets</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#tags-and-metadata">Tags and Metadata</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#thumbnail-helper-gizmo">Thumbnail Helper Gizmo</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#assembly-editing">Assembly Editing</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#set-and-reset-assembly-origin">Set and Reset Assembly Origin</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#assembly-origin-rotationorientation">Assembly Origin Rotation/Orientation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#set-assembly-origin-from-cursor-and-origin-pie">Set Assembly Origin from Cursor and Origin pie</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#assembly-variants">Assembly Variants</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#turn-assembly-into-asset">Turn Assembly into Asset</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#asset-storage">Asset Storage</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#asset-bookmarks">Asset Bookmarks</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#local-library-bookmark">Local Library Bookmark</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#display-type">Display Type</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="filebrowser_tools.html">Filebrowser Tools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="toggle_region.html">Toggle Region</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="render.html">Render</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="smooth.html">Smooth</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="clipping_toggle.html">Clipping Toggle</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="surface_slide.html">Surface Slide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="material_picker.html">Material Picker</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="apply_transformation.html">Apply Transform</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="select.html">Select</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="mesh_cut.html">Mesh Cut</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="thread.html">Thread</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="unity.html">Unity</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="customize.html">Customize</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Pie Menus</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_modes.html">Modes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_save.html">Save</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_shading.html">Shading</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_views.html">Views</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_align.html">Align</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_cursor_origin.html">Cursor and Origin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_transform.html">Transform</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_snapping.html">Snapping</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_collections.html">Collections</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_workspace.html">Workspace</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_tools.html">Tools</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Development</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">MACHIN3tools</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Tools &raquo;</li>
+      <li>Assetbrowser Tools<sup>partly Deus Ex</sup></li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="asset-browser-tools">Asset Browser tools</h2>
+<p>The <strong>Asset Browser</strong> tools built on Blender's native Asset Browser and significantly enhance its functionality and general asset creation in Blender.</p>
+<p>MACHIN3tools 1.8 of MACHIN3tools also brought <a href="#asset-bookmarks">Assetbrowser Bookmarks</a>, and 1.9 allows you cycling the <a href="#display-type">display type</a> just like in a <a href="filebrowser_tools.html">filebrowser</a>. </p>
+<p>MACHIN3tools 1.10 to 1.12 brought major updates, further improving working with assemblies, including within a single blend file, and not necessarily as external assets.</p>
+<h3 id="assembly-assets">Assembly Assets</h3>
+<p>A core concept of the Assetbrowser tools are <em>Assembly Assets</em>, which are<sup>usually</sup> <em>multi-object</em> <a href="https://docs.blender.org/manual/en/4.4/scene_layout/object/editing/asset.html">assets</a>, that are organized into a collection, and referenced by an <a href="https://docs.blender.org/manual/en/4.4/scene_layout/object/properties/instancing/collection.html#basic-usage">instance collection</a> empty. </p>
+<p>This allows you work with them as a single unified object or drop them into a scene from an external file via the Asset Browser, again as single unified asset.<br />
+Assemblies can be optionally <strong>disassembled</strong> at any time, or in <a href="faq.html#what-is-prime-and-deusex"><em>DeusEx</em></a> directly <a href="#assembly-editing">edited</a>.</p>
+<h4 id="menu">Menu</h4>
+<p>3DView &gt; MACHIN3 tab &gt; MACHIN3tools Panel &gt; Assetbrowser Tools<br />
+<a href="pie_save.html">Save Pie</a><br />
+<a href="pie_modes.html">Modes Pie</a></p>
+<h4 id="create-and-disassemble-assemblies">Create and Disassemble Assemblies</h4>
+<p><a href="img/assetbrowser_tools/create_assembly_asset_panel.png"><img alt="CreateAssemblyAseetPanel" src="img/assetbrowser_tools/create_assembly_asset_panel.png" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As of version 1.0.1, a thumbnail is assigned automatically to the asset and no longer needs to be added manually.<br />
+As of version 1.1, individual asset's objects no longer need to be positioned in the world origin.</p>
+</div>
+<div class="video">
+  <iframe src="https://www.youtube.com/embed/7DPFawKrxbY?rel=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen seamless frameBorder="0"></iframe>
+</div>
+
+<div class='video'>
+    <iframe src='https://www.youtube.com/embed/vOSPR2nHWCQ?start=30&rel=0' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' allowfullscreen seamless frameBorder='0'></iframe>
+</div>
+
+<div class='video'>
+    <iframe src='https://www.youtube.com/embed/t-bjcgyPmOI?rel=0' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' allowfullscreen seamless frameBorder='0'></iframe>
+</div>
+
+<h5 id="severely-hidden-objects">Severely Hidden Objects</h5>
+<p>Assembly Asset Creation supports <a href="faq.html#what-does-severely-hidden-mean">severely hidden objects</a>, which are objects in excluded or hidden collections.</p>
+<div class='video'>
+    <iframe src='https://www.youtube.com/embed/WYtTX31sAT8?rel=0' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' allowfullscreen seamless frameBorder='0'></iframe>
+</div>
+
+<h5 id="decal-backups-and-stash-objects">Decal Backups and Stash Objects</h5>
+<p><a href="https://decal.machin3.io">DECALmachine</a> backups or <a href="https://mesh.machin3.io">MESHmachine</a> can now (again) also be kept around.<br />
+These will persist after dropping an asset into a new file after disassembly or when editing an assembly.</p>
+<div class='video'>
+    <iframe src='https://www.youtube.com/embed/FzppR97aF_w?rel=0' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' allowfullscreen seamless frameBorder='0'></iframe>
+</div>
+
+<h5 id="skip-duplication">Skip Duplication</h5>
+<p>You can optionally skip duplicating which creates the asset from the original objects.<br />
+This has to be enabled in the <a href="preferences.html">addon preferences</a> first.  </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is a bit more limited - for instance it doesn't support <em>sub-assembly assets</em> - and in my opinion is more suitable to simple assemblies, but it may suit your workflow better.</p>
+</div>
+<div class='video'>
+    <iframe src='https://www.youtube.com/embed/nK_SDIIr004?rel=0' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' allowfullscreen seamless frameBorder='0'></iframe>
+</div>
+
+<h5 id="sub-assembly-assets">Sub-Assembly Assets</h5>
+<p><em>Sub-Assembly Assets</em> are ones created from part of a larger hierarchy of objects, which is now supported via the <em>Selection Only</em> toggle in the <a href="#create-and-disassemble-assemblies"><em>Create Assembly Asset</em></a> popup.</p>
+<div class='video'>
+    <iframe src='https://www.youtube.com/embed/4GWeEtpagf8?rel=0' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' allowfullscreen seamless frameBorder='0'></iframe>
+</div>
+
+<h5 id="tags-and-metadata">Tags and Metadata</h5>
+<p>To avoid repetitive tasks, you can now also add tags and metadata at time of asset creation.<br />
+Metadata can be setup in the <a href="preferences.html">addon preferences</a> </p>
+<div class='video'>
+    <iframe src='https://www.youtube.com/embed/P35_otR9RJI?rel=0' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' allowfullscreen seamless frameBorder='0'></iframe>
+</div>
+
+<h4 id="thumbnail-helper-gizmo">Thumbnail Helper Gizmo</h4>
+<blockquote>
+<p><sup><a href="faq.html#what-is-prime-and-deus-ex">DeusEx</a> only</sup> </p>
+</blockquote>
+<p>The <a href="faq.html#what-is-prime-and-deusex">DeusEx variant</a> offers a Thumbnail Helper Gizmo, that gives precise control over the <em>Asset's Thumbnail framing</em>, which can sometimes be off a bit when done automatically, in particular with rotated mirrored objects present within the assembly. </p>
+<div class='video'>
+    <iframe src='https://www.youtube.com/embed/wsIdBAwRXxo?rel=0' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' allowfullscreen seamless frameBorder='0'></iframe>
+</div>
+
+<h3 id="assembly-editing">Assembly Editing</h3>
+<blockquote>
+<p><sup><a href="faq.html#what-is-prime-and-deus-ex">DeusEx</a> only</sup> </p>
+</blockquote>
+<p><a href="faq.html#what-is-prime-and-deusex">DeusEx</a> also allows you to directly introspect and <strong>edit any Assembly</strong> or Instance Collection.</p>
+<div class='video'>
+    <iframe src='https://www.youtube.com/embed/9vDtIXvRL-M?rel=0' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' allowfullscreen seamless frameBorder='0'></iframe>
+</div>
+
+<h3 id="set-and-reset-assembly-origin">Set and Reset Assembly Origin</h3>
+<p>The <em>Assembly Origin</em> is now set <em>relative</em> to the Assembly's empty object, but can optionally still be set relative to the <em>original</em> assembly objects.<br />
+In addition you can now <strong>reset</strong> the origin, thereby making the instance collection empty the <em>world origin</em> within the collection.</p>
+<div class='video'>
+    <iframe src='https://www.youtube.com/embed/LAac1f0nFUI?rel=0' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' allowfullscreen seamless frameBorder='0'></iframe>
+</div>
+
+<h4 id="assembly-origin-rotationorientation">Assembly Origin Rotation/Orientation</h4>
+<blockquote>
+<p><sup><a href="faq.html#what-is-prime-and-deus-ex">DeusEx</a> only</sup> </p>
+</blockquote>
+<p><a href="faq.html#what-is-prime-and-deusex">DeuxEx</a> even allow you to change an assembly/instance collection origin's <em>rotation</em> or <em>orientation</em> now - something that Blender itself doesn't support directly, as the instance collection offset only affects translation.</p>
+<div class='video'>
+    <iframe src='https://www.youtube.com/embed/1838yIKXu0Q?rel=0' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' allowfullscreen seamless frameBorder='0'></iframe>
+</div>
+
+<h4 id="set-assembly-origin-from-cursor-and-origin-pie">Set Assembly Origin from <a href="pie_cursor_origin.html">Cursor and Origin pie</a></h4>
+<p>Instead of adjusting the <em>Assembly Origin</em> from the sidebar, you can now do it from the <a href="pie_cursor_origin.html"><em>Cursor and Origin</em> pie</a> as well.</p>
+<div class='video'>
+    <iframe src='https://www.youtube.com/embed/rQxBYQrLLfw?rel=0' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' allowfullscreen seamless frameBorder='0'></iframe>
+</div>
+
+<h3 id="assembly-variants">Assembly Variants</h3>
+<blockquote>
+<p><sup><a href="faq.html#what-is-prime-and-deus-ex">DeusEx</a> only</sup> </p>
+</blockquote>
+<p>In <a href="faq.html#what-is-prime-and-deusex">DeusEx</a> you can create <em>Assembly Variants</em> now, which are unique variations independent of existing assemblies.</p>
+<div class='video'>
+    <iframe src='https://www.youtube.com/embed/h-Tm2saZ-Lk?rel=0' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' allowfullscreen seamless frameBorder='0'></iframe>
+</div>
+
+<h3 id="turn-assembly-into-asset">Turn Assembly into Asset</h3>
+<blockquote>
+<p><sup><a href="faq.html#what-is-prime-and-deus-ex">DeusEx</a> only</sup> </p>
+</blockquote>
+<p>Also in <a href="faq.html#what-is-prime-and-deusex">DeusEx</a> - and particularly useful for <a href="#assembly-variants"><em>Assembly Variants</em></a> or also any user-created Instance Collection really - you can now easily turn them into a local asset with proper thumbnail, and optionally with tags and metadata.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is different from creating an entirely new assembly asset, as the active object is an assembly referencing a collection already.</p>
+</div>
+<div class='video'>
+    <iframe src='https://www.youtube.com/embed/e6Dt__q3rCk?rel=0' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' allowfullscreen seamless frameBorder='0'></iframe>
+</div>
+
+<h3 id="asset-storage">Asset Storage</h3>
+<p>Finally, once you are happy and finished with your assets, you can then use the new <em>Clean-out Non-Assets</em> tool, which creates an efficiently small a blend file that contains only the assets and related data.</p>
+<div class='video'>
+    <iframe src='https://www.youtube.com/embed/D8NotSbJWm4?rel=0' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' allowfullscreen seamless frameBorder='0'></iframe>
+</div>
+
+<h3 id="asset-bookmarks">Asset Bookmarks</h3>
+<p>If you appreciate the Asset Browser, you will love Asset Browser Bookmarks.</p>
+<p><a href="img/assetbrowser_tools/assetbrowser_bookmarks.jpg"><img alt="AssstBrowserBookmarks" src="img/assetbrowser_tools/assetbrowser_bookmarks.jpg" /></a>
+<em>Bookmarks bar in Asset Browser header, and Library - Catalog shown next to it</em></p>
+<p>You can jump to any saved bookmark by clicking on it or by using the <code>ALT + 1</code> to <code>ÀLT + 0</code> keymaps.<br />
+You can save any Library + Catalog combination by <code>SHIFT</code> clicking on a number/bookmark. Thumbnail size is saved too by the way.<br />
+You can clear a bookmark by <code>CTRL</code> clicking on it.</p>
+<p>This is so convenient to use, and gets even better in combination with the <a href="toggle_region.html">Toggle Region tool</a>, which can pop open an asset browser area at the top and bottom of your 3d view at any time.</p>
+<p>The bookmarks bar is of course of less use in a vertical setup:
+<img alt="AssstBrowserBookmarksVectical" src="img/assetbrowser_tools/vertical_bookmarks.jpg" /></p>
+<p>However, the shortcuts to recall a bookmark still work without issue.
+So if you prefer to work like that, you will just have to temporarily widen the asset browser area, and save your bookmarks while you can see it, then shrink it down again.</p>
+<h4 id="local-library-bookmark">Local Library Bookmark</h4>
+<div class='video'>
+    <iframe src='https://www.youtube.com/embed/vOSPR2nHWCQ?start=105&rel=0' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' allowfullscreen seamless frameBorder='0'></iframe>
+</div>
+
+<h3 id="display-type">Display Type</h3>
+<p>With the <a href="filebrowser_tools.html">Filebrowser tools</a> active, you can now adjust the <code>display_type</code> in the Assetbrowser as well via the <code>2</code> key, again just like in the Filebrowser.<br />
+You can also cycle the <code>display_type</code> using a dedicated button in the Assetbrowser header, which - again - is most suitable for horizontal layouts.</p>
+<p>Changing the <code>display_type</code> is recognized and remembered by the <a href="toggle_region.html">ToggleRegion</a> tool, as well as when setting and recalling <a href="#asset-bookmarks">bookmarks</a>.</p>
+<div class="video">
+  <iframe src="https://www.youtube.com/embed/MvyrGSTZOS4?rel=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen seamless frameBorder="0"></iframe>
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="smart_drive.html" class="btn btn-neutral float-left" title="Smart Drive"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="filebrowser_tools.html" class="btn btn-neutral float-right" title="Filebrowser Tools">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="smart_drive.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="filebrowser_tools.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme_extra.js" defer></script>
+    <script src="js/theme.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://machin3.io/MESHmachine/docs/faq.html" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>FAQ - MESHmachine</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "FAQ";
+        var mkdocs_page_input_path = "faq.md";
+        var mkdocs_page_url = "/MESHmachine/docs/faq.html";
+      </script>
+    
+    <script src="js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-78703389-1', 'MMdocs');
+        ga('send', 'pageview');
+      </script>
+    
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> MESHmachine
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Get Started</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="index.html">MESHmachine</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="whatsnew.html">What's new?</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="faq.html">FAQ</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#how-is-it-done">How is it done?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#will-meshmachine-work-in-blender-40-alpha-some-experimental-build">Will MESHmachine work in Blender 4.0-alpha (some experimental build)?</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#get-support">Get support</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#general-information">General information</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#errors">Errors</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#tool-misbehaviors">Tool misbehaviors</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#contact">Contact</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#other-addons">Other Addons</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#are-decalmachine-and-machin3tools-required">Are DECALmachine and MACHIN3tools required?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#is-hardops-or-boxcutter-required">Is HardOps or BoxCutter required?</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#terminology">Terminology</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#what-is-a-chamfer-what-is-a-fillet-what-is-a-bevel">What is a chamfer? What is a fillet? What is a bevel?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#what-are-rail-and-sweep-edges">What are rail and sweep edges?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#what-are-triangular-and-quad-bevel-corners">What are triangular and quad bevel corners?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#is-this-non-destructive-modeling">Is this non-destructive modeling?</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#using-meshmachine">Using MESHmachine</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#where-can-i-discuss-the-meshmachine-workflow">Where can I discuss the MESHmachine workflow?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#can-i-use-this-with-subdivision-surfaces-are-plugs-compatible-with-sub-ds">Can I use this with subdivision surfaces? Are plugs compatible with sub-d's?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#why-is-the-tool-greyed-out-in-the-meshmachine-menu">Why is the ... tool greyed out in the MESHmachine menu?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#how-can-i-get-the-plug-popup-how-can-i-adjust-a-tools-properties-afterwards">How can I get the Plug popup? How can I adjust a tool's properties afterwards?</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#1-panel">1. Panel</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#2-menu">2. Menu</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#3-popup">3. Popup</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Chamfers and Fillets</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="change_width.html">Change Width</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="fuse.html">Fuse</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="flatten.html">Flatten</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="unfuse.html">Unfuse</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="refuse.html">Refuse</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="unchamfer.html">Unchamfer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="unbevel.html">Unbevel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="unfuck.html">Unf*ck</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="turn_corner.html">Turn Corner</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="quad_corner.html">Quad Corner</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="mark_loop.html">Mark Loop</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Plugs</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="plugs_introduction.html">Plugs Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="plug_creation.html">Plug Creation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="advanced_plug_creation.html">Advanced Plug Creation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="remove_plugs.html">Remove Plugs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="delete_plug.html">Delete Plug</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="plug_resources.html">Plug Resources</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Booleans</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="boolean.html">Boolean</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="boolean_cleanup.html">Boolean Cleanup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="chamfer.html">Chamfer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="offset.html">Offset</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Stashes</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="create_stash.html">Create Stash</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="view_stashes.html">View Stashes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="transfer_stashes.html">Transfer Stashes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="stashes_panel.html">Stashes Panel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="orphan_stashes.html">Orphan Stashes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="sweep_stashes.html">Sweep Stashes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="conform.html">Conform</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="quick_patch.html">Quick Patch</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Normals</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="normal_flatten_straighten.html">Normal Flatten and Straighten</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="normal_transfer.html">Normal Transfer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="normal_clear.html">Normal Clear</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Mirror</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="symmetrize.html">Symmetrize</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="real_mirror.html">Real Mirror</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Selection</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="lselect.html">LSelect</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="sselect.html">SSelect</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="vselect.html">VSelect</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="select.html">Select</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Refinement</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="wedge.html">Wedge</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Looptools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="circle_relax.html">Circle and Relax</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">MESHmachine</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Get Started &raquo;</li>
+      <li>FAQ</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="contents">Contents</h1>
+<ol>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#get-support">Get Support</a></li>
+<li><a href="#other-addons">Other Addons</a></li>
+<li><a href="#terminology">Terminology</a></li>
+<li><a href="#using-meshmachine">Using MESHmachine</a></li>
+</ol>
+<h2 id="installation">Installation</h2>
+<h3 id="how-is-it-done">How is it done?</h3>
+<p>See the <a href="installation.html">Installation</a> guide and note the version requirement.</p>
+<h3 id="will-meshmachine-work-in-blender-40-alpha-some-experimental-build">Will MESHmachine work in Blender 4.0-alpha (some experimental build)?</h3>
+<p>Using experimental builds of Blender, you are at risk of encountering sudden failures of addons that used to work just fine the day before.</p>
+<p>I can't make any guarantees if things will keep working. Fixing things that break in experimental Blender builds will not be a priority, until the experimental build approaches release.</p>
+<h2 id="get-support">Get support</h2>
+<div class="admonition danger">
+<p class="admonition-title">Attention</p>
+<p>Note the <a href="installation.html#requirements">Requirements</a> in the installation guide.<br />
+Make sure you are using the <a href="installation.html#latest-meshmachine">latest version</a>.<br />
+Confirm you've followed the <a href="installation.html">installation instructions</a>.</p>
+</div>
+<p>Also note, that <a href="preferences.html#experimental-features">experimental features</a> are excluded from product support!</p>
+<h3 id="general-information">General information</h3>
+<p>To provide help, I need the following:</p>
+<ol>
+<li><strong>Proof of Purchase</strong></li>
+<li><strong>system-info.txt</strong></li>
+</ol>
+<p>Please use the <em>Get Support</em> tool in the help panel to create the system-info.txt file, and for further instructions.</p>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
+<iframe src="https://www.youtube.com/embed/b1XV0XDD1eA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen seamless frameBorder="0"></iframe>
+</div>
+
+<hr />
+<h3 id="errors">Errors</h3>
+<p>If you are seeing an error, please send me a <strong>screenshot of the system console</strong>.<br />
+Just an screenshot of the error message popup usually lacks context and is not ideal.<br />
+Instead of sending a screenshot, you can also <strong>copy and paste</strong> the console text into the email.</p>
+<div class="admonition warning">
+<p class="admonition-title">Keep in mind</p>
+<p><img alt="SystemConsole" src="img/faq/system_console.jpg" /></p>
+<p>On Windows you can turn on the console via <em>Window</em> &gt; <em>Toggle System Console</em>.
+On Linux and MacOS, you need start Blender from a terminal.<br />
+I <strong>do not</strong> need an image of Blender's <em>Info View</em> and I don't need to see Blender's <em>Python Console</em> either.</p>
+</div>
+<p>If the error only occurs on a certain model, please attach the blend file as well.<br />
+Please remove any part of the model that doesn't contrinbute to the problem to keep the file size small.</p>
+<h3 id="tool-misbehaviors">Tool misbehaviors</h3>
+<p>If you think a tool of MESHmachine doesn't do what it should do, please <strong>send me the blend file</strong>.<br />
+Please remove any part of the model that doesn't contribute to the problem to keep the file size small.</p>
+<h3 id="contact">Contact</h3>
+<p>Use <a href="mailto:mesh@machin3.io">eMail</a>, not twitter, not facebook, not youtube, not artstation, not blender market, and not the <a href="https://blenderartists.org/t/meshmachine/1102529">Blender Artists</a> or <a href="https://polycount.com/discussion/205933/blender-meshmachine-hard-surface-focused-mesh-modeling">polycount</a> threads <strong>for reporting of errors</strong>.</p>
+<h2 id="other-addons">Other Addons</h2>
+<h3 id="are-decalmachine-and-machin3tools-required">Are DECALmachine and MACHIN3tools required?</h3>
+<p>No, MESHmachine provides modeling tools that work on the mesh level. It does not depend on any other addon to do so.<br />
+MESHmachine is a mesh modeling toolset, while <a href="https://gumroad.com/l/DECALmachine">DECALmachine</a> is a detailing toolset, using mesh decals.    </p>
+<p><a href="https://github.com/machin3io/MACHIN3tools">MACHIN3tools</a> is a free addon collection, covering a variety of tasks simple, common blender task, including but not exclusively related to modeling.</p>
+<h3 id="is-hardops-or-boxcutter-required">Is HardOps or BoxCutter required?</h3>
+<p><a href="https://gumroad.com/l/hardops">HardOps</a> and <a href="https://gumroad.com/l/BoxCutter">BoxCutter</a> are not required to use MESHmachine.<br />
+They can complement each other well however, and I personally do use both of them.</p>
+<h2 id="terminology">Terminology</h2>
+<h3 id="what-is-a-chamfer-what-is-a-fillet-what-is-a-bevel">What is a chamfer? What is a fillet? What is a bevel?</h3>
+<p>A chamfer is a transitional surface between 2 other surfaces, often - but not necessiarily - at a 45 degree angle. It's also referred to as a flat bevel.<br />
+In blender it can be created using the <em>Bevel</em> tool and modifier, if the segments are set to 1 and with the <em>Bridge</em> tool if the number of cuts is set to 0.<br />
+A chamfer has a <em>flat profile</em>.</p>
+<p>Similarly, a fillet is a transitional surface, with a <em>curved profile</em>. It's also referred to as a rounded bevel.
+In blender it can be created using the <em>Bevel</em> tool and modifier, if the segments are set to higher than 1 and with the <em>Bridge</em> tool if the number of cuts is set to above 0.<br />
+A fillet has a <em>round profile</em>.</p>
+<p>Both are used to refine and replace hard edges.</p>
+<p><img alt="FAQChamferandBevel" src="img/faq/chamfer_and_fillet.jpg" />
+<em>this chamfer has 2 micro bevels of its own!</em></p>
+<p>And so in the context of MESHmachine, I think it makes sense to differentiate between fillet and bevel.<br />
+Bevel is a tool to create a fillet from a hard edge. And with MESHmachine's fuse tool, you can now also create a fillet from a chamfer.
+The chamfer itself, can of course also be created by the bevel tool or by using MESHmachine's <a href="chamfer.html">Chamfer</a> tool, although the latter is specifically made for post-boolean chamfers.</p>
+<h3 id="what-are-rail-and-sweep-edges">What are rail and sweep edges?</h3>
+<p>Rail edges are edges or edgeloops going along a bevel or chamfer.
+Sweep edges are edges going across.</p>
+<p><img alt="FAQChamferRailandSweeps" src="img/faq/chamfer_rail_and_sweeps.jpg" />
+<em>chamfers have only 2 sets of rails</em></p>
+<p><img alt="FAQBevelRailandSweeps" src="img/faq/fillet_rail_and_sweeps.jpg" />
+<em>while bevels can have many rails</em></p>
+<p>Rail edges are great to <em>loop select</em> across a chamfer or bevel, while sweep edges can be used to <em>loop select</em> along a chamfer or bevel.</p>
+<div class="admonition note">
+<p class="admonition-title">Loop Selections</p>
+<p>Loop selections are done - by default via <code>Alt + Select Mouse</code>, while pointing at an edge.</p>
+</div>
+<h3 id="what-are-triangular-and-quad-bevel-corners">What are triangular and quad bevel corners?</h3>
+<p>A triangular bevel corner is one, that has three corner vertices.<br />
+Similarly a quad corner is one, that has four corner verts.</p>
+<p><img alt="TriangularBevelCorners" src="img/faq/triangular_bevel_corners.jpg" />
+<em>a triangular bevel corner can be a single triangle, can include a single triangle in its center or may not contain a triangle at all</em></p>
+<div class="admonition note">
+<p class="admonition-title">Triangular Bevel Corners</p>
+<p>Triangular bevel corners split the flow of a bevel/fillet in 2 directions.<br />
+This is undesired and tools like <a href="unfuse.html">Unfuse</a>, <a href="refuse.html">Refuse</a> and <a href="unbevel.html">Unbevel</a>, will not work with these kinds of corners.<br />
+<img alt="FAQSplitFlow" src="img/faq/split_flow.jpg" /></p>
+</div>
+<p>The <a href="quad_corner.html">Quad Corner</a> tool can be used to convert triangular bevel corners to quad corners.</p>
+<h3 id="is-this-non-destructive-modeling">Is this non-destructive modeling?</h3>
+<p>It's not <strong>non-destructive</strong>, no. </p>
+<p>With MESHmachine you work directly on the mesh level. There's no continuous construction history as in CAD modeling tools, and there aren't stacks of modifiers either. Mesh manipulation is permanent.<br />
+What MESHmachine's chamfer and fillet toolset does, is reconstruct geometry, which is imperfect, but often good enough.<br />
+And so, I'd call it pseudo-non-destructive, or better <strong>reconstructive</strong>.</p>
+<h2 id="using-meshmachine">Using MESHmachine</h2>
+<h3 id="where-can-i-discuss-the-meshmachine-workflow">Where can I discuss the MESHmachine workflow?</h3>
+<!-- I'd invite you to discuss all things MESHmachine (except [errors and tool misbehaviors](#get-support)) in the [blenderartists](https://blenderartists.org/t/meshmachine/1102529) and [polycount](https://polycount.com/discussion/205933/blender-meshmachine-hard-surface-focused-mesh-modeling) threads. -->
+<!---->
+<p>I'd invite you to discuss all things MESHmachine (except <a href="#get-support">errors and tool misbehaviors</a>) in the <a href="https://blenderartists.org/t/meshmachine/1102529">blenderartists</a> thread.</p>
+<h3 id="can-i-use-this-with-subdivision-surfaces-are-plugs-compatible-with-sub-ds">Can I use this with subdivision surfaces? Are plugs compatible with sub-d's?</h3>
+<p>Subdivision Surface modeling is generally understood as working on a low to mid poly model, and adding a live sub-d modfier on top, which produces a higher density, smoother mesh.
+While I think some of MESHmachine's tools can be helpful in this context, it's not really aimed at that.  </p>
+<p>You will likely have to manually remove ngons and avoid triangles due to the tight topology constraints of the sub-d workflow.</p>
+<p>For me personally, sub-d's only play a role, if a sculptural surfacing is an important part of the form language. And in that case I will use it to generate the main forms, but then fatten the modifier stack.<br />
+In that scenario you can then abolutely use plugs on top of the mesh, but you loose the flexibily of sub-d modeling.</p>
+<p>What you can't do is use plugs on the low or mid poly model while keeping the sub-d modifier live. This is asking for trouble.</p>
+<p>So, if you use sub-d's as a finishing tool, MESHmachine is not your best choice. If you only use it for form generation initialy and are willing to apply the subsurf modifier, MESHmachine can be useful.</p>
+<h3 id="why-is-the-tool-greyed-out-in-the-meshmachine-menu">Why is the ... tool greyed out in the MESHmachine menu?</h3>
+<p>Every time you open the <em>MESHmachine menu</em>, each tool listed will check if certain conditions are met, before becoming available, a process called polling.
+This is to avoid having to deal with illegal selections a tool can't properly process.</p>
+<p>Refer to the individual tool pages here in the docs, for details on what tool expects what kind of selection.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These conditions are intentionally very simple and just because, a tool is no longer greyed out does not mean it will execute properly.  </p>
+<p>Illegal selections may still be present and you will receive feedback, if that's the case.
+<img alt="FAQIllegalSelection" src="img/faq/illegal_selection.jpg" /></p>
+</div>
+<h3 id="how-can-i-get-the-plug-popup-how-can-i-adjust-a-tools-properties-afterwards">How can I get the Plug popup? How can I adjust a tool's properties afterwards?</h3>
+<p>In Blender the result of most tools, can be adjusted, after a tool has been called.<br />
+In case of MESHmachine's <a href="plugs_introduction.html">Plug tool</a> for instance, you can set various properties to modify the way the plug geometry is integrated into a surface.</p>
+<p>There are 3 ways to do this:</p>
+<h4 id="1-panel">1. Panel</h4>
+<p><img alt="RedoLastBottom" src="img/faq/redo_last_bottom.png" />
+<em>the operator properties panel at the bottom left of the screen</em></p>
+<h4 id="2-menu">2. Menu</h4>
+<p><img alt="RedoLastMenu" src="img/faq/redo_last_menu.jpg" />
+<em>the</em> <strong>Adjust Last Operation</strong> <em>entry in the</em> <strong>Edit Menu</strong></p>
+<h4 id="3-popup">3. Popup</h4>
+<p><img alt="RedoLastMenu" src="img/faq/redo_last_popup.png" />
+<strong>Redo Last</strong> <em>popup called via a</em> <strong>shortcut</strong></p>
+<p><img alt="RedoLastKeymap" src="img/faq/redo_last_kmi.jpg" />
+<em>the default keymap is <code>F9</code> or <code>F6</code> depending on your chosen keymap</em></p>
+<p>If you like using the popup, consider mapping it to a button on your mouse, which is how I do it in all feature videos.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="whatsnew.html" class="btn btn-neutral float-left" title="What's new?"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="change_width.html" class="btn btn-neutral float-right" title="Change Width">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="whatsnew.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="change_width.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme_extra.js" defer></script>
+    <script src="js/theme.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

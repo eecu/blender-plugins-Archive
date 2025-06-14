@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://machin3.io/MACHIN3tools/docs/customize.html" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Customize - MACHIN3tools</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Customize";
+        var mkdocs_page_input_path = "customize.md";
+        var mkdocs_page_url = "/MACHIN3tools/docs/customize.html";
+      </script>
+    
+    <script src="js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> MACHIN3tools
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Get Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="index.html">MACHIN3tools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="whatsnew.html">What's new?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Objects</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="quad_sphere.html">Quad Sphere</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tools</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="smart_vert.html">Smart Vert</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="smart_edge.html">Smart Edge</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="smart_face.html">Smart Face</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="clean_up.html">Clean Up</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="edge_constrained_transform.html">Edge Constrained Transform <sup>Deus Ex</sup></a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="extrude.html">Extrude <sup>partly Deus Ex</sup></a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="focus.html">Focus</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="mirror.html">Mirror</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="align.html">Align</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="group_tools.html">Group Tools <sup>partly Deus Ex</sup></a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="smart_drive.html">Smart Drive</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="assetbrowser_tools.html">Assetbrowser Tools<sup>partly Deus Ex</sup></a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="filebrowser_tools.html">Filebrowser Tools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="toggle_region.html">Toggle Region</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="render.html">Render</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="smooth.html">Smooth</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="clipping_toggle.html">Clipping Toggle</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="surface_slide.html">Surface Slide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="material_picker.html">Material Picker</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="apply_transformation.html">Apply Transform</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="select.html">Select</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="mesh_cut.html">Mesh Cut</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="thread.html">Thread</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="unity.html">Unity</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="customize.html">Customize</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#contents">Contents</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#theme">Theme</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#matcaps">Matcaps</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#shading-and-rendering">Shading and Rendering</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#overlays">Overlays</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#outliner">Outliner</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#startup-scene">Startup Scene</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#preferences">Preferences</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#interface">Interface</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#viewport">Viewport</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#input-and-navigation">Input and Navigation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#keymap">Keymap</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#window-keymap">Window Keymap</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#screen-keymap">Screen Keymap</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#screen-editing-keymap">Screen Editing Keymap</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#user-interface-keymap">User Interface Keymap</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#frames-keymap">Frames Keymap</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#outliner-keymap">Outliner Keymap</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#3d-view-keymap">3D View Keymap</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#object-mode-keymap">Object Mode Keymap</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#object-non-modal-keymap">Object Non-modal Keymap</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#image-keymap">Image Keymap</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#image-paint-keymap">Image Paint Keymap</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#mesh-keymap">Mesh Keymap</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#sculpt-keymap">Sculpt Keymap</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#curve-keymap">Curve Keymap</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#uv-editor-keymap">UV Editor Keymap</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#node-tool-select-box-keymap">Node Tool: Select Box Keymap</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#node-editor-keymap">Node Editor Keymap</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#file-browser-keymap">File Browser Keymap</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#file-browser-main-keymap">File Browser Main Keymap</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#transform-modal-map-keymap">Transform Modal Map Keymap</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#grease-pencil-edit-mode-keymap">Grease Pencil Edit Mode Keymap</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#grease-pencil-sculpt-mode-keymap">Grease Pencil Sculpt Mode Keymap</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#grease-pencil-brush-stroke-keymap">Grease Pencil Brush Stroke Keymap</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#mesh-keymap_1">Mesh Keymap</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#toolbar-popup-keymap">Toolbar Popup Keymap</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#system">System</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#experimental">Experimental</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#save-load">Save &amp; Load</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Pie Menus</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_modes.html">Modes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_save.html">Save</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_shading.html">Shading</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_views.html">Views</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_align.html">Align</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_cursor_origin.html">Cursor and Origin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_transform.html">Transform</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_snapping.html">Snapping</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_collections.html">Collections</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_workspace.html">Workspace</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_tools.html">Tools</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Development</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">MACHIN3tools</a>
+        
+      </nav>
+      <div class="wy-nav-content" style="max-width: 1600px !important">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Tools &raquo;</li>
+      <li>Customize</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="_1"></h1>
+<h2 id="contents">Contents</h2>
+<ol>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#theme">Theme</a> </li>
+<li><a href="#matcaps">Matcaps</a></li>
+<li><a href="#shading-and-rendering">Shading and Rendering</a></li>
+<li><a href="#overlays">Overlays</a></li>
+<li><a href="#outliner">Outliner</a></li>
+<li><a href="#startup-scene">Startup Scene</a></li>
+<li><a href="#preferences">Preferences</a></li>
+</ol>
+<h2 id="overview">Overview</h2>
+<p>The <em>Customize</em> tool - accessed from the <a href="preferences.html">addon preferences</a> - changes various Blender settings, preferences and keymaps.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Customization is deeply personal. The tools is primarily meant for myself, to set up Blender how I myself like it.
+But feel free to pick and choose only some parts of it. For instance, you could pick only the Theme or Matcaps.</p>
+</div>
+<div class='video'>
+  <iframe src='https://www.youtube.com/embed/4VcB44F6QvE?start=134&rel=0' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' allowfullscreen seamless frameBorder='0'></iframe>
+</div>
+
+<p><a href="img/customize/preferences.png"><img alt="CustomizePreferences" src="img/customize/preferences.png" /></a></p>
+<!-- *Customize tool [preferences](preferences.md), with only Theme and Matcap enabled* -->
+
+<p>When run, the tool will print every single change it does to the system console.<br />
+Those same changes are also listed below.</p>
+<h2 id="theme">Theme</h2>
+<p>The <em>M3</em> theme is a merger of <em>Flatty Dark Blueberry</em> for general UI colors, and <a href="https://twitter.com/PLyczkowski">Paweł Łyczkowski's</a> <em>rTheme</em> for 3D View colors.</p>
+<h2 id="matcaps">Matcaps</h2>
+<p>The following 4 Matcaps are supplied with MACHIN3tools, and will be copied to Blender's matcap folder, if matcap customization is enabled.</p>
+<ul>
+<li><code>matcap_base.exr</code> </li>
+<li><code>matcap_shiny_red.exr</code>    </li>
+<li><code>matcap_zebra_horizontal.exr</code> </li>
+<li><code>matcap_zebra_vertical.exr</code>   </li>
+</ul>
+<h2 id="shading-and-rendering">Shading and Rendering</h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Shading changes will affect the currently open blend file/scene.<br />
+It's assumed that the startup file is open, and the user will save the changes to the startup file.</p>
+</div>
+<ul>
+<li>Change <code>shading.type</code> to <code>SOLID</code></li>
+<li>Change <code>shading.light</code> to <code>MATCAP</code></li>
+<li>Change <code>shading.color_type</code> to <code>SINGLE</code></li>
+<li>Change <code>shading.single_color</code> to <code>838387</code></li>
+<li>Change <code>shading.studio_light</code> to <code>matcap_base.exr</code></li>
+<li>Changed <code>shading.studiolight_background_alpha</code> to 0</li>
+<li>Change <code>shading.studiolight_background_blur</code> to 1</li>
+<li>Enable <code>shading.show_cavity</code></li>
+<li>Change <code>shading.cavity_type</code> to <code>WORLD</code></li>
+<li>Change <code>shading.cavity_ridge_factor</code> to 0</li>
+<li>Change <code>shading.cavity_valley_factor</code> to 2</li>
+<li>Enabled <code>shading.show_backface_culling</code></li>
+<li>Enable <code>shading.use_scene_lights</code></li>
+<li>Enable <code>shading.use_scene_lights_render</code></li>
+<li>Disable <code>shading.use_scene_world_render</code></li>
+<li>Enable <code>LOW</code> Eevee Next Preset</li>
+<li>Change Render Engine to <code>CYCLES</code></li>
+<li>Change Cycles Devices to <code>GPU</code></li>
+<li>Enable <code>cycle.use_preview_denoising</code></li>
+<li>Set <code>cycles.preview_denoising_start_sample</code> to 2</li>
+<li>Set <code>cycles.preview_denoising_input_passes</code> to <code>NONE</code></li>
+<li>Enable Fast GI Approximation</li>
+<li>Set <code>cycles.ao_bounces</code> to 2</li>
+<li>Set <code>cycles.ao_bounces_render</code> to 2</li>
+</ul>
+<h2 id="overlays">Overlays</h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Overlay changes will affect the currently open blend file/scene.<br />
+It's assumed that the startup file is open, and the user will save the changes to the startup file.</p>
+</div>
+<ul>
+<li>Enable <code>overlay.show_face_center</code></li>
+<li>Disable <code>overlay.show_relationship_lines</code></li>
+<li>Change <code>overlay.vertex_opacity</code> to 1</li>
+<li>Disable <code>overlay.show_fade_inactive</code></li>
+<li>Enable <code>overlay.show_face_orientation</code> (when the M3 Theme being used) </li>
+</ul>
+<h2 id="outliner">Outliner</h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Outliner changes will affect the currently open blend file/scene.<br />
+It's assumed that the startup file is open, and the user will save the changes to the startup file.</p>
+</div>
+<ul>
+<li>Disable <code>outliner.use_filter_children</code></li>
+<li>Disable <code>outliner.use_filter_object_content</code></li>
+<li>Enable <code>outliner.show_restrict_column_select</code></li>
+<li>Enable <code>outliner.show_restrict_column_viewport</code></li>
+<li>Enable <code>outliner.show_restrict_column_render</code> </li>
+</ul>
+<h2 id="startup-scene">Startup Scene</h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Startup Scene changes will affect the currently open blend file/scene.<br />
+It's assumed that the startup file is open, and the user will save the changes to the startup file.</p>
+</div>
+<ul>
+<li>Enable <code>tool_settings.use_uv_select_sync</code></li>
+<li>Disable <code>overlay.show_cursor</code></li>
+<li>Enable <code>scene.M3.draw_cursor_axes</code></li>
+<li>Enable <code>scene.M3.draw_active_axes</code></li>
+<li>Enable GPU Compositing</li>
+<li>Remove default Light</li>
+<li>Remove default Camera</li>
+<li>Remove default Cube</li>
+<li>Remove default Collection</li>
+<li>Remove default Material</li>
+<li>Align Viewport with World Y Axis</li>
+<li>Set Annotation Stroke Placement to <code>SURFACE</code></li>
+<li>Set Annotation Eraser Size to 50</li>
+</ul>
+<h2 id="preferences">Preferences</h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>None of the following changes in preferences are saved automatically.<br />
+In fact MACHIN3tools will intentionally disable auto-saving of preferences.<br />
+It is assumed the user will manually save the changes.</p>
+</div>
+<h3 id="interface">Interface</h3>
+<ul>
+<li>Disable Splash Screen</li>
+<li>Enable Tool Tips</li>
+<li>Enable Python Tool Tips</li>
+<li>Enable Developer Extras</li>
+<li>Change Header Position to <code>BOTTOM</code> (for the 3D View), and back to <code>KEEP_EXISTING</code> as a as general preference</li>
+<li>Disable Navigation Controls</li>
+<li>Change Color Picker to <code>SQUARE_SV</code></li>
+<li>Change Pie Menu Animation Timeout to 0</li>
+<li>Enable Status Bar System Memory</li>
+<li>Enable Status Bar Video Memory</li>
+</ul>
+<h3 id="viewport">Viewport</h3>
+<ul>
+<li>Change 3D Viewport Axis to MINIMAL</li>
+</ul>
+<h3 id="input-and-navigation">Input and Navigation</h3>
+<ul>
+<li>Enable Mouse Zoom Invert</li>
+<li>Enable Zoom to Mouse Position</li>
+<li>Change Double Click Speed to 200</li>
+<li>Change <code>NDOF</code> Dead Zone to 0.03</li>
+<li>Disable <code>NDOF</code> Zoom Invert</li>
+<li>Disable <code>NDOF</code> Lock Camera Pan/Zoom</li>
+<li>Change <code>NDOF</code> View Rotate Method to Turntable</li>
+<li>Disable <code>NDOF</code> Pan Axis Inversions</li>
+<li>Disable <code>NDOF</code> Rotation Axis Inversions</li>
+<li>Disable <code>NDOF</code> Lock Horizon</li>
+<li>Disable <code>NDOF</code> (Show) Orbit Center</li>
+</ul>
+<h3 id="keymap">Keymap</h3>
+<p>The Keymap option of the Customize tool will set the 2.7x keymap, and then modify it quite extensively, starting with the selection, which will be done using the <code>LEFT</code> mouse button.</p>
+<h4 id="window-keymap">Window Keymap</h4>
+<ul>
+<li>Deactivated <code>wm.open_mainfile, name: Open, active: True, map type: KEYBOARD, type: F1, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {}</code></li>
+<li>Deactivated <code>wm.doc_view_manual_ui_context, name: View Online Manual, active: True, map type: KEYBOARD, type: F1, value: PRESS, alt: 1, ctrl: 0, shift: 0, properties: {}</code></li>
+<li>Deactivated <code>wm.open_mainfile, name: Open, active: True, map type: KEYBOARD, type: O, value: PRESS, alt: 0, ctrl: 1, shift: 0, properties: {}</code></li>
+<li>Deactivated <code>wm.save_as_mainfile, name: Save As, active: True, map type: KEYBOARD, type: F2, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {}</code></li>
+<li>Deactivated <code>wm.save_as_mainfile, name: Save Copy, active: True, map type: KEYBOARD, type: S, value: PRESS, alt: 1, ctrl: 1, shift: 0, properties: {'copy': 1}</code></li>
+<li>Deactivated <code>wm.save_as_mainfile, name: Save As, active: True, map type: KEYBOARD, type: S, value: PRESS, alt: 0, ctrl: 1, shift: 1, properties: {}</code></li>
+</ul>
+<h4 id="screen-keymap">Screen Keymap</h4>
+<ul>
+<li>Changed <code>ed.undo, name: Undo, active: True, map type: KEYBOARD, type: Z, value: PRESS, alt: 0, ctrl: 1, shift: 0, properties: {}</code><ul>
+<li>to <code>ed.undo, name: Undo, active: True, map type: KEYBOARD, type: F1, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {}</code></li>
+</ul>
+</li>
+<li>Changed <code>ed.redo, name: Redo, active: True, map type: KEYBOARD, type: Z, value: PRESS, alt: 0, ctrl: 1, shift: 1, properties: {}</code><ul>
+<li>to <code>ed.redo, name: Redo, active: True, map type: KEYBOARD, type: F2, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {}</code></li>
+</ul>
+</li>
+<li>Changed <code>ed.undo_history, name: Undo History, active: True, map type: KEYBOARD, type: Z, value: PRESS, alt: 1, ctrl: 1, shift: 0, properties: {}</code><ul>
+<li>to <code>ed.undo_history, name: Undo History, active: True, map type: KEYBOARD, type: F1, value: PRESS, alt: 1, ctrl: 0, shift: 0, properties: {}</code></li>
+</ul>
+</li>
+<li>Deactivated <code>screen.screen_full_area, name: Toggle Maximize Area, active: True, map type: KEYBOARD, type: UP_ARROW, value: PRESS, alt: 0, ctrl: 1, shift: 0, properties: {}</code></li>
+<li>Deactivated <code>screen.screen_full_area, name: Toggle Maximize Area, active: True, map type: KEYBOARD, type: DOWN_ARROW, value: PRESS, alt: 0, ctrl: 1, shift: 0, properties: {}</code></li>
+<li>Deactivated <code>screen.screen_full_area, name: Toggle Maximize Area, active: True, map type: KEYBOARD, type: SPACE, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {}</code></li>
+<li>Deactivated <code>screen.screen_full_area, name: Toggle Maximize Area, active: True, map type: KEYBOARD, type: F10, value: PRESS, alt: 1, ctrl: 0, shift: 0, properties: {'use_hide_panels': 1}</code></li>
+<li>Changed <code>screen.repeat_history, name: Repeat History, active: True, map type: KEYBOARD, type: R, value: PRESS, alt: 1, ctrl: 1, shift: 0, properties: {}</code><ul>
+<li>to <code>screen.repeat_history, name: Repeat History, active: True, map type: KEYBOARD, type: R, value: PRESS, alt: 1, ctrl: 0, shift: 1, properties: {}</code></li>
+</ul>
+</li>
+<li>Changed <code>screen.redo_last, name: Redo Last, active: True, map type: KEYBOARD, type: F6, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {}</code><ul>
+<li>to <code>screen.redo_last, name: Redo Last, active: True, map type: MOUSE, type: BUTTON4MOUSE, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {}</code></li>
+</ul>
+</li>
+</ul>
+<h4 id="screen-editing-keymap">Screen Editing Keymap</h4>
+<ul>
+<li>Changed <code>screen.screen_full_area, name: Toggle Maximize Area, active: True, map type: KEYBOARD, type: ACTIONZONE_FULLSCREEN, value: ANY, alt: 0, ctrl: 0, shift: 0, properties: {'use_hide_panels': 1}</code><ul>
+<li>to <code>screen.screen_full_area, name: Toggle Maximize Area, active: True, map type: KEYBOARD, type: SPACE, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {'use_hide_panels': 1}</code></li>
+</ul>
+</li>
+</ul>
+<h4 id="user-interface-keymap">User Interface Keymap</h4>
+<ul>
+<li>Changed <code>ui.reset_default_button, name: Reset to Default Value, active: True, map type: KEYBOARD, type: BACK_SPACE, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'all': 1}</code><ul>
+<li>to <code>ui.reset_default_button, name: Reset to Default Value, active: True, map type: MOUSE, type: MIDDLEMOUSE, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'all': 0}</code></li>
+</ul>
+</li>
+</ul>
+<h4 id="frames-keymap">Frames Keymap</h4>
+<ul>
+<li>Deactivated <code>screen.animation_play, name: Play Animation, active: True, map type: KEYBOARD, type: A, value: PRESS, alt: 1, ctrl: 0, shift: 0, properties: {}</code></li>
+<li>Deactivated <code>screen.animation_play, name: Play Animation, active: True, map type: KEYBOARD, type: A, value: PRESS, alt: 1, ctrl: 0, shift: 1, properties: {'reverse': 1}</code></li>
+<li>Deactivated <code>screen.animation_play, name: Play Animation, active: True, map type: KEYBOARD, type: MEDIA_PLAY, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {}</code></li>
+</ul>
+<h4 id="outliner-keymap">Outliner Keymap</h4>
+<ul>
+<li>Changed <code>outliner.show_active, name: Show Active, active: True, map type: KEYBOARD, type: PERIOD, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {}</code><ul>
+<li>to <code>outliner.show_active, name: Show Active, active: True, map type: KEYBOARD, type: F, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {}</code></li>
+</ul>
+</li>
+<li>Changed <code>outliner.start_filter, name: Filter, active: True, map type: KEYBOARD, type: F, value: PRESS, alt: 0, ctrl: 1, shift: 0, properties: {}</code><ul>
+<li>to <code>outliner.start_filter, name: Filter, active: True, map type: KEYBOARD, type: SLASH, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {}</code></li>
+</ul>
+</li>
+</ul>
+<h4 id="3d-view-keymap">3D View Keymap</h4>
+<ul>
+<li>Changed <code>view3d.cursor3d, name: Set 3D Cursor, active: True, map type: MOUSE, type: RIGHTMOUSE, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {}</code><ul>
+<li>to <code>view3d.cursor3d, name: Set 3D Cursor, active: True, map type: MOUSE, type: RIGHTMOUSE, value: PRESS, alt: 1, ctrl: 0, shift: 0, properties: {'orientation': 3}</code></li>
+</ul>
+</li>
+<li>Deactivated <code>transform.translate, name: Move, active: True, map type: MOUSE, type: RIGHTMOUSE, value: CLICK_DRAG, alt: 0, ctrl: 0, shift: 1, properties: {'release_confirm': 1, 'cursor_transform': 1}</code></li>
+<li>Changed <code>view3d.view_selected, name: Frame Selected, active: True, map type: KEYBOARD, type: NUMPAD_PERIOD, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {}</code><ul>
+<li>to <code>view3d.view_selected, name: Frame Selected, active: True, map type: KEYBOARD, type: F, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {}</code></li>
+</ul>
+</li>
+<li>Deactivated <code>view3d.view_axis, name: View Axis, active: True, map type: MOUSE, type: MIDDLEMOUSE, value: CLICK_DRAG, alt: 1, ctrl: 0, shift: 0, properties: {'type': 5, 'relative': 1}</code></li>
+<li>Deactivated <code>view3d.view_axis, name: View Axis, active: True, map type: MOUSE, type: MIDDLEMOUSE, value: CLICK_DRAG, alt: 1, ctrl: 0, shift: 0, properties: {'type': 6, 'relative': 1}</code></li>
+<li>Deactivated <code>view3d.view_axis, name: View Axis, active: True, map type: MOUSE, type: MIDDLEMOUSE, value: CLICK_DRAG, alt: 1, ctrl: 0, shift: 0, properties: {'type': 4, 'relative': 1}</code></li>
+<li>Deactivated <code>view3d.view_axis, name: View Axis, active: True, map type: MOUSE, type: MIDDLEMOUSE, value: CLICK_DRAG, alt: 1, ctrl: 0, shift: 0, properties: {'type': 3, 'relative': 1}</code></li>
+<li>Changed <code>view3d.view_selected, name: Frame Selected, active: True, map type: NDOF, type: NDOF_BUTTON_FIT, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {}</code><ul>
+<li>to <code>view3d.view_center_pick, name: Center View to Mouse, active: True, map type: NDOF, type: NDOF_BUTTON_1, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {}</code></li>
+</ul>
+</li>
+<li>Changed <code>view3d.select, name: Select, active: True, map type: MOUSE, type: LEFTMOUSE, value: CLICK, alt: 0, ctrl: 0, shift: 0, properties: {}</code><ul>
+<li>to <code>view3d.select, name: Select, active: True, map type: MOUSE, type: LEFTMOUSE, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {}</code></li>
+</ul>
+</li>
+<li>Changed <code>view3d.select, name: Select (Toggle), active: True, map type: MOUSE, type: LEFTMOUSE, value: CLICK, alt: 0, ctrl: 0, shift: 1, properties: {'toggle': 1}</code><ul>
+<li>to <code>view3d.select, name: Select (Toggle), active: True, map type: MOUSE, type: LEFTMOUSE, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {'toggle': 1}</code></li>
+</ul>
+</li>
+<li>Deactivated <code>view3d.select, name: Select, active: True, map type: MOUSE, type: LEFTMOUSE, value: CLICK, alt: 0, ctrl: 1, shift: 0, properties: {'center': 1, 'object': 1}</code></li>
+<li>Changed <code>view3d.select, name: Select, active: True, map type: MOUSE, type: LEFTMOUSE, value: CLICK, alt: 1, ctrl: 0, shift: 0, properties: {'enumerate': 1}</code><ul>
+<li>to <code>view3d.select, name: Select, active: True, map type: MOUSE, type: LEFTMOUSE, value: PRESS, alt: 1, ctrl: 0, shift: 0, properties: {'enumerate': 1}</code></li>
+</ul>
+</li>
+<li>Deactivated <code>view3d.select, name: Select (Toggle), active: True, map type: MOUSE, type: LEFTMOUSE, value: CLICK, alt: 0, ctrl: 1, shift: 1, properties: {'toggle': 1, 'center': 1}</code></li>
+<li>Deactivated <code>view3d.select, name: Select, active: True, map type: MOUSE, type: LEFTMOUSE, value: CLICK, alt: 1, ctrl: 1, shift: 0, properties: {'center': 1, 'enumerate': 1}</code></li>
+<li>Deactivated <code>view3d.select, name: Select (Toggle), active: True, map type: MOUSE, type: LEFTMOUSE, value: CLICK, alt: 1, ctrl: 0, shift: 1, properties: {'toggle': 1, 'enumerate': 1}</code></li>
+<li>Deactivated <code>view3d.select, name: Select (Toggle), active: True, map type: MOUSE, type: LEFTMOUSE, value: CLICK, alt: 1, ctrl: 1, shift: 1, properties: {'toggle': 1, 'center': 1, 'enumerate': 1}</code></li>
+<li>Deactivated <code>view3d.zoom_border, name: Zoom to Border, active: True, map type: KEYBOARD, type: B, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {}</code></li>
+<li>Deactivated <code>transform.translate, name: Move, active: True, map type: KEYBOARD, type: T, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {'texture_space': 1}</code></li>
+</ul>
+<h4 id="object-mode-keymap">Object Mode Keymap</h4>
+<ul>
+<li>Changed <code>object.select_hierarchy, name: Select Hierarchy, active: True, map type: KEYBOARD, type: LEFT_BRACKET, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'direction': 0, 'extend': 0}</code><ul>
+<li>to <code>object.select_hierarchy, name: Select Hierarchy, active: True, map type: KEYBOARD, type: UP_ARROW, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'direction': 0, 'extend': 0}</code></li>
+</ul>
+</li>
+<li>Changed <code>object.select_hierarchy, name: Select Hierarchy, active: True, map type: KEYBOARD, type: RIGHT_BRACKET, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'direction': 1, 'extend': 0}</code><ul>
+<li>to <code>object.select_hierarchy, name: Select Hierarchy, active: True, map type: KEYBOARD, type: DOWN_ARROW, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'direction': 1, 'extend': 0}</code></li>
+</ul>
+</li>
+<li>Deactivated <code>object.delete, name: Delete, active: True, map type: KEYBOARD, type: X, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {'use_global': 1}</code></li>
+<li>Deactivated <code>object.delete, name: Delete, active: True, map type: KEYBOARD, type: DEL, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'use_global': 0, 'confirm': 0}</code></li>
+<li>Deactivated <code>object.delete, name: Delete, active: True, map type: KEYBOARD, type: DEL, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {'use_global': 1, 'confirm': 0}</code></li>
+<li>Deactivated <code>object.move_to_collection, name: Move to Collection, active: True, map type: KEYBOARD, type: M, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {}</code></li>
+<li>Deactivated <code>object.link_to_collection, name: Link to Collection, active: True, map type: KEYBOARD, type: M, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: H, value: PRESS, alt: 0, ctrl: 1, shift: 0, properties: {}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: ONE, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'collection_index': 1, 'extend': 0}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: TWO, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'collection_index': 2, 'extend': 0}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: THREE, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'collection_index': 3, 'extend': 0}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: FOUR, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'collection_index': 4, 'extend': 0}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: FIVE, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'collection_index': 5, 'extend': 0}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: SIX, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'collection_index': 6, 'extend': 0}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: SEVEN, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'collection_index': 7, 'extend': 0}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: EIGHT, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'collection_index': 8, 'extend': 0}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: NINE, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'collection_index': 9, 'extend': 0}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: ZERO, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'collection_index': 10, 'extend': 0}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: ONE, value: PRESS, alt: 1, ctrl: 0, shift: 0, properties: {'collection_index': 11, 'extend': 0}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: TWO, value: PRESS, alt: 1, ctrl: 0, shift: 0, properties: {'collection_index': 12, 'extend': 0}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: THREE, value: PRESS, alt: 1, ctrl: 0, shift: 0, properties: {'collection_index': 13, 'extend': 0}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: FOUR, value: PRESS, alt: 1, ctrl: 0, shift: 0, properties: {'collection_index': 14, 'extend': 0}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: FIVE, value: PRESS, alt: 1, ctrl: 0, shift: 0, properties: {'collection_index': 15, 'extend': 0}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: SIX, value: PRESS, alt: 1, ctrl: 0, shift: 0, properties: {'collection_index': 16, 'extend': 0}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: SEVEN, value: PRESS, alt: 1, ctrl: 0, shift: 0, properties: {'collection_index': 17, 'extend': 0}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: EIGHT, value: PRESS, alt: 1, ctrl: 0, shift: 0, properties: {'collection_index': 18, 'extend': 0}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: NINE, value: PRESS, alt: 1, ctrl: 0, shift: 0, properties: {'collection_index': 19, 'extend': 0}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: ZERO, value: PRESS, alt: 1, ctrl: 0, shift: 0, properties: {'collection_index': 20, 'extend': 0}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: ONE, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {'collection_index': 1, 'extend': 1}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: TWO, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {'collection_index': 2, 'extend': 1}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: THREE, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {'collection_index': 3, 'extend': 1}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: FOUR, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {'collection_index': 4, 'extend': 1}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: FIVE, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {'collection_index': 5, 'extend': 1}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: SIX, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {'collection_index': 6, 'extend': 1}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: SEVEN, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {'collection_index': 7, 'extend': 1}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: EIGHT, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {'collection_index': 8, 'extend': 1}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: NINE, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {'collection_index': 9, 'extend': 1}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: ZERO, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {'collection_index': 10, 'extend': 1}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: ONE, value: PRESS, alt: 1, ctrl: 0, shift: 1, properties: {'collection_index': 11, 'extend': 1}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: TWO, value: PRESS, alt: 1, ctrl: 0, shift: 1, properties: {'collection_index': 12, 'extend': 1}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: THREE, value: PRESS, alt: 1, ctrl: 0, shift: 1, properties: {'collection_index': 13, 'extend': 1}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: FOUR, value: PRESS, alt: 1, ctrl: 0, shift: 1, properties: {'collection_index': 14, 'extend': 1}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: FIVE, value: PRESS, alt: 1, ctrl: 0, shift: 1, properties: {'collection_index': 15, 'extend': 1}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: SIX, value: PRESS, alt: 1, ctrl: 0, shift: 1, properties: {'collection_index': 16, 'extend': 1}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: SEVEN, value: PRESS, alt: 1, ctrl: 0, shift: 1, properties: {'collection_index': 17, 'extend': 1}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: EIGHT, value: PRESS, alt: 1, ctrl: 0, shift: 1, properties: {'collection_index': 18, 'extend': 1}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: NINE, value: PRESS, alt: 1, ctrl: 0, shift: 1, properties: {'collection_index': 19, 'extend': 1}</code></li>
+<li>Deactivated <code>object.hide_collection, name: Hide Collection, active: True, map type: KEYBOARD, type: ZERO, value: PRESS, alt: 1, ctrl: 0, shift: 1, properties: {'collection_index': 20, 'extend': 1}</code></li>
+</ul>
+<h4 id="object-non-modal-keymap">Object Non-modal Keymap</h4>
+<ul>
+<li>Deactivated <code>object.mode_set, name: Set Object Mode, active: True, map type: KEYBOARD, type: TAB, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'mode': 1, 'toggle': 1}</code></li>
+<li>Deactivated <code>object.mode_set, name: Set Object Mode, active: True, map type: KEYBOARD, type: TAB, value: PRESS, alt: 0, ctrl: 1, shift: 0, properties: {'mode': 64, 'toggle': 1}</code></li>
+<li>Deactivated <code>object.mode_set, name: Set Object Mode, active: True, map type: KEYBOARD, type: V, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'mode': 4, 'toggle': 1}</code></li>
+<li>Deactivated <code>object.mode_set, name: Set Object Mode, active: True, map type: KEYBOARD, type: TAB, value: PRESS, alt: 0, ctrl: 1, shift: 0, properties: {'mode': 8, 'toggle': 1}</code></li>
+</ul>
+<h4 id="image-keymap">Image Keymap</h4>
+<ul>
+<li>Changed <code>image.view_selected, name: View Center, active: True, map type: KEYBOARD, type: NUMPAD_PERIOD, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {}</code><ul>
+<li>to <code>image.view_selected, name: View Center, active: True, map type: KEYBOARD, type: F, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {}</code></li>
+</ul>
+</li>
+<li>Deactivated <code>object.mode_set, name: Set Object Mode, active: True, map type: KEYBOARD, type: TAB, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'mode': 1, 'toggle': 1}</code></li>
+</ul>
+<h4 id="image-paint-keymap">Image Paint Keymap</h4>
+<ul>
+<li>Changed <code>wm.radial_control, name: Radial Control, active: True, map type: KEYBOARD, type: F, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'data_path_primary': 'tool_settings.image_paint.brush.size', 'data_path_secondary': 'tool_settings.unified_paint_settings.size', 'use_secondary': 'tool_settings.unified_paint_settings.use_unified_size', 'rotation_path': 'tool_settings.image_paint.brush.mask_texture_slot.angle', 'color_path': 'tool_settings.image_paint.brush.cursor_color_add', 'fill_color_path': 'tool_settings.image_paint.brush.color', 'fill_color_override_path': 'tool_settings.unified_paint_settings.color', 'fill_color_override_test_path': 'tool_settings.unified_paint_settings.use_unified_color', 'zoom_path': 'space_data.zoom', 'image_id': 'tool_settings.image_paint.brush', 'secondary_tex': 1}</code><ul>
+<li>to <code>wm.radial_control, name: Radial Control, active: True, map type: KEYBOARD, type: F, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'data_path_primary': 'tool_settings.image_paint.brush.size', 'data_path_secondary': 'tool_settings.unified_paint_settings.size', 'use_secondary': 'tool_settings.unified_paint_settings.use_unified_size', 'rotation_path': 'tool_settings.image_paint.brush.mask_texture_slot.angle', 'color_path': 'tool_settings.image_paint.brush.cursor_color_add', 'fill_color_path': 'tool_settings.image_paint.brush.color', 'fill_color_override_path': 'tool_settings.unified_paint_settings.color', 'fill_color_override_test_path': 'tool_settings.unified_paint_settings.use_unified_color', 'zoom_path': 'space_data.zoom', 'image_id': 'tool_settings.image_paint.brush', 'secondary_tex': 1, 'release_confirm': 1}</code></li>
+</ul>
+</li>
+</ul>
+<h4 id="mesh-keymap">Mesh Keymap</h4>
+<ul>
+<li>Changed <code>mesh.bevel, name: Bevel, active: True, map type: KEYBOARD, type: B, value: PRESS, alt: 0, ctrl: 1, shift: 0, properties: {'affect': 1}</code><ul>
+<li>to <code>mesh.bevel, name: Bevel, active: True, map type: KEYBOARD, type: B, value: PRESS, alt: 0, ctrl: 1, shift: 0, properties: {'affect': 1, 'offset_type': 0, 'profile': 0.6000000238418579}</code></li>
+</ul>
+</li>
+<li>Changed <code>mesh.bevel, name: Bevel, active: True, map type: KEYBOARD, type: B, value: PRESS, alt: 0, ctrl: 1, shift: 1, properties: {'affect': 0}</code><ul>
+<li>to <code>mesh.bevel, name: Bevel, active: True, map type: KEYBOARD, type: B, value: PRESS, alt: 0, ctrl: 1, shift: 1, properties: {'affect': 1, 'offset_type': 3, 'profile': 0.6000000238418579}</code></li>
+</ul>
+</li>
+<li>Deactivated <code>wm.call_menu, name: Mesh Select Mode, active: True, map type: KEYBOARD, type: TAB, value: PRESS, alt: 0, ctrl: 1, shift: 0, properties: {'name': 'VIEW3D_MT_edit_mesh_select_mode'}</code></li>
+<li>Deactivated <code>mesh.loop_select, name: Loop Select, active: True, map type: MOUSE, type: LEFTMOUSE, value: CLICK, alt: 1, ctrl: 0, shift: 0, properties: {}</code></li>
+<li>Changed <code>mesh.loop_select, name: Loop Select, active: True, map type: MOUSE, type: LEFTMOUSE, value: CLICK, alt: 1, ctrl: 0, shift: 1, properties: {'toggle': 1}</code><ul>
+<li>to <code>mesh.loop_select, name: Loop Select, active: True, map type: MOUSE, type: LEFTMOUSE, value: PRESS, alt: 1, ctrl: 0, shift: 0, properties: {'toggle': 1}</code></li>
+</ul>
+</li>
+<li>Deactivated <code>mesh.edgering_select, name: Edge Ring Select, active: True, map type: MOUSE, type: LEFTMOUSE, value: CLICK, alt: 1, ctrl: 1, shift: 0, properties: {}</code></li>
+<li>Changed <code>mesh.edgering_select, name: Edge Ring Select, active: True, map type: MOUSE, type: LEFTMOUSE, value: CLICK, alt: 1, ctrl: 1, shift: 1, properties: {'toggle': 1}</code><ul>
+<li>to <code>mesh.edgering_select, name: Edge Ring Select, active: True, map type: MOUSE, type: LEFTMOUSE, value: CLICK, alt: 1, ctrl: 1, shift: 0, properties: {'toggle': 1}</code></li>
+</ul>
+</li>
+<li>Changed <code>mesh.shortest_path_pick, name: Pick Shortest Path, active: True, map type: MOUSE, type: LEFTMOUSE, value: CLICK, alt: 0, ctrl: 1, shift: 0, properties: {'use_fill': 0}</code><ul>
+<li>to <code>mesh.shortest_path_pick, name: Pick Shortest Path, active: True, map type: MOUSE, type: LEFTMOUSE, value: PRESS, alt: 0, ctrl: 1, shift: 0, properties: {'use_fill': 0}</code></li>
+</ul>
+</li>
+<li>Changed <code>mesh.shortest_path_pick, name: Pick Shortest Path, active: True, map type: MOUSE, type: LEFTMOUSE, value: CLICK, alt: 0, ctrl: 1, shift: 1, properties: {'use_fill': 1}</code><ul>
+<li>to <code>mesh.shortest_path_pick, name: Pick Shortest Path, active: True, map type: MOUSE, type: LEFTMOUSE, value: PRESS, alt: 0, ctrl: 1, shift: 1, properties: {'use_fill': 1}</code></li>
+</ul>
+</li>
+<li>Changed <code>mesh.select_more, name: Select More, active: True, map type: KEYBOARD, type: NUMPAD_PLUS, value: PRESS, alt: 0, ctrl: 1, shift: 0, properties: {}</code><ul>
+<li>to <code>mesh.select_more, name: Select More, active: True, map type: MOUSE, type: WHEELUPMOUSE, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {}</code></li>
+</ul>
+</li>
+<li>Changed <code>mesh.select_less, name: Select Less, active: True, map type: KEYBOARD, type: NUMPAD_MINUS, value: PRESS, alt: 0, ctrl: 1, shift: 0, properties: {}</code><ul>
+<li>to <code>mesh.select_less, name: Select Less, active: True, map type: MOUSE, type: WHEELDOWNMOUSE, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {}</code></li>
+</ul>
+</li>
+<li>Changed <code>mesh.select_next_item, name: Select Next Element, active: True, map type: KEYBOARD, type: NUMPAD_PLUS, value: PRESS, alt: 0, ctrl: 1, shift: 1, properties: {}</code><ul>
+<li>to <code>mesh.select_next_item, name: Select Next Element, active: True, map type: MOUSE, type: WHEELUPMOUSE, value: PRESS, alt: 0, ctrl: 1, shift: 0, properties: {}</code></li>
+</ul>
+</li>
+<li>Changed <code>mesh.select_prev_item, name: Select Previous Element, active: True, map type: KEYBOARD, type: NUMPAD_MINUS, value: PRESS, alt: 0, ctrl: 1, shift: 1, properties: {}</code><ul>
+<li>to <code>mesh.select_prev_item, name: Select Previous Element, active: True, map type: MOUSE, type: WHEELDOWNMOUSE, value: PRESS, alt: 0, ctrl: 1, shift: 0, properties: {}</code></li>
+</ul>
+</li>
+<li>Changed <code>mesh.select_linked, name: Select Linked All, active: True, map type: KEYBOARD, type: L, value: PRESS, alt: 0, ctrl: 1, shift: 0, properties: {}</code><ul>
+<li>to <code>mesh.select_linked, name: Select Linked All, active: True, map type: MOUSE, type: LEFTMOUSE, value: DOUBLE_CLICK, alt: 0, ctrl: 0, shift: 1, properties: {'delimit': 14}</code></li>
+</ul>
+</li>
+<li>Deactivated <code>mesh.select_linked_pick, name: Select Linked, active: True, map type: KEYBOARD, type: L, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'deselect': 0}</code></li>
+<li>Changed <code>mesh.select_linked_pick, name: Select Linked, active: True, map type: KEYBOARD, type: L, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {'deselect': 1}</code><ul>
+<li>to <code>mesh.select_linked_pick, name: Select Linked, active: True, map type: MOUSE, type: LEFTMOUSE, value: DOUBLE_CLICK, alt: 1, ctrl: 0, shift: 1, properties: {'deselect': 1, 'delimit': 14}</code></li>
+</ul>
+</li>
+<li>Deactivated <code>mesh.fill, name: Fill, active: True, map type: KEYBOARD, type: F, value: PRESS, alt: 1, ctrl: 0, shift: 0, properties: {}</code></li>
+<li>Deactivated <code>wm.call_menu, name: Merge, active: True, map type: KEYBOARD, type: M, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'name': 'VIEW3D_MT_edit_mesh_merge'}</code></li>
+<li>Deactivated <code>wm.call_menu, name: Split, active: True, map type: KEYBOARD, type: M, value: PRESS, alt: 1, ctrl: 0, shift: 0, properties: {'name': 'VIEW3D_MT_edit_mesh_split'}</code></li>
+<li>Deactivated <code>mesh.edge_face_add, name: Make Edge/Face, active: True, map type: KEYBOARD, type: F, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {}</code></li>
+<li>Deactivated <code>object.subdivision_set, name: Subdivision Set, active: True, map type: KEYBOARD, type: ZERO, value: PRESS, alt: 0, ctrl: 1, shift: 0, properties: {'level': 0, 'relative': 0}</code></li>
+<li>Deactivated <code>object.subdivision_set, name: Subdivision Set, active: True, map type: KEYBOARD, type: ONE, value: PRESS, alt: 0, ctrl: 1, shift: 0, properties: {'level': 1, 'relative': 0}</code></li>
+<li>Deactivated <code>object.subdivision_set, name: Subdivision Set, active: True, map type: KEYBOARD, type: TWO, value: PRESS, alt: 0, ctrl: 1, shift: 0, properties: {'level': 2, 'relative': 0}</code></li>
+<li>Deactivated <code>object.subdivision_set, name: Subdivision Set, active: True, map type: KEYBOARD, type: THREE, value: PRESS, alt: 0, ctrl: 1, shift: 0, properties: {'level': 3, 'relative': 0}</code></li>
+<li>Deactivated <code>object.subdivision_set, name: Subdivision Set, active: True, map type: KEYBOARD, type: FOUR, value: PRESS, alt: 0, ctrl: 1, shift: 0, properties: {'level': 4, 'relative': 0}</code></li>
+<li>Deactivated <code>object.subdivision_set, name: Subdivision Set, active: True, map type: KEYBOARD, type: FIVE, value: PRESS, alt: 0, ctrl: 1, shift: 0, properties: {'level': 5, 'relative': 0}</code></li>
+</ul>
+<h4 id="sculpt-keymap">Sculpt Keymap</h4>
+<ul>
+<li>Changed <code>paint.visibility_filter, name: Visibility Filter, active: True, map type: KEYBOARD, type: PAGE_UP, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'action': 1}</code><ul>
+<li>to <code>paint.visibility_filter, name: Visibility Filter, active: True, map type: KEYBOARD, type: PAGE_UP, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {'action': 1}</code></li>
+</ul>
+</li>
+<li>Changed <code>paint.visibility_filter, name: Visibility Filter, active: True, map type: KEYBOARD, type: PAGE_DOWN, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'action': 0}</code><ul>
+<li>to <code>paint.visibility_filter, name: Visibility Filter, active: True, map type: KEYBOARD, type: PAGE_DOWN, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {'action': 0}</code></li>
+</ul>
+</li>
+<li>Changed <code>wm.radial_control, name: Radial Control, active: True, map type: KEYBOARD, type: F, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'data_path_primary': 'tool_settings.sculpt.brush.size', 'data_path_secondary': 'tool_settings.unified_paint_settings.size', 'use_secondary': 'tool_settings.unified_paint_settings.use_unified_size', 'rotation_path': 'tool_settings.sculpt.brush.texture_slot.angle', 'color_path': 'tool_settings.sculpt.brush.cursor_color_add', 'fill_color_path': '', 'fill_color_override_path': '', 'fill_color_override_test_path': '', 'zoom_path': '', 'image_id': 'tool_settings.sculpt.brush', 'secondary_tex': 0}</code><ul>
+<li>to <code>wm.radial_control, name: Radial Control, active: True, map type: KEYBOARD, type: F, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'data_path_primary': 'tool_settings.sculpt.brush.size', 'data_path_secondary': 'tool_settings.unified_paint_settings.size', 'use_secondary': 'tool_settings.unified_paint_settings.use_unified_size', 'rotation_path': 'tool_settings.sculpt.brush.texture_slot.angle', 'color_path': 'tool_settings.sculpt.brush.cursor_color_add', 'fill_color_path': '', 'fill_color_override_path': '', 'fill_color_override_test_path': '', 'zoom_path': '', 'image_id': 'tool_settings.sculpt.brush', 'secondary_tex': 0, 'release_confirm': 1}</code></li>
+</ul>
+</li>
+</ul>
+<h4 id="curve-keymap">Curve Keymap</h4>
+<ul>
+<li>Changed <code>curve.select_more, name: Select More, active: True, map type: KEYBOARD, type: NUMPAD_PLUS, value: PRESS, alt: 0, ctrl: 1, shift: 0, properties: {}</code><ul>
+<li>to <code>curve.select_more, name: Select More, active: True, map type: MOUSE, type: WHEELUPMOUSE, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {}</code></li>
+</ul>
+</li>
+<li>Changed <code>curve.select_less, name: Select Less, active: True, map type: KEYBOARD, type: NUMPAD_MINUS, value: PRESS, alt: 0, ctrl: 1, shift: 0, properties: {}</code><ul>
+<li>to <code>curve.select_less, name: Select Less, active: True, map type: MOUSE, type: WHEELDOWNMOUSE, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {}</code></li>
+</ul>
+</li>
+<li>Changed <code>curve.select_linked, name: Select Linked All, active: True, map type: KEYBOARD, type: L, value: PRESS, alt: 0, ctrl: 1, shift: 0, properties: {}</code><ul>
+<li>to <code>curve.select_linked, name: Select Linked All, active: True, map type: MOUSE, type: LEFTMOUSE, value: DOUBLE_CLICK, alt: 0, ctrl: 0, shift: 1, properties: {}</code></li>
+</ul>
+</li>
+<li>Deactivated <code>curve.make_segment, name: Make Segment, active: True, map type: KEYBOARD, type: F, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {}</code></li>
+</ul>
+<h4 id="uv-editor-keymap">UV Editor Keymap</h4>
+<ul>
+<li>Changed <code>uv.select, name: Select, active: True, map type: MOUSE, type: LEFTMOUSE, value: CLICK, alt: 0, ctrl: 0, shift: 0, properties: {}</code><ul>
+<li>to <code>uv.select, name: Select, active: True, map type: MOUSE, type: LEFTMOUSE, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {}</code></li>
+</ul>
+</li>
+<li>Changed <code>uv.select, name: Select (Toggle), active: True, map type: MOUSE, type: LEFTMOUSE, value: CLICK, alt: 0, ctrl: 0, shift: 1, properties: {'toggle': 1}</code><ul>
+<li>to <code>uv.select, name: Select (Toggle), active: True, map type: MOUSE, type: LEFTMOUSE, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {'toggle': 1}</code></li>
+</ul>
+</li>
+<li>Changed <code>uv.select_loop, name: Loop Select, active: True, map type: MOUSE, type: LEFTMOUSE, value: CLICK, alt: 1, ctrl: 0, shift: 0, properties: {}</code><ul>
+<li>to <code>uv.select_loop, name: Loop Select, active: True, map type: MOUSE, type: LEFTMOUSE, value: PRESS, alt: 1, ctrl: 0, shift: 0, properties: {}</code></li>
+</ul>
+</li>
+<li>Changed <code>uv.select_loop, name: Loop Select, active: True, map type: MOUSE, type: LEFTMOUSE, value: CLICK, alt: 1, ctrl: 0, shift: 1, properties: {'extend': 1}</code><ul>
+<li>to <code>uv.select_loop, name: Loop Select, active: True, map type: MOUSE, type: LEFTMOUSE, value: PRESS, alt: 1, ctrl: 0, shift: 1, properties: {'extend': 1}</code></li>
+</ul>
+</li>
+<li>Changed <code>uv.shortest_path_pick, name: Pick Shortest Path, active: True, map type: MOUSE, type: LEFTMOUSE, value: CLICK, alt: 0, ctrl: 1, shift: 0, properties: {'use_fill': 0}</code><ul>
+<li>to <code>uv.shortest_path_pick, name: Pick Shortest Path, active: True, map type: MOUSE, type: LEFTMOUSE, value: PRESS, alt: 0, ctrl: 1, shift: 0, properties: {'use_fill': 0}</code></li>
+</ul>
+</li>
+<li>Changed <code>uv.shortest_path_pick, name: Pick Shortest Path, active: True, map type: MOUSE, type: LEFTMOUSE, value: CLICK, alt: 0, ctrl: 1, shift: 1, properties: {'use_fill': 1}</code><ul>
+<li>to <code>uv.shortest_path_pick, name: Pick Shortest Path, active: True, map type: MOUSE, type: LEFTMOUSE, value: PRESS, alt: 0, ctrl: 1, shift: 1, properties: {'use_fill': 1}</code></li>
+</ul>
+</li>
+<li>Changed <code>uv.select_linked, name: Select Linked, active: True, map type: KEYBOARD, type: L, value: PRESS, alt: 0, ctrl: 1, shift: 0, properties: {}</code><ul>
+<li>to <code>uv.select_linked, name: Select Linked, active: True, map type: MOUSE, type: LEFTMOUSE, value: DOUBLE_CLICK, alt: 0, ctrl: 0, shift: 1, properties: {}</code></li>
+</ul>
+</li>
+<li>Deactivated <code>uv.select_linked_pick, name: Select Linked Pick, active: True, map type: KEYBOARD, type: L, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'extend': 1, 'deselect': 0}</code></li>
+<li>Changed <code>uv.select_linked_pick, name: Select Linked Pick, active: True, map type: KEYBOARD, type: L, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {'deselect': 1}</code><ul>
+<li>to <code>uv.select_linked_pick, name: Select Linked Pick, active: True, map type: MOUSE, type: LEFTMOUSE, value: DOUBLE_CLICK, alt: 1, ctrl: 0, shift: 1, properties: {'deselect': 1}</code></li>
+</ul>
+</li>
+<li>Changed <code>uv.select_more, name: Select More, active: True, map type: KEYBOARD, type: NUMPAD_PLUS, value: PRESS, alt: 0, ctrl: 1, shift: 0, properties: {}</code><ul>
+<li>to <code>uv.select_more, name: Select More, active: True, map type: MOUSE, type: WHEELUPMOUSE, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {}</code></li>
+</ul>
+</li>
+<li>Changed <code>uv.select_less, name: Select Less, active: True, map type: KEYBOARD, type: NUMPAD_MINUS, value: PRESS, alt: 0, ctrl: 1, shift: 0, properties: {}</code><ul>
+<li>to <code>uv.select_less, name: Select Less, active: True, map type: MOUSE, type: WHEELDOWNMOUSE, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {}</code></li>
+</ul>
+</li>
+<li>Deactivated <code>transform.translate, name: Move, active: True, map type: MOUSE, type: LEFTMOUSE, value: CLICK_DRAG, alt: 0, ctrl: 0, shift: 0, properties: {}</code></li>
+<li>Changed <code>uv.cursor_set, name: Set 2D Cursor, active: True, map type: MOUSE, type: RIGHTMOUSE, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {}</code><ul>
+<li>to <code>uv.cursor_set, name: Set 2D Cursor, active: True, map type: MOUSE, type: RIGHTMOUSE, value: PRESS, alt: 1, ctrl: 0, shift: 0, properties: {}</code></li>
+</ul>
+</li>
+<li>Deactivated <code>transform.translate, name: Move, active: True, map type: MOUSE, type: RIGHTMOUSE, value: CLICK_DRAG, alt: 0, ctrl: 0, shift: 1, properties: {'release_confirm': 1, 'cursor_transform': 1}</code></li>
+</ul>
+<h4 id="node-tool-select-box-keymap">Node Tool: Select Box Keymap</h4>
+<ul>
+<li>Deactivated <code>node.select, name: Select, active: True, map type: MOUSE, type: LEFTMOUSE, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'deselect_all': 1, 'select_passthrough': 1}</code></li>
+<li>Deactivated <code>node.select, name: Select, active: True, map type: MOUSE, type: LEFTMOUSE, value: PRESS, alt: 0, ctrl: 1, shift: 0, properties: {}</code></li>
+<li>Deactivated <code>node.select, name: Select, active: True, map type: MOUSE, type: LEFTMOUSE, value: PRESS, alt: 1, ctrl: 0, shift: 0, properties: {}</code></li>
+<li>Deactivated <code>node.select, name: Select, active: True, map type: MOUSE, type: LEFTMOUSE, value: PRESS, alt: 1, ctrl: 1, shift: 0, properties: {}</code></li>
+<li>Deactivated <code>node.select, name: Select (Toggle), active: True, map type: MOUSE, type: LEFTMOUSE, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {'toggle': 1}</code></li>
+<li>Deactivated <code>node.select, name: Select (Toggle), active: True, map type: MOUSE, type: LEFTMOUSE, value: PRESS, alt: 0, ctrl: 1, shift: 1, properties: {'toggle': 1}</code></li>
+<li>Deactivated <code>node.select, name: Select (Toggle), active: True, map type: MOUSE, type: LEFTMOUSE, value: PRESS, alt: 1, ctrl: 0, shift: 1, properties: {'toggle': 1}</code></li>
+<li>Deactivated <code>node.select, name: Select (Toggle), active: True, map type: MOUSE, type: LEFTMOUSE, value: PRESS, alt: 1, ctrl: 1, shift: 1, properties: {'toggle': 1}</code></li>
+<li>Deactivated <code>node.select, name: Select, active: True, map type: MOUSE, type: LEFTMOUSE, value: CLICK, alt: 0, ctrl: 0, shift: 0, properties: {'deselect_all': 1}</code></li>
+</ul>
+<h4 id="node-editor-keymap">Node Editor Keymap</h4>
+<ul>
+<li>Changed <code>node.select, name: Select, active: True, map type: MOUSE, type: RIGHTMOUSE, value: CLICK, alt: 0, ctrl: 0, shift: 0, properties: {'deselect_all': 1, 'select_passthrough': 1}</code><ul>
+<li>to <code>node.select, name: Select, active: True, map type: MOUSE, type: LEFTMOUSE, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'deselect_all': 1, 'select_passthrough': 1}</code></li>
+</ul>
+</li>
+<li>Changed <code>node.select, name: Select, active: True, map type: MOUSE, type: RIGHTMOUSE, value: CLICK, alt: 0, ctrl: 1, shift: 0, properties: {}</code><ul>
+<li>to <code>node.select, name: Select, active: True, map type: MOUSE, type: LEFTMOUSE, value: PRESS, alt: 0, ctrl: 1, shift: 0, properties: {}</code></li>
+</ul>
+</li>
+<li>Changed <code>node.select, name: Select, active: True, map type: MOUSE, type: RIGHTMOUSE, value: CLICK, alt: 1, ctrl: 0, shift: 0, properties: {}</code><ul>
+<li>to <code>node.select, name: Select, active: True, map type: MOUSE, type: LEFTMOUSE, value: PRESS, alt: 1, ctrl: 0, shift: 0, properties: {}</code></li>
+</ul>
+</li>
+<li>Changed <code>node.select, name: Select, active: True, map type: MOUSE, type: RIGHTMOUSE, value: CLICK, alt: 1, ctrl: 1, shift: 0, properties: {}</code><ul>
+<li>to <code>node.select, name: Select, active: True, map type: MOUSE, type: LEFTMOUSE, value: PRESS, alt: 1, ctrl: 1, shift: 0, properties: {}</code></li>
+</ul>
+</li>
+<li>Changed <code>node.select, name: Select (Toggle), active: True, map type: MOUSE, type: RIGHTMOUSE, value: CLICK, alt: 0, ctrl: 0, shift: 1, properties: {'toggle': 1}</code><ul>
+<li>to <code>node.select, name: Select (Toggle), active: True, map type: MOUSE, type: LEFTMOUSE, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {'toggle': 1}</code></li>
+</ul>
+</li>
+<li>Changed <code>node.select, name: Select (Toggle), active: True, map type: MOUSE, type: RIGHTMOUSE, value: CLICK, alt: 0, ctrl: 1, shift: 1, properties: {'toggle': 1}</code><ul>
+<li>to <code>node.select, name: Select (Toggle), active: True, map type: MOUSE, type: LEFTMOUSE, value: PRESS, alt: 0, ctrl: 1, shift: 1, properties: {'toggle': 1}</code></li>
+</ul>
+</li>
+<li>Changed <code>node.select, name: Select (Toggle), active: True, map type: MOUSE, type: RIGHTMOUSE, value: CLICK, alt: 1, ctrl: 0, shift: 1, properties: {'toggle': 1}</code><ul>
+<li>to <code>node.select, name: Select (Toggle), active: True, map type: MOUSE, type: LEFTMOUSE, value: PRESS, alt: 1, ctrl: 0, shift: 1, properties: {'toggle': 1}</code></li>
+</ul>
+</li>
+<li>Changed <code>node.select, name: Select (Toggle), active: True, map type: MOUSE, type: RIGHTMOUSE, value: CLICK, alt: 1, ctrl: 1, shift: 1, properties: {'toggle': 1}</code><ul>
+<li>to <code>node.select, name: Select (Toggle), active: True, map type: MOUSE, type: LEFTMOUSE, value: PRESS, alt: 1, ctrl: 1, shift: 1, properties: {'toggle': 1}</code></li>
+</ul>
+</li>
+<li>Changed <code>node.add_reroute, name: Add Reroute, active: True, map type: MOUSE, type: LEFTMOUSE, value: CLICK_DRAG, alt: 0, ctrl: 0, shift: 1, properties: {}</code><ul>
+<li>to <code>node.add_reroute, name: Add Reroute, active: True, map type: MOUSE, type: RIGHTMOUSE, value: CLICK_DRAG, alt: 0, ctrl: 0, shift: 1, properties: {}</code></li>
+</ul>
+</li>
+<li>Changed <code>node.links_cut, name: Cut Links, active: True, map type: MOUSE, type: LEFTMOUSE, value: CLICK_DRAG, alt: 0, ctrl: 1, shift: 0, properties: {}</code><ul>
+<li>to <code>node.links_cut, name: Cut Links, active: True, map type: MOUSE, type: RIGHTMOUSE, value: CLICK_DRAG, alt: 0, ctrl: 1, shift: 0, properties: {}</code></li>
+</ul>
+</li>
+<li>Deactivated <code>node.link_make, name: Make Links, active: True, map type: KEYBOARD, type: F, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'replace': 0}</code></li>
+<li>Deactivated <code>node.link_make, name: Make Links, active: True, map type: KEYBOARD, type: F, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {'replace': 1}</code></li>
+<li>Changed <code>node.view_all, name: Frame All, active: True, map type: KEYBOARD, type: HOME, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {}</code><ul>
+<li>to <code>node.view_all, name: Frame All, active: True, map type: KEYBOARD, type: F, value: PRESS, alt: 0, ctrl: 0, shift: 1, properties: {}</code></li>
+</ul>
+</li>
+<li>Changed <code>node.view_selected, name: Frame Selected, active: True, map type: KEYBOARD, type: NUMPAD_PERIOD, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {}</code><ul>
+<li>to <code>node.view_selected, name: Frame Selected, active: True, map type: KEYBOARD, type: F, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {}</code></li>
+</ul>
+</li>
+</ul>
+<h4 id="file-browser-keymap">File Browser Keymap</h4>
+<ul>
+<li>Changed <code>file.start_filter, name: Filter, active: True, map type: KEYBOARD, type: F, value: PRESS, alt: 0, ctrl: 1, shift: 0, properties: {}</code><ul>
+<li>to <code>file.start_filter, name: Filter, active: True, map type: KEYBOARD, type: SLASH, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {}</code></li>
+</ul>
+</li>
+</ul>
+<h4 id="file-browser-main-keymap">File Browser Main Keymap</h4>
+<ul>
+<li>Changed <code>file.view_selected, name: Frame Selected, active: True, map type: KEYBOARD, type: NUMPAD_PERIOD, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {}</code><ul>
+<li>to <code>file.view_selected, name: Frame Selected, active: True, map type: KEYBOARD, type: F, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {}</code></li>
+</ul>
+</li>
+</ul>
+<h4 id="transform-modal-map-keymap">Transform Modal Map Keymap</h4>
+<ul>
+<li>Changed Transform Modal Map's <code>PROPORTIONAL_SIZE_UP</code> from <code>WHEELDOWNMOUSE</code> to <code>WHEELUPMOUSE</code></li>
+<li>Changed Transform Modal Map's <code>PROPORTIONAL_SIZE_UP</code> from <code>WHEELUPMOUSE</code> to <code>WHEELDOWNMOUSE</code></li>
+<li>Changed Transform Modal Map's <code>PROPORTIONAL_SIZE_UP</code> from <code>SHIFT + WHEELDOWNMOUSE</code> to <code>SHIFT + WHEELUPMOUSE</code></li>
+<li>Changed Transform Modal Map's <code>PROPORTIONAL_SIZE_UP</code> from <code>SHIFT + WHEELUPMOUSE</code> to <code>SHIFT + WHEELDOWNMOUSE</code></li>
+</ul>
+<h4 id="grease-pencil-edit-mode-keymap">Grease Pencil Edit Mode Keymap</h4>
+<ul>
+<li>Deactivated <code>grease_pencil.cyclical_set, name: Set Cyclical State, active: True, map type: KEYBOARD, type: F, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'type': 0}</code></li>
+<li>Deactivated <code>grease_pencil.cyclical_set, name: Set Cyclical State, active: True, map type: KEYBOARD, type: C, value: PRESS, alt: 1, ctrl: 0, shift: 0, properties: {'type': 2}</code></li>
+</ul>
+<h4 id="grease-pencil-sculpt-mode-keymap">Grease Pencil Sculpt Mode Keymap</h4>
+<ul>
+<li>Changed <code>wm.radial_control, name: Radial Control, active: True, map type: KEYBOARD, type: F, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'data_path_primary': 'tool_settings.gpencil_sculpt_paint.brush.size', 'data_path_secondary': 'tool_settings.unified_paint_settings.size', 'use_secondary': 'tool_settings.unified_paint_settings.use_unified_size', 'rotation_path': 'tool_settings.gpencil_sculpt_paint.brush.texture_slot.angle', 'color_path': 'tool_settings.gpencil_sculpt_paint.brush.cursor_color_add', 'fill_color_path': '', 'fill_color_override_path': '', 'fill_color_override_test_path': '', 'zoom_path': '', 'image_id': 'tool_settings.gpencil_sculpt_paint.brush', 'secondary_tex': 0}</code><ul>
+<li>to <code>wm.radial_control, name: Radial Control, active: True, map type: KEYBOARD, type: F, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'data_path_primary': 'tool_settings.gpencil_sculpt_paint.brush.size', 'data_path_secondary': 'tool_settings.unified_paint_settings.size', 'use_secondary': 'tool_settings.unified_paint_settings.use_unified_size', 'rotation_path': 'tool_settings.gpencil_sculpt_paint.brush.texture_slot.angle', 'color_path': 'tool_settings.gpencil_sculpt_paint.brush.cursor_color_add', 'fill_color_path': '', 'fill_color_override_path': '', 'fill_color_override_test_path': '', 'zoom_path': '', 'image_id': 'tool_settings.gpencil_sculpt_paint.brush', 'secondary_tex': 0, 'release_confirm': 1}</code></li>
+</ul>
+</li>
+</ul>
+<h4 id="grease-pencil-brush-stroke-keymap">Grease Pencil Brush Stroke Keymap</h4>
+<ul>
+<li>Changed <code>wm.radial_control, name: Radial Control, active: True, map type: KEYBOARD, type: F, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'data_path_primary': 'tool_settings.gpencil_paint.brush.size'}</code><ul>
+<li>to <code>wm.radial_control, name: Radial Control, active: True, map type: KEYBOARD, type: F, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'data_path_primary': 'tool_settings.gpencil_paint.brush.size', 'release_confirm': 1}</code></li>
+</ul>
+</li>
+</ul>
+<h4 id="mesh-keymap_1">Mesh Keymap</h4>
+<ul>
+<li>Added <code>mesh.loop_multi_select, name: Multi Select Loops, active: True, map type: MOUSE, type: LEFTMOUSE, value: CLICK_DRAG, alt: 1, ctrl: 0, shift: 1, properties: {'ring': 0}</code></li>
+<li>Added <code>mesh.loop_multi_select, name: Multi Select Loops, active: True, map type: MOUSE, type: LEFTMOUSE, value: CLICK_DRAG, alt: 1, ctrl: 1, shift: 0, properties: {'ring': 1}</code></li>
+<li>Added <code>mesh.subdivide, name: Subdivide, active: True, map type: KEYBOARD, type: TWO, value: PRESS, alt: 1, ctrl: 0, shift: 0, properties: {'smoothness': 0.0}</code></li>
+</ul>
+<h4 id="toolbar-popup-keymap">Toolbar Popup Keymap</h4>
+<ul>
+<li>Added <code>wm.tool_set_by_id, name: Set Tool by Name, active: True, map type: KEYBOARD, type: D, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'name': 'builtin.annotate'}</code></li>
+<li>Added <code>wm.tool_set_by_id, name: Set Tool by Name, active: True, map type: KEYBOARD, type: E, value: PRESS, alt: 0, ctrl: 0, shift: 0, properties: {'name': 'builtin.annotate_eraser'}</code></li>
+</ul>
+<h3 id="system">System</h3>
+<ul>
+<li>change Cylces Render Device to CUDA</li>
+<li>change Undo Steps to 64</li>
+</ul>
+<h3 id="experimental">Experimental</h3>
+<ul>
+<li>Enable Asset Debug Info</li>
+</ul>
+<h3 id="save-load">Save &amp; Load</h3>
+<ul>
+<li>Disable Save Prompt</li>
+<li>Enable File Compression</li>
+<li>Disable UI Loading</li>
+<li>Change Save Versions to 3</li>
+<li>Change Recent Files to 20</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="unity.html" class="btn btn-neutral float-left" title="Unity"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="pie_modes.html" class="btn btn-neutral float-right" title="Modes">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="unity.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="pie_modes.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme_extra.js" defer></script>
+    <script src="js/theme.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
