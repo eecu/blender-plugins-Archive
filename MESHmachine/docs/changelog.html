@@ -1,0 +1,1921 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://machin3.io/MESHmachine/docs/changelog.html" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Changelog - MESHmachine</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Changelog";
+        var mkdocs_page_input_path = "changelog.md";
+        var mkdocs_page_url = "/MESHmachine/docs/changelog.html";
+      </script>
+    
+    <script src="js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-78703389-1', 'MMdocs');
+        ga('send', 'pageview');
+      </script>
+    
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> MESHmachine
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Get Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="index.html">MESHmachine</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="whatsnew.html">What's new?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Chamfers and Fillets</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="change_width.html">Change Width</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="fuse.html">Fuse</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="flatten.html">Flatten</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="unfuse.html">Unfuse</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="refuse.html">Refuse</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="unchamfer.html">Unchamfer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="unbevel.html">Unbevel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="unfuck.html">Unf*ck</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="turn_corner.html">Turn Corner</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="quad_corner.html">Quad Corner</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="mark_loop.html">Mark Loop</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Plugs</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="plugs_introduction.html">Plugs Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="plug_creation.html">Plug Creation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="advanced_plug_creation.html">Advanced Plug Creation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="remove_plugs.html">Remove Plugs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="delete_plug.html">Delete Plug</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="plug_resources.html">Plug Resources</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Booleans</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="boolean.html">Boolean</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="boolean_cleanup.html">Boolean Cleanup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="chamfer.html">Chamfer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="offset.html">Offset</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Stashes</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="create_stash.html">Create Stash</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="view_stashes.html">View Stashes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="transfer_stashes.html">Transfer Stashes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="stashes_panel.html">Stashes Panel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="orphan_stashes.html">Orphan Stashes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="sweep_stashes.html">Sweep Stashes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="conform.html">Conform</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="quick_patch.html">Quick Patch</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Normals</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="normal_flatten_straighten.html">Normal Flatten and Straighten</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="normal_transfer.html">Normal Transfer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="normal_clear.html">Normal Clear</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Mirror</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="symmetrize.html">Symmetrize</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="real_mirror.html">Real Mirror</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Selection</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="lselect.html">LSelect</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="sselect.html">SSelect</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="vselect.html">VSelect</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="select.html">Select</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Refinement</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="wedge.html">Wedge</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Looptools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="circle_relax.html">Circle and Relax</a>
+                  </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="changelog.html">Changelog</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#0160">0.16.0</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#0154">0.15.4</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#0153">0.15.3</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#0152">0.15.2</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#0151">0.15.1</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#015">0.15</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v014">v0.14</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v013">v0.13</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v012">v0.12</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v0112">v0.11.2</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v0111">v0.11.1</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v011">v0.11</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v010">v0.10</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v091">v0.9.1</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v09">v0.9</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v082">v0.8.2</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v081">v0.8.1</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v08">v0.8</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v072">v0.7.2</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v071">v0.7.1</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v07">v0.7</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v0613">v0.6.13</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v0612">v0.6.12</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v0611">v0.6.11</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v0610">v0.6.10</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v069">v0.6.9</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v068">v0.6.8</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v06">v0.6</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v0516-limited">v0.5.16 limited</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v0515-limited">v0.5.15 limited</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v0514-limited">v0.5.14 limited</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v0513">v0.5.13</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v0512">v0.5.12</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v0511">v0.5.11</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v0510">v0.5.10</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v059">v0.5.9</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v058">v0.5.8</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v057">v0.5.7</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v056">v0.5.6</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v055">v0.5.5</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v054">v0.5.4</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v053">v0.5.3</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v052">v0.5.2</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v051">v0.5.1</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v05">v0.5</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">MESHmachine</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>Changelog</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="_1"></h1>
+<h2 id="0160">0.16.0</h2>
+<blockquote>
+<p>2024-07-10</p>
+</blockquote>
+<ul>
+<li>
+<p>CreateStash tool</p>
+<ul>
+<li>apply mods on stashes, depending on mode your are in<ul>
+<li>stashing from object mode: apply modifiers on stash(es)<ul>
+<li>keep them by holding ALT key</li>
+</ul>
+</li>
+<li>stashing from edit mode: keep modifiers on stash<ul>
+<li>apply them by holding ALT key<ul>
+<li>unless you stash a specific face selection only</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>the tools tooltip reflects these changes, so reference that if you are ever unsure</li>
+</ul>
+</li>
+<li>re-enable fading wire drawing, accidentally left disabled in 0.15.4</li>
+</ul>
+</li>
+<li>
+<p>BooleanApply tool</p>
+<ul>
+<li>properly support redoing now<ul>
+<li>support individually toggling whether mods should be applied on original and operand object stashes<ul>
+<li>by default mods are not applied on the original object's stash</li>
+<li>and are applied on the operand objects' stashes</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Symmetrize tool</p>
+<ul>
+<li>when not mirroring vertex groups, remove the association on the affected verts, instead of just setting the weight to 0</li>
+</ul>
+</li>
+<li>
+<p>AddBoolean tool</p>
+<ul>
+<li>fix import when setting up AutoSmooth in 4.1+</li>
+</ul>
+</li>
+<li>
+<p>Plug tool</p>
+<ul>
+<li>fix exception when applying normal transfer as part of the plugging</li>
+</ul>
+</li>
+<li>
+<p>addon preferences</p>
+<ul>
+<li>in Blender 4.2, when activating LoopTools wrappers in addon prefs, support automatically installing it from Blender extensions repo</li>
+<li>on first addon registration, try to setup the MACHIN3tools <code>matcap_shiny_red.exr</code> for the NormalTransfer tool, if it can be found</li>
+</ul>
+</li>
+</ul>
+<h2 id="0154">0.15.4</h2>
+<blockquote>
+<p>2024-05-16</p>
+</blockquote>
+<ul>
+<li>bad day</li>
+</ul>
+<h2 id="0153">0.15.3</h2>
+<blockquote>
+<p>2024-05-16</p>
+</blockquote>
+<ul>
+<li>
+<p>Fuse tool</p>
+<ul>
+<li>fix exception in BRIDGE mode, introduced accidentally in 0.15.2</li>
+</ul>
+</li>
+<li>
+<p>Symmetrize tool</p>
+<ul>
+<li>when not mirroring custom normals, expose option to mirror vgroups, but default to False</li>
+<li>fix exception when mirroring custom normals, when using transfer method to fix the center seam</li>
+<li>improve HyperCursor integration</li>
+</ul>
+</li>
+<li>
+<p>Boolean tool</p>
+<ul>
+<li>simplify and speed up AutoSmooth setup, when toggling smoothing using <code>S</code> key</li>
+</ul>
+</li>
+<li>
+<p>Wedge tool</p>
+<ul>
+<li>improve HyperCursor integration</li>
+</ul>
+</li>
+<li>
+<p>CreateStash tool</p>
+<ul>
+<li>fix issues when trying to stash non-mesh objects</li>
+</ul>
+</li>
+<li>
+<p>preferences</p>
+<ul>
+<li>add notes for <code>ALT + LEFTMOUSE</code> keymap, used by default for the Select wrapper, and should be remapped for people using <code>ALT</code> for navigation</li>
+</ul>
+</li>
+</ul>
+<h2 id="0152">0.15.2</h2>
+<blockquote>
+<p>2024-04-10</p>
+</blockquote>
+<ul>
+<li>
+<p>Select tool/wrapper</p>
+<ul>
+<li>fix issue in <em>always_loop_select</em> mode where you can't select additional edges</li>
+</ul>
+</li>
+<li>
+<p>Boolean tool</p>
+<ul>
+<li>in Blender 4.1<ul>
+<li>when adding Auto Smooth mod, while existing Auto Smooth node trees are in the file, use the API<sup>which is faster!</sup>, rather than the Blender op to add the mod</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>NormalTransfer tool</p>
+<ul>
+<li>prevent exception when having a selection of only sharp edges (no faces)<ul>
+<li>this is rather pointless, as you really want to select faces next to sharp edges, but now it longer errors out</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>OffsetCut tool</p>
+<ul>
+<li>fix rare exception when custom data layers are still present from a previous run</li>
+</ul>
+</li>
+<li>
+<p>remove Blender-auto-added Auto Smooth mods, when bringing Plugs into the scene</p>
+</li>
+<li>
+<p>Fuse, Refuse, Unfuse, Unchamfer, Unbevel tools</p>
+<ul>
+<li>support creating HyperCursor<sup>unreleased</sup> geometry gizmos</li>
+</ul>
+</li>
+<li>
+<p>Fuse, Refuse tools</p>
+<ul>
+<li>support maintaining vertex groups on sweep verts</li>
+</ul>
+</li>
+<li>
+<p>addon preferences</p>
+<ul>
+<li>update integrated updater to expose the Re-Scan button even if no update is found yet</li>
+</ul>
+</li>
+</ul>
+<h2 id="0151">0.15.1</h2>
+<blockquote>
+<p>2024-03-19</p>
+</blockquote>
+<ul>
+<li>Boolean tool<ul>
+<li>in Blender 4.1<ul>
+<li>when checking for existing Auto Smooth mods in the stack, that deviate from standard naming, support finding ones with index suffix in the node tree name</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="015">0.15</h2>
+<blockquote>
+<p>2024-03-18</p>
+</blockquote>
+<ul>
+<li>support Blender 4.1<ul>
+<li>auto smooth and custom normal related fixes in<ul>
+<li>Symmetrize tool</li>
+<li>Nornmal Flatten and Straighten tools</li>
+<li>Normal Transfer tool</li>
+<li>Normal Clear tool</li>
+<li>RealMirror tool</li>
+<li>Plug tool</li>
+<li>Boolean tool</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Boolean tool<ul>
+<li>support modifier based Auto Smooth in 4.1<ul>
+<li>when toggling (auto) smooth using <code>S</code> key, insert the mod towards the end of the stack, but always before Mirror and Array mods</li>
+</ul>
+</li>
+<li>init operator's auto smooth state and angle, from active object</li>
+<li>when finishing with <code>LMB</code> unselect the active</li>
+<li>hide cutters from rendering via cycles visibility settings too now</li>
+<li>when canceling restore everything accordingly to its initial state</li>
+<li>flesh out statusbar</li>
+</ul>
+</li>
+<li>Symmetrize tool<ul>
+<li>expose redundant center edge removal threshold angle</li>
+<li>increase it slightly from 0 to 0.05 to be more tolerant</li>
+</ul>
+</li>
+<li>Select tool/wrapper<ul>
+<li>add <em>Always Loop Select</em> toggle<ul>
+<li>by default connected Sharps are selected, if entire edge selection consists of sharp edges, otherwise an angle based loop selection is done</li>
+<li>with Always Loop Select enabled now, this behavior is overidden, so you don't constantly have to toggle back to loop selecting, when working on sharp edges</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Stashes<ul>
+<li>improve how stashes HUD is drawn at the top of the 3D view<ul>
+<li>properly offset HUD downs depending on region_overlap pref, theme header alpha, and  header and tool header positioning</li>
+<li>furthermore offset stashes HUD down, if MACHIN3tools focus tool active, and has its own HUD drawn</li>
+</ul>
+</li>
+<li>ViewStashes tool<ul>
+<li>improve edit stash object HUD in the same way</li>
+<li>handle area and space data reference loss due to area maximizing or workspace space changes more gracefully<ul>
+<li>still not recommended to do, while in edit stash mode though</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>CreatePlug, AddPlugToLibrary tools<ul>
+<li>ensure plug objects are properly render-able for the thumbnail</li>
+</ul>
+</li>
+<li>Unchamfer tool<ul>
+<li>fix typo, causing exception in debug mode</li>
+</ul>
+</li>
+<li>handlers<ul>
+<li>rework when and how handler logic is executed</li>
+<li>add asset drop cleanup handler (previously in MACHIN3tools) to automatically unlink stash objects after dropping and asset using stashes from the asset browser</li>
+</ul>
+</li>
+<li>GetSupport tool<ul>
+<li>improve the readme.html file, generated by the tool, providing more details on how to get to the system console</li>
+<li>in Bender 4.1 (and 3.5) open the readme.html in the Browser automatically</li>
+</ul>
+</li>
+<li>addon preferences<ul>
+<li>place Get Support button at top of addon prefs</li>
+<li>add custom updater <ul>
+<li>NOTE: since it's only introduced now in 0.15, it will only be of use for upcoming releases, so can't be used to install this very 0.15 update yet</li>
+<li>allows for very easy addon update installation from .zip file, and from inside of Blender, instead of manually from the file browser</li>
+<li>finds matching .zip file(s) in home and Downloads folder</li>
+<li>allows selecting one of them them or manually selecting a file in any other location</li>
+<li>extracts the file to a temporary location, and installs update when quitting Blender</li>
+<li>like a manual update installation from the filebrowser, this maintains previous addon settings and custom keys</li>
+<li>see installation instructions for details  </li>
+<li>supports - and defaults to - keeping the current assets to prevent accidental loss</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>fix issue with thankyou note after manual installation without removing previous installation</li>
+<li>fix plug library unloading messages sell being shown despite registration_debug pref being disabled</li>
+</ul>
+<h2 id="v014">v0.14</h2>
+<blockquote>
+<p>2023-11-14</p>
+</blockquote>
+<ul>
+<li>OffsetCut tool<sup>experimental</sup><ul>
+<li>remove dependency on face maps, as they were removed in 4.0</li>
+</ul>
+</li>
+<li>Wedge tool<ul>
+<li>support HyperCursor 0.9.15<sup>pre-release :)</sup> alongside previous versions</li>
+</ul>
+</li>
+<li>addon preferences</li>
+<li>add option to control whether addon (un)registration confirmation is written to the terminal<ul>
+<li>simplify and refactor how the various settings are drawn</li>
+<li>add HyperCursor to about section in addon preferences</li>
+<li>addon preferences - add new nag screen</li>
+<li>draw thank you message direction above the prefs, instead of in a popup<ul>
+<li>for 5 minutes, then disappear forever</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>fully support Blender 4.0<ul>
+<li>drop dpi arg in blf.size()</li>
+<li>support new shader names</li>
+<li>support new bevel weight custom data layer</li>
+</ul>
+</li>
+<li>ensure modal HUDs are only drawn on active 3D view, not others</li>
+<li>fix np.float issue with newer numpy versions</li>
+<li>silence <em>reload_modules()</em> debug output for good</li>
+</ul>
+<h2 id="v013">v0.13</h2>
+<blockquote>
+<p>2023-06-28</p>
+</blockquote>
+<ul>
+<li>bump minimum Blender version to 3.6</li>
+<li>Normal Transfer tool<ul>
+<li>add previously removed NEAREST NORMAL and NEAREST POLY NORMAL mapping methods again<ul>
+<li>they can be useful when transfering normals next to sharp edges</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Symmetrize tool<ul>
+<li>fix issue when encountering non-manifold center edges at the center</li>
+<li>lower precision a little when determining which center edges are redundant</li>
+</ul>
+</li>
+<li>add pre-0.6 Tutorial.blend file to 3D view's sidebar MESHmachine help panel<ul>
+<li>this file contains simple test cases for the tools of the fillet tool set</li>
+</ul>
+</li>
+<li>switch all timer modals to new system clock based method<ul>
+<li>fixes a long time issue, where timer modals would sometimes run much faster than they should, which was especially annoying for the Add Boolean tool</li>
+</ul>
+</li>
+<li>update HUD and VIEW3D drawing</li>
+<li>take system's UI scaling into account for all HUDs</li>
+<li>preferences<ul>
+<li>add show_sidebar_panel toggle</li>
+<li>update about page</li>
+</ul>
+</li>
+<li>remove bgl completely</li>
+</ul>
+<h2 id="v012">v0.12</h2>
+<blockquote>
+<p>2022-12-30</p>
+</blockquote>
+<ul>
+<li>bump minimum Blender version to 3.3</li>
+<li>BooleanDuplicate</li>
+<li>redo completely and now duplicate the entire "object tree", which includes all mod objects, even those that aren't parented</li>
+<li>no longer initiate the translate tool at the end, to keep the operator props in the redo panel accessible</li>
+<li>support local view</li>
+<li>Boolean </li>
+<li>SPLIT <ul>
+<li>ensure all the parenting, all (parented) mod objects, all drivers, hooks etc are proberly and separately reproduced on the split object</li>
+<li>add displace mod using a strength of 0 on the split off part</li>
+</ul>
+</li>
+<li>change default auto smooth angle to 20 degrees instead of 30</li>
+<li>BooleanApply</li>
+<li>remove cutter children as well</li>
+<li>Symmetrize</li>
+<li>add ability to remove redundant center edges, enabled by default</li>
+<li>only available if remove and partial are disabled, and if there are no custom normals</li>
+<li>Fuse, Change Width, etc.</li>
+<li>take object scaling into account to determine mouse sensitivity</li>
+<li>various HyperCursor integrations</li>
+</ul>
+<h2 id="v0112">v0.11.2</h2>
+<blockquote>
+<p>2022-04-30</p>
+</blockquote>
+<ul>
+<li>resolve odd 3.1 related crashes, hopefully</li>
+<li>add thank you note to addon preferences </li>
+</ul>
+<h2 id="v0111">v0.11.1</h2>
+<blockquote>
+<p>2022-04-24</p>
+</blockquote>
+<ul>
+<li>Boolean<ul>
+<li>disable renderability for cutters</li>
+</ul>
+</li>
+<li>a few small tweaks and fixes</li>
+</ul>
+<h2 id="v011">v0.11</h2>
+<blockquote>
+<p>2022-03-09</p>
+</blockquote>
+<ul>
+<li>support Blender 3.1</li>
+<li>Plug, NormalTransfer and Conform tools<ul>
+<li>use new generalized vgroup management approach, required due to changes in 3.0+</li>
+</ul>
+</li>
+<li>fix automatic legacy stash update</li>
+</ul>
+<h2 id="v010">v0.10</h2>
+<blockquote>
+<p>2021-12-24</p>
+</blockquote>
+<ul>
+<li>Symmetrize tool<ul>
+<li>add mode to remove half the mesh instead of symmetrizing, toggle via <code>X</code> key</li>
+<li>add mode to symmetrize/remove only the selected parts of a mesh, toggle via <code>S</code> key</li>
+<li>take HUD scale prefs into account for drawing of flick distance and HUD labels</li>
+</ul>
+</li>
+<li>BooleanDuplicate tool <ul>
+<li>support recursive duplication and instancing, allowing for more more complex boolean setups, where operands themselves have boolean mods</li>
+<li>fix exception when encountering objects without a data block, such as group empties</li>
+</ul>
+</li>
+<li>MakeUnique tool<ul>
+<li>fix poll for objects without a data block, such as group empties</li>
+</ul>
+</li>
+<li>MESHmachine menu<ul>
+<li>fix <em>is_instance</em> poll for for non-mesh objects, such as group empties</li>
+</ul>
+</li>
+</ul>
+<h2 id="v091">v0.9.1</h2>
+<blockquote>
+<p>2021-12-18</p>
+</blockquote>
+<ul>
+<li>Flatten tool<ul>
+<li>support multi face flattening with Pick Shortest Path, Box or Circle Selections</li>
+<li>prevent invalid selections</li>
+</ul>
+</li>
+<li>Unchamfer tool<ul>
+<li>default to setting sharp edges only if selected faces are smooth</li>
+</ul>
+</li>
+<li>NormalTransfer and Conform tools<ul>
+<li>use temporary workaround related to <a href="https://developer.blender.org/T93896">this Blender 3.0 bug</a></li>
+</ul>
+</li>
+<li>fix Split and Delete tools not appearing in MESHmachine's menu in Blender 3.0</li>
+</ul>
+<h2 id="v09">v0.9</h2>
+<blockquote>
+<p>2021-11-25</p>
+</blockquote>
+<ul>
+<li>support Blender 3.0</li>
+<li>add BooleanDuplicate tool<ul>
+<li>create instances via <code>ALT</code></li>
+</ul>
+</li>
+<li>BooleanApply tool<ul>
+<li>support multi object selections</li>
+</ul>
+</li>
+<li>Unfuse and Unbevel tools<ul>
+<li>default to setting sharp edges only if selected faces are smooth</li>
+</ul>
+</li>
+<li>improve GetSupport tool</li>
+<li>addon preferences<ul>
+<li>add option for legacy line smoothing </li>
+</ul>
+</li>
+<li>remove legacy code for Blender pre-2.93</li>
+<li>drop bgl module use for view3d drawing (except for legacy line smoothing)</li>
+</ul>
+<h2 id="v082">v0.8.2</h2>
+<blockquote>
+<p>2021-09-10</p>
+</blockquote>
+<ul>
+<li>Wedge<ul>
+<li>disable debug output</li>
+</ul>
+</li>
+<li>fix issues on some linux systems</li>
+</ul>
+<h2 id="v081">v0.8.1</h2>
+<blockquote>
+<p>2021-08-23</p>
+</blockquote>
+<ul>
+<li>fix Wedge on rotated objects</li>
+</ul>
+<h2 id="v08">v0.8</h2>
+<blockquote>
+<p>2021-08-22</p>
+</blockquote>
+<ul>
+<li>add Wedge tool</li>
+<li>Boolean tool<ul>
+<li>add SPLIT mode</li>
+</ul>
+</li>
+<li>add MakeUnique tool<ul>
+<li>useful for instanced meshes as created by Split Booleans</li>
+</ul>
+</li>
+<li>BooleanApply tool<ul>
+<li>support applying mods with instanced meshes, such as ones created by Split Booleans</li>
+<li>support applying mods whose objects are used by multiple booleans</li>
+<li>name stashes based on boolean operation<ul>
+<li>this allows you to later easily filter out (and remove) stashes of the (at the time) active objects</li>
+</ul>
+</li>
+<li>only apply mods, that are visible in the viewport</li>
+</ul>
+</li>
+<li>ViewStashes and ViewOrphanStashes tools<ul>
+<li>support setting cursor to stash</li>
+</ul>
+</li>
+<li>Plug tool <ul>
+<li>support re-targeting subset shrinkwrap mods, if their target is the plug object</li>
+</ul>
+</li>
+<li>AddPlugToLibrary tool<ul>
+<li>work around issues with linked thumbnail scene contents introduced in 2.90</li>
+</ul>
+</li>
+<li>Lselect tool<ul>
+<li>inverse min-angle for better UX, increasing the angle now grows the selection</li>
+</ul>
+</li>
+<li>Symmetrize tool<ul>
+<li>fix issue with the flick HUD, if object origin was far behind view</li>
+</ul>
+</li>
+<li>replace previous parenting and unparenting logic</li>
+<li>use safe matrix inversion everywhere</li>
+</ul>
+<h2 id="v072">v0.7.2</h2>
+<blockquote>
+<p>2021-03-25</p>
+</blockquote>
+<ul>
+<li>support stashing evaluated meshes using <code>ALT</code> key</li>
+<li>when swapping stash, parent active's children - including decals - to swapped stash object</li>
+<li>fix subset plug creation issue</li>
+<li>fix typos</li>
+</ul>
+<h2 id="v071">v0.7.1</h2>
+<blockquote>
+<p>2021-03-01</p>
+</blockquote>
+<ul>
+<li>add NDOF(3d mouse) support for viewport navigation in all modal tools</li>
+<li>add optional stashes HUD offset in preferences</li>
+<li>NormalTransfer and Conform tools<ul>
+<li>reverse stash scroll direction, just like in the ViewStashes tool</li>
+</ul>
+</li>
+<li>fix Quickpatch raycast error, when filtering out decals but not having DM installed</li>
+<li>fix 2.93 issues due to change in bpy.props representation before registration</li>
+</ul>
+<h2 id="v07">v0.7</h2>
+<blockquote>
+<p>2021-02-20</p>
+</blockquote>
+<ul>
+<li>add Boolean tool</li>
+<li>add BooleanApply tool</li>
+<li>add Select tool<ul>
+<li>a selection wrapper that picks VSelect, SSelect, LSelect or Blender's native loop select depending on existing selection context</li>
+<li>keymapped to <code>ALT + LMB</code> by default</li>
+</ul>
+</li>
+<li>add QuickPatch tool</li>
+<li>add DeletePlug tool<ul>
+<li>with only the handles selected, conveniently delete one or multiple plugs (incl. related and potentiall hidden deformers and occluders)</li>
+<li>use the <code>X</code> <em>"shortcut"</em> in the MESHmachine object menu</li>
+</ul>
+</li>
+<li>add SweepStashes tool (sidepanel)<ul>
+<li>clean up a scene after appending an object with stashes from another blend file</li>
+</ul>
+</li>
+<li>Symmetrize tool - add flick mode<ul>
+<li>symmetrize in any of the 6 local space directions using a single keymap</li>
+</ul>
+</li>
+<li>LSelect tool<ul>
+<li>support selecting multiple loops at once or one after another</li>
+<li>prevent issues with zero length edges</li>
+</ul>
+</li>
+<li>expose Stashes in 3D view's sidepanel<ul>
+<li>show, (re)name, swap and remove an object's stashes</li>
+</ul>
+</li>
+<li>CreateStash tool <ul>
+<li>support stashing face selections</li>
+<li>support finishing early and canceling</li>
+</ul>
+</li>
+<li>ViewStashes tool<ul>
+<li>add stash swapping capability<ul>
+<li>support MACHIN3tools grouping, when swapping</li>
+</ul>
+</li>
+<li>add stash clearing capability</li>
+<li>support setting wireframe alpha</li>
+<li>support canceling when stashes were retrieved</li>
+<li>select only retrieved stash objects when finishing</li>
+</ul>
+</li>
+<li>ViewOrphanStashes tool<ul>
+<li>add stash clearing capability</li>
+</ul>
+</li>
+<li>TransferStashes tool<ul>
+<li>always make transferred stash objects unique</li>
+</ul>
+</li>
+<li>remove ClearStashes and ClearOrphanStashes tools</li>
+<li>Plugs<ul>
+<li>use to BOUNDS draw type for plug handles</li>
+<li>fix contain issue in 2.91</li>
+</ul>
+</li>
+<li>TurnCorner<ul>
+<li>support toggling width adjustement</li>
+</ul>
+</li>
+<li>QuadCorner<ul>
+<li>fix issue in redo panel </li>
+</ul>
+</li>
+<li>various other tweaks and improvements<ul>
+<li>add basic statusbar hints for all modal tools</li>
+<li>improve stash and HUD drawing incl. anti aliasing</li>
+<li>update stash matrix format and introduce stash versioning and UUIDs </li>
+<li>support ALT navigation in modal tools where it was still missing</li>
+<li>make HUD following mouse optional</li>
+<li>expose HUD timeout factor to preferences</li>
+<li>fix HUD issue when modal ops are called via keymap</li>
+</ul>
+</li>
+<li>experimental features <em>(undocumented and excluded from product support!)</em><ul>
+<li>split edge NormalTransfer approach next to sharp edges</li>
+<li>BooleanCleanup flip option, useful for mesh cuts</li>
+<li>OffsetCut tool</li>
+</ul>
+</li>
+<li>add MESHmachine plug </li>
+<li>update license</li>
+</ul>
+<h2 id="v0613">v0.6.13</h2>
+<blockquote>
+<p>2020-09-10</p>
+</blockquote>
+<ul>
+<li>fix 2.90 exception, when adding plug to library</li>
+</ul>
+<h2 id="v0612">v0.6.12</h2>
+<blockquote>
+<p>2020-09-05</p>
+</blockquote>
+<ul>
+<li>ensure 2.90 compatibility</li>
+<li>support ALT navigation</li>
+<li>support proper work space filtering for panels</li>
+</ul>
+<h2 id="v0611">v0.6.11</h2>
+<blockquote>
+<p>2020-06-03</p>
+</blockquote>
+<ul>
+<li>Symmetrize<ul>
+<li>re-enable symmetrize drawing, which was left off accidentally</li>
+</ul>
+</li>
+<li>Unfuck<ul>
+<li>update widthlinked + tensionlinked icons in Redo panel</li>
+</ul>
+</li>
+<li>prevent undo related crash bug in 2.83</li>
+<li>fix issue with real-mirrored decals</li>
+<li>fix 2d array plugs not carrying through the cap vertex groups</li>
+<li>remove obsolete shortcut mentions from the docs</li>
+</ul>
+<h2 id="v0610">v0.6.10</h2>
+<blockquote>
+<p>2019-06-27</p>
+</blockquote>
+<ul>
+<li>add LSelect</li>
+<li>select loop of ngons based on initial 2 polygon selection<ul>
+<li>requires loop of quads on either side</li>
+</ul>
+</li>
+<li>select loop of edges from initial single edge selection based on angle threshold</li>
+<li>add SSelect</li>
+<li>select all connected sharp edges</li>
+<li>ViewStashes<ul>
+<li>add edit stash object mode</li>
+</ul>
+</li>
+<li>lower wire alpha</li>
+<li>LoopTools Circle Wrapper<ul>
+<li>add Fix Midpoint option</li>
+</ul>
+</li>
+<li>used for circular selections with irregular vert distribution</li>
+<li>stashes HUD</li>
+<li>offset down, if necessary</li>
+<li>fix broken decal asset libraries ui list, due to API change</li>
+<li>fix cursor wrapping in fullscreen</li>
+<li>fix array plugs not creating proper vertex group, due to API limitation (at the time)</li>
+<li>fix Xray toggles in Normal Transfer, Conform, View Stashes, etc due to change in Blender default drawing behavior</li>
+<li>fix issue in Symmetrize, when mesh is positioned in a way, that Symmetrize doesn't produce a center seam</li>
+<li>fix Examples_012 and Examples_017 array plugs</li>
+<li>fix exception when popup_message() couldn't be found, as a result of previous refactoring</li>
+<li>fix issue when removing old version and installing new one in the same Blender session</li>
+<li>prevent errors when coming across certain MM ops in Blenders operator search menu</li>
+<li>a few performance performance improvements</li>
+</ul>
+<h2 id="v069">v0.6.9</h2>
+<blockquote>
+<p>2019-05-18</p>
+</blockquote>
+<ul>
+<li>Plug <ul>
+<li>fix recent depsgraph issues</li>
+<li>support local view</li>
+<li>if auto smooth is required, enable it</li>
+<li>fix previous redo issues affection plug rotation and deformation</li>
+</ul>
+</li>
+<li>AddPlugToLibrary<ul>
+<li>fix recent depsgraph issues</li>
+</ul>
+</li>
+<li>Insert<ul>
+<li>clear drivers to prevent issues with plugs created in 2.79</li>
+<li>improve raycast and raycast performance</li>
+</ul>
+</li>
+<li>BooleanCleanup <ul>
+<li>fix rare vert drawing issue</li>
+</ul>
+</li>
+<li>stashes HUD <ul>
+<li>take into account MM's modal_hud_scale and Blender's ui_scale prefs</li>
+</ul>
+</li>
+<li>fix broken driver in Examples plug 018</li>
+<li>fix multi-region issue with modals and HUDs</li>
+<li>fix utils.registraion.reload_plug_libraries()</li>
+<li>fix Plug Packs link in help Panel</li>
+<li>fix gumroad link in Preferences - About</li>
+</ul>
+<h2 id="v068">v0.6.8</h2>
+<blockquote>
+<p>2019-05-13</p>
+</blockquote>
+<ul>
+<li>Plugs<ul>
+<li><strong>WARNING</strong>: there are issues with redoing the plug tool, until <a href="https://developer.blender.org/T64300">T64300</a> and <a href="https://developer.blender.org/T64307">T64307</a> are fixed<ul>
+<li>plug rotation is disabled</li>
+<li>plug deformation doesn't work when redoing</li>
+<li>contain and normal transfer options are temporarily enabled by default for that reason</li>
+</ul>
+</li>
+<li>create collections when bringing Plugs into the scene</li>
+<li>default to raycast based plug insertion (at the location of the mouse cursor)</li>
+<li>support local view</li>
+<li>remove show wire option and always use the fading wire instead</li>
+</ul>
+</li>
+<li>Fuse, Unfuse, Refuse, Unchamfer, Unbevel<ul>
+<li>auto-set smooth tool option based on initial selection</li>
+<li>auto-sets tool options when working on <a href="https://machin3.io/DECALmachine">DECALmachine</a> panel decals</li>
+</ul>
+</li>
+<li>ChangeWidth<ul>
+<li>add taper option</li>
+</ul>
+</li>
+<li>Symmetrize, RealMirror<ul>
+<li>use different colors when mirroring custom normals</li>
+<li>improve drawing performance</li>
+</ul>
+</li>
+<li>RealMirror<ul>
+<li>create collections for originals and mirrored objects</li>
+</ul>
+</li>
+<li>VSelect<ul>
+<li>draw all vgroups in addition to the highlighted and selected ones</li>
+</ul>
+</li>
+<li>stashes HUD<ul>
+<li>only draw when overlays are enabled</li>
+</ul>
+</li>
+<li>CreateStash<ul>
+<li>improve performance significantly  </li>
+</ul>
+</li>
+<li>ViewStashes<ul>
+<li>support retrieving stashes in local view</li>
+</ul>
+</li>
+<li>TransferStashes<ul>
+<li>draw transferred stashes, this is especially useful in context of the re-stash option</li>
+</ul>
+</li>
+<li>NormalTransfer<ul>
+<li>optionally switch the matcap automatically when the tool is run and switch back when finished</li>
+<li>disabled NEAREAST NORMAL and NEAREST POLY NORMAL modes</li>
+</ul>
+</li>
+<li>Remove Tape tool<ul>
+<li>Grease Pencil now has a Line shape, that's similar</li>
+</ul>
+</li>
+<li>Preferences<ul>
+<li>add options for context menus for object and edit modes</li>
+<li>automatically register LoopTools, if the wrappers are enabled and LoopTools is not registered</li>
+<li>fix issues in Plug Library Rename and Remove</li>
+<li>add update check</li>
+<li>add GetSupport tool </li>
+<li>update about page</li>
+<li>remove keyboard layout selection</li>
+<li>remove options to use tools in either SIMPLE or MODAL mode</li>
+</ul>
+</li>
+<li>add tool tips for all tools</li>
+<li>improve all modal tools<ul>
+<li>prevent jumping values when cursor wrapping, when rotating the view and when toggling SHIFT and CTRL</li>
+<li>mesh scale and zoom independent modal geometry adjustments </li>
+</ul>
+</li>
+<li>fix issues when unregistering and Loading Factory Settings</li>
+<li>start refactoring, simplifying and optimizing internals of the chamfer and fillet toolset in preparation for 0.7</li>
+</ul>
+<h2 id="v06">v0.6</h2>
+<blockquote>
+<p>2018-10-31</p>
+</blockquote>
+<ul>
+<li>Fuse</li>
+<li>only draw self.capholes in HUD, if not self.cyclic</li>
+<li>Refuse</li>
+<li>add force_projected_loop support</li>
+<li>Flatten</li>
+<li>add 1,2 scrolling</li>
+<li>Unchamfer</li>
+<li>add bweight and bweights props in draw()</li>
+<li>Unfuck()</li>
+<li>fix issue where the handle1co and handle2co wouldn't update properly when the width is changed, because the original end points were used for intersect_point_line() instead of the adjustted start1co and start2co</li>
+<li>TurnCorner</li>
+<li>set smoothing based on initially selected face</li>
+<li>QuadCorner</li>
+<li>lower width min prop</li>
+<li>only draw self.tension in HUD, if not self.single</li>
+<li>Plug and DrawPlug</li>
+<li>use utils.normal.normal_clear_across_sharps() instaed of various vertex group ops, to clear normals acress sharps<ul>
+<li>hide plug type selection in draw()</li>
+</ul>
+</li>
+<li>fix issue with cointain amount not taking into account plug and target scale</li>
+<li>MyPlugs library</li>
+<li>fix contain issue in 001_Blender plug, as a result of the latest Plug() changes</li>
+<li>CreateStash</li>
+<li>fix exception when pressing d in modal(), when stash has not been created from other object, and so sources was not defined</li>
+<li>allow d key presses to pass through, if there are no sources or if alt, shift, ctrl is pressed</li>
+<li>set MM.isstashobj prop</li>
+<li>ViewStashes</li>
+<li>when retrieving a stashe, only transfer stashes when the stash matrix == target matrix at the time the stash was created</li>
+<li>undo stash naming when retrieving a stash</li>
+<li>unset MM.isstashobj prop when retrieving</li>
+<li>TransferStashes</li>
+<li>move retrieve and restashing to utils.stash.transfer_stashes()
+        - add prop to enable retieval and restashing<ul>
+<li>useful for transfering stashes to plug subsets</li>
+<li>also useful for transfering stashes to duplicate object with applied scale/rotation</li>
+</ul>
+</li>
+<li>ClearStashes and RemoveOrphanStashes</li>
+<li>add deletion counter title</li>
+<li>Conform</li>
+<li>make sure stashobjs matrix == active obj's matrix<ul>
+<li>this means you can move and rotate an object with stashes, and conform will keep working</li>
+</ul>
+</li>
+<li>add ViewOrphanStashes()</li>
+<li>view and retrieve orphan stashes</li>
+<li>add RemoveOrphanStashes()</li>
+<li>removes objects with MM.isstashobj prop and use_face_user props being True and users prop being 1</li>
+<li>BooleanCleanup</li>
+<li>add poll()</li>
+<li>add 1,2 scrolling</li>
+<li>Chamfer</li>
+<li>rename Normal Transfer VGroup stuff to just Vertex Group</li>
+<li>name the actual vgroup "chamfer"</li>
+<li>add 1,2 scrolling</li>
+<li>Offset</li>
+<li>rename Normal Transfer VGroup stuff to just Vertex Group</li>
+<li>name the actual vgroup "offset"</li>
+<li>add 1,2 scrolling</li>
+<li>NormalTransfer</li>
+<li>automatically clear normals across sharp edges, if limit_by_sharps props is True<ul>
+<li>experimental</li>
+</ul>
+</li>
+<li>NormalClear</li>
+<li>change prevent_sharp_edges to limit_to_selection</li>
+<li>Symmetrize</li>
+<li>redo normal transfer without stashes</li>
+<li>Real Mirror</li>
+<li>fix parenting issues by simplifiying using matrix math</li>
+<li>Looptools Wrappers</li>
+<li>remove UP_ARROW and DOWN_ARROW</li>
+<li>VSelect</li>
+<li>add ONE and TWO keys</li>
+<li>properties.py</li>
+<li>save stash matrix in object.MM.stashmx and stash target matrix in object.MM.stashtargetmx instead of on the stashes</li>
+<li>this is necessary for the retrieval of orphan stashes</li>
+<li>remove obsolete location, rotation and scale props for stashes, it's all done via matrices now</li>
+<li>rename MM.isstash to MM.isstashobj</li>
+<li>utils.core.init_sweeps()</li>
+<li>fix "mark loop"/freestyle issue, where single loop edges weren't expluded when marked</li>
+<li>utils.normal.py
+         - move normal functions from ops over here</li>
+<li>add normal_transfer_from_obj() and normal_transfer_from_stash()</li>
+<li>utils.stash.create_stash()</li>
+<li>always set the stashmx and stashtargetmx props</li>
+<li>this way, you can properly retrieve orphan stashes at the location they were created at</li>
+<li>utils.stash.transfer_stashes()</li>
+<li>add restash arg + logic</li>
+<li>utils.ui.py</li>
+<li>in draw_init() and draw_prop() support modal_hud_scale and user_preferences.view.ui_scale</li>
+<li>UI</li>
+<li>improve stash idx HUD display in NormalTransfer(), Conform(), ViewStashes and ClearStashes()</li>
+<li>remove modal HUD positioning options</li>
+<li>add modal_hud_scale prop</li>
+<li>remove adddon warning</li>
+</ul>
+<h2 id="v0516-limited">v0.5.16 <em>limited</em></h2>
+<blockquote>
+<p>2018-07-13</p>
+</blockquote>
+<ul>
+<li>Plug<ul>
+<li>add "global" deformation toggle<ul>
+<li>intended for cases, where you know you are working on flat geometry but the plugs are complex and have a deformer with use_deformer toggled on, perhaps even with subsets set to forcesubsetdeform</li>
+<li>you can just toggle off all deformation in that case, even for fillet plugs and speed up the plug tool considerably</li>
+</ul>
+</li>
+<li>store handle scale</li>
+<li>store local empty location</li>
+<li>add simple subdivision to the cointainer, to avoid rare bug in negative corners, where faces to replace are found outisde the container cut</li>
+</ul>
+</li>
+<li>InsertPlug</li>
+<li>check if plug scale is stored and set it accordingly
+        - check if empty locations are stored and set them accordingly</li>
+<li>ValidatePlug<ul>
+<li>add flipped normals check</li>
+<li>always automatically deselect handle polyons</li>
+<li>always generate unique UUIDs for emtpies, when they aren't set</li>
+</ul>
+</li>
+<li>AddPlugToLibrary<ul>
+<li>add mode selection and with it ability to replace existing plugs<ul>
+<li>useful to update plugs, without having to manually remove the previous version</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>MyPlugs plugs</li>
+<li>add Blender logo plug to previously empty library</li>
+</ul>
+<h2 id="v0515-limited">v0.5.15 <em>limited</em></h2>
+<blockquote>
+<p>2018-07-04</p>
+</blockquote>
+<ul>
+<li>preferences<ul>
+<li>add plug creator property, useful for plug creators to attach their name, url or email or any other text string to a plug</li>
+</ul>
+</li>
+<li>Plug</li>
+<li>re-shuffle ui in the redo panel and introduce separate deformation box
+        - support deformers for array plugs
+        - support deformers for subsets
+        - expose deformer related plug precision and subset precision properties
+                - for arrays with deformers especially, higher values seem to be necessary with increasing length of the array</li>
+<li>maintain hierarchy if subsets are paretned to other subsets</li>
+<li>make deformer usage (mesh deform instead of surface deform) optional, not mandatory, if a deformer is present, using the "Use Deformer" property in the redo panel
+        - use forcesubset property, to forceably deform specific subsets, even if "deform subsets" is turned off in the redo panel</li>
+<li>influence deformers via the offset property in addtion to the plug and handle</li>
+<li>improve subset parenting and fix an issue, if target object is chlld of another object itself
+        - fix context.scene.tool_settings.vertex_group_weight related issue</li>
+<li>fix issue where hook or array plug was only correctly determined if hook or array mods where present on the handle, which doest not need to be the case</li>
+<li>CreatePlug<ul>
+<li>clear all materials on the plug mesh</li>
+<li>keep the subset origin and orientation, instead of aligning it to the plug</li>
+</ul>
+</li>
+<li>SetPlugProps
+        - optionally set the default deformer precision value for plugs and subsets</li>
+<li>add forcesubsetdeform property</li>
+<li>add isplugoccluder property</li>
+<li>AddPlugToLibrary<ul>
+<li>show indicator for deformer plugs, a small d in the bottom right corner</li>
+<li>white: deformer use enabled by default</li>
+<li>black: deformer use is disabled by default</li>
+<li>missing: no deformer present</li>
+</ul>
+</li>
+<li>support occluders, objects that help rendering icons of plugs that have significant underhangs</li>
+<li>ValidatePlug (previously DebugPlugProperties)<ul>
+<li>add summary dialog<ul>
+<li>there's basically no need anymore for checking the temrinal, except in cases where you want to actually debug individual plug components/objects</li>
+</ul>
+</li>
+<li>add handle n-gon check</li>
+<li>optionally set visibility and renderability of deformer and occluders and others(array caps) if present</li>
+<li>show new plug creator property</li>
+<li>add abolity to generate new UUID (UUIDs are for future proofing and are not currently used, it's just a unique id to mark a specific plug design)</li>
+</ul>
+</li>
+<li>Example Plugs</li>
+<li>fix plug 003
+        - add deformers to a few plugs
+        - set creator property for all of them</li>
+<li>add forcesubsetdeform plug</li>
+<li>and occluder example plug
+        - redo all icons</li>
+<li>plug_icon_render.blend<ul>
+<li>update lighting witha a 3rd light source</li>
+<li>add deformer indicator</li>
+</ul>
+</li>
+</ul>
+<h2 id="v0514-limited">v0.5.14 <em>limited</em></h2>
+<blockquote>
+<p>2018-06-27</p>
+</blockquote>
+<ul>
+<li>Plug</li>
+<li>polystein like detail insertion tool</li>
+<li>does not use boolean, inetead replaces faces directly</li>
+<li>unlike polystein, it does not require any special face selection either</li>
+<li>cleanup and organize</li>
+<li>expose props, as redo seems to work now</li>
+<li>add limited dissolve as a cleanup step, beofre doing tris-to-quads</li>
+<li>create deformation plane and add surface deform mod<ul>
+<li>allows existing chamfers/bevels to perfectly be alligned to surface</li>
+<li>this also corrects any misalginments of the plug due to low res curvatur of the target surface</li>
+</ul>
+</li>
+<li>this plane method and face fill function will be used as a fall back method</li>
+<li>the prefered method will be using custom grid/deformation planes per plug:<ul>
+<li>these, instead of the border verts of the plug, will be used to find the faces on the target to replace</li>
+<li>they will also used for the surfac deform</li>
+<li>they shold make the current face fill obsolete</li>
+<li>and so insertions shold become less topology intrusive</li>
+</ul>
+</li>
+<li>switch to custom per plug deformation plane system</li>
+<li>the deformation plane is called the handle and is also the parent object of the plug</li>
+<li>the plug is the mesh that is embedded</li>
+<li>the plug and the handle can have children, which will be recognized as subsets</li>
+<li>remove end in edit mode prop</li>
+<li>properly error check initial selection<ul>
+<li>this could likey be made redundant with proper plug scene insertion (via DM style asset loaders)</li>
+</ul>
+</li>
+<li>create stash when non are present and normal_transfer is True</li>
+<li>unparent subsets and plug from handle</li>
+<li>separately do plug vertex projection and handle based target face finding</li>
+<li>add handle subdivision based on precision prop</li>
+<li>move add_vgroup() and unparent() to utils.support</li>
+<li>add draw()</li>
+<li>fix issue with dissolve_limited() dissolving beyond the seection border<ul>
+<li>turns out it needs to be run in FACE mode!</li>
+</ul>
+</li>
+<li>ensure only the bridged faces and nothing else is selected before running cleanup()</li>
+<li>hide various debug output if debug is False</li>
+<li>control offset loop reach for the plug and the handle</li>
+<li>initialize precision, dissolve_angle and offset_amnt in MESHmachine menu</li>
+<li>add rotation prop, useful to finetune placement/mesh integration</li>
+<li>contain prop, used to limit the face replacement<ul>
+<li>it's a bit slow, but necessary on big flat polys and long ones such as on cylinders or bevels</li>
+</ul>
+</li>
+<li>add more vertex groups to simplify selections</li>
+<li>use bmesh to create them(assign the verts) and select verts from vgroups</li>
+<li>check for presense of conform vgroup at the beginning</li>
+<li>benchmark</li>
+<li>fix missing faces issue when contain is True</li>
+<li>fix tiny triangle at border issue when contain is True</li>
+<li>fix issue in merge where sometimes edges would be in the border and boundary group when contain is True</li>
+<li>inrease the polygon selection for normal transfer when contain is True</li>
+<li>re-format draw()</li>
+<li>create normal_transfer vgroups<ul>
+<li>do it even if normal transfer prop is False</li>
+</ul>
+</li>
+<li>add deform prop, to choose whether the plug obj is deformed<ul>
+<li>diabling will only work properly with plugs, that don't have a hard edge (no bevel/fuse)</li>
+<li>if disabled a normal transfer will also not be done, as it would only smooth across the hard edge, which is undesired</li>
+</ul>
+</li>
+<li>add deform_subsets prop, which may be desired in some cases</li>
+<li>update testing scene<ul>
+<li>add sharp edge plugs</li>
+</ul>
+</li>
+<li>do normal transfer without bpy.ops</li>
+<li>do stash creation without bpy.ops</li>
+<li>for EDGE mode, clear the normals so theres no smoothing across the hard edge caused by the data trasnfer mod</li>
+<li>add filletoredge enum prop<ul>
+<li>FILLET always aplies modifier based deformation and does not do vertex proximity offsets</li>
+<li>EDGE optionally optionally oes modifier based deformation and always does vertex proximity offsets</li>
+<li>this differentiation now also allows tiny bevels to be properly deforemed, when before the vertex proximity offsets would damage them</li>
+</ul>
+</li>
+<li>parent and unparent without bpy.ops</li>
+<li>modal, fading wire drawing of the edges relevant to the integration - the same as in the normal transver vgroup verts</li>
+<li>its drawn in a similar fashion as symmetrize, as the plug op is not a modal</li>
+<li>add fading_wire prop in draw()</li>
+<li>add support for Hooks</li>
+<li>fix redo issue in apply_hooks_and_arrays()(previously apply_hooks()) caused by lack of scene.update()</li>
+<li>add support for mesh_deform, through an additional deformer mesh<ul>
+<li>it turns out the surface deform mod has some limitations, like underhangs</li>
+<li>the mod will either not bind or in some cases the bind is messy and produces offshooting verts</li>
+<li>the mesh deformer mod seems to handle these cases fine, but setting a plug with a deformer up requires additional effort</li>
+<li>if a deformer is found a mesh deform of the plug is done, by tying the deformer mesh with a surface deform to the shrinkwrapped handle</li>
+</ul>
+</li>
+<li>add hidden deform_interpolation_falloff prop, beldner sets this value to 4, but it was insufficient for the 2 dimensional array plug<ul>
+<li>increasing it to 16 seems to fix the issue and does not seem to affect other plugs negatively</li>
+</ul>
+</li>
+<li>always add a stash if no stash is present, not just when normal transfer is checked</li>
+<li>allow plugging on plugs (before they are plugged)</li>
+<li>automatically set FILLET or EDGE on first run based on object.MM.hasfillet prop</li>
+<li>solve the vertex group issue in 2 dimensional array plugs, by first applying the array mods on the caps of the second plug array mod</li>
+<li>DrawPlug</li>
+<li>fix issue in DrawPlug which would weirdly cause props in Plug to jump when dragged in a redo panel<ul>
+<li>to add to the weird, the fix was to track time handlers like the draw handlers, and remove them before creating new ones</li>
+<li>unfortunately this sometimes leads to the drawing not fading out and sticking around for a while</li>
+<li>pluggin again, toggling ao or xray or going into edit mode and out again seems to remove it</li>
+<li>this should be done properly at some point, just not sure how right now</li>
+</ul>
+</li>
+<li>Plug Libraries</li>
+<li>add Plugs assets folder</li>
+<li>create Examples and MyPlugs libraries<ul>
+<li>Examples is force-locked, won't be available for plug creation</li>
+<li>MyPlugs is the startnig library for new user plugs, it contains only 2 blender plugs</li>
+</ul>
+</li>
+<li>CreatePlug</li>
+<li>creates plug from selected object or objects<ul>
+<li>the active will be the plug mesh, any others will be subsets</li>
+</ul>
+</li>
+<li>creates plug handle and enters EDIT mode to finish of the handle<ul>
+<li>the handle mesh should be relatively evenly subdividable</li>
+<li>triangles are fine, n-gons not (as they dont subdivide)</li>
+</ul>
+</li>
+<li>sets isplug and isplughandle object props</li>
+<li>offsets outer edges slightly</li>
+<li>sets xray and wire rendendering</li>
+<li>add uuid object prop<ul>
+<li>may be useful in future</li>
+</ul>
+</li>
+<li>add isplugsubset prop</li>
+<li>make handle invisible to render</li>
+<li>this way it doesnt need to be done for icon rendering</li>
+<li>fix issue where the handle location is not properly updated due to the hooks</li>
+<li>automatically set the object.MM.hasfillet prop on the plug object</li>
+<li>add AddPlugToLibrary</li>
+<li>allows plug library selection and optionally setting plug name</li>
+<li>figures out new plug index and builds blend and icon path</li>
+<li>save currentblend to be loaded again at the end</li>
+<li>render icon by appending the scene from plug_icon_render.blend</li>
+<li>delete everything but the plug objs and save the plug blend</li>
+<li>add indicator HUD support and props to toggle them in draw()</li>
+<li>fix issue where the handle location is not properly updated due to the hooks</li>
+<li>automatically focus viewport on handle in case you open the plug blend manually</li>
+<li>SetPlugProps</li>
+<li>manually checks and sets plug props of selected object</li>
+<li>poll whether 1 object is selected</li>
+<li>DebugPlugProps</li>
+<li>check the active objec for plug props</li>
+<li>checks the actives children as well</li>
+<li>so, ideally, you'd select the handle and run the tool, as the handle is the most parent object of a plug</li>
+<li>ClearPlugProps
+        - useful for array plug creation when the caps of the array are created from plug meshes, that already have their props</li>
+<li>
+<p>add alsoclearvgroups prop, it defaults to True</p>
+</li>
+<li>
+<p>Fuse</p>
+</li>
+<li>save force_projected_loop prop</li>
+<li>Chamfer</li>
+<li>optionally create normal transfer vertex groups</li>
+<li>Offset</li>
+<li>optionally create normal transfer vertex group</li>
+<li>CreateStash</li>
+<li>separate out create_stash() from operator class</li>
+<li>NormalTransfer</li>
+<li>hide various debug outpuf debug is False</li>
+<li>separate out normal_transfer() and add_normal_transfer_mod() from operater class</li>
+<li>NormalClear</li>
+<li>separate out normal_clear() from operator class</li>
+<li>Real Mirror</li>
+<li>converts mirror mods into real independent objects</li>
+<li>does proper mirrored origin, orientation and custom normals</li>
+<li>add poll checking for active mirror mods</li>
+<li>fix 180 degree rotation issue</li>
+<li>allow empty targets(mirroring across itself)</li>
+<li>support multiple axes</li>
+<li>support multiple mirror mods</li>
+<li>add optional uv offset on the mirrored objects</li>
+<li>optionally create group for the mirrored objects</li>
+<li>optionally apply data transfer mods for the mirrored objects</li>
+<li>fix issue if obj received custom normals from applying data transfer<ul>
+<li>in this case the loop/normal data needs to be received from the mirror object, not from the original</li>
+</ul>
+</li>
+<li>VSelect</li>
+<li>it's like select linked for vertex groups</li>
+<li>select vert/edge/polygon</li>
+<li>run VSelect and the enite vertex group the selections belongs to will be selected<ul>
+<li>if there are multiple, you can scroll through them</li>
+</ul>
+</li>
+<li>if nothing is selected you can scroll through all of the vertex groups of the object</li>
+<li>unlike select similar set to VGROUP, this works on all selection types, and supports mulitple vgroups per selection</li>
+<li>keep it all in edit mode bmesh instead of mode switching</li>
+<li>make it modal</li>
+<li>drawHUD and drawVIEW3D</li>
+<li>individual group toggle</li>
+<li>all group toggle/invert</li>
+<li>instead of returning the vgroups common to all selected elements, return all vgroups in the selection</li>
+<li>this allows for easily selecting multiple specific groups by using on vert/edge/poly per group, coupled with the A modal toggle</li>
+<li>DrawSymmetrize</li>
+<li>get the vert ids by importing from symmetrize.py instead of passing them in as an str argumment</li>
+<li>utils.registration.py</li>
+<li>registers, unregisters and reloads plug libraries</li>
+<li>change insert function template in utils.registration to support plug removal via modal dialog operator RemovePlug()</li>
+<li>add bpy.types.Scene.newpllugidx prop<ul>
+<li>automatically set bpy.context.scene.newplugidx when bpy.context.scene.pluglibs is changed</li>
+</ul>
+</li>
+<li>utils.append.py</li>
+<li>has methods for group, world and scene appending (turned out only scene was needed for plug icon rendering)</li>
+<li>utils.devloper.Benchmark</li>
+<li>prints time for each Benchmark.meassure()</li>
+<li>prints total time via Benchmark.total()</li>
+<li>compares time to previous tool run execution</li>
+<li>add do_benchmark toggle</li>
+<li>utils.support.add_vgroup()</li>
+<li>create vgroup and make it active using bpy.ops, if no vertex id list is passed in</li>
+<li>utils.support.py</li>
+<li>add .parent() and unparent()</li>
+<li>properties.py</li>
+<li>introduce isstash, isplug and isplughandle props</li>
+<li>add isplugdeformer object property</li>
+<li>preferences</li>
+<li>add showplugcount prop</li>
+<li>add plugfadingwire prop<ul>
+<li>be default this is off and so the fading wire option will not be available</li>
+<li>this is because a weird crash to desktop bug appeared</li>
+<li>it happens if you plug the only object in a scene and change the wire/fading fire options</li>
+<li>if you comment out the fading wire code, the issue vanishes, so it is related to this</li>
+<li>the weird part is, if you add a stash or a second object to the scene, verything is fine</li>
+</ul>
+</li>
+<li>add pluglibsCOL and pluglibsIDX</li>
+<li>create Plugs tab</li>
+<li>add plugsinlibraryscale, showpluglabels and plugxraypreview prefs</li>
+<li>add plurgremovemode prop to menu</li>
+<li>add showplugbutton and showplugbuttonname props to prefs</li>
+<li>init.py</li>
+<li>add PlugLibsCollection() and PLugLibsUIList() to init.py</li>
+<li>UI</li>
+<li>add check() to all ops that have a draw function
+        - this ensures redrawing when props change</li>
+<li>add Plug tool</li>
+<li>add Plug Libraries</li>
+<li>add plurgremovemode prop to menu</li>
+<li>create Plug Utils submenu<ul>
+<li>add Create Plug, Set Plug Props, Clear Plug Props and Debug Plug Props</li>
+</ul>
+</li>
+</ul>
+<h2 id="v0513">v0.5.13</h2>
+<blockquote>
+<p>2018-06-02</p>
+</blockquote>
+<ul>
+<li>Fuse</li>
+<li>add Fuse prop “Projected Loop”<ul>
+<li>forces rails to not be aligned with existing loop edges</li>
+</ul>
+</li>
+<li>add Conform tool<ul>
+<li>shrink wrap with stash as target</li>
+<li>conform selection to stash object</li>
+</ul>
+</li>
+<li>add Boolean Cleanup tool<ul>
+<li>used to fix verts of an edge loop in place based on connected edges on the selected side</li>
+<li>merge the other verts based on a threshold</li>
+<li>can be used on cyclic and non-cyclic edge selections</li>
+</ul>
+</li>
+<li>add Chamfer tool<ul>
+<li>per side loop slide toggle</li>
+<li>2 face methods:<ul>
+<li>REBUILD with the optional Merge Perimeter prop</li>
+<li>REPLACE with the Reach prop</li>
+</ul>
+</li>
+<li>the methods are different ways of dealing with geometry outside of the chamfer, which the chamfer may overlap depending on the width</li>
+<li>REBUILD should be used if the chamfer doesnt or only minimally overlaps</li>
+<li>REPLACE can be used if the chamfer overlaps a lot</li>
+</ul>
+</li>
+<li>add Offset tool<ul>
+<li>similar to Chamfer, but offsets an edge in the chosen direction</li>
+</ul>
+</li>
+<li>add LoopTools modal wrappers for Circle and Relax<ul>
+<li>only availble the LoopTools addon is activated</li>
+</ul>
+</li>
+<li>Symmetrize()<ul>
+<li>fix exception when fix center seam is turned on, but there aren’t any center verts</li>
+</ul>
+</li>
+<li>add version string to registration terminal output</li>
+</ul>
+<h2 id="v0512">v0.5.12</h2>
+<blockquote>
+<p>2018-05-22</p>
+</blockquote>
+<ul>
+<li>added Merge option to Unf*ck</li>
+<li>Added Stashes (states of an object at a user set time)</li>
+<li>Create Stash<ul>
+<li>from active</li>
+<li>from other(s) to active</li>
+</ul>
+</li>
+<li>View Stashes<ul>
+<li>you can also retrieve stashes</li>
+</ul>
+</li>
+<li>Clear Stashes<ul>
+<li>individual or all</li>
+</ul>
+</li>
+<li>Transfer Stashes<ul>
+<li>from other to active</li>
+</ul>
+</li>
+<li>there’s a persistent HUD for stashes (top of the screen)<ul>
+<li>shows stashes count and invalid stashes count</li>
+</ul>
+</li>
+<li>added NormalTrasnfer tool</li>
+<li>transfers normals from a stash</li>
+<li>stash normals can be flipped from the tool’s modal using F</li>
+<li>the stash can also be smoothed if you have stashed an unsmoothed obj, using S in the modal, this has no ui representation yet, as I’m not sure what to display</li>
+<li>added Symmetrize tool</li>
+<li>it’s Blender’s symmetrize op, with the added ability to mirror custom normals</li>
+<li>default keymaps are Alt + X, Alt + Y and Alt + Y<ul>
+<li>change in prefs</li>
+</ul>
+</li>
+<li>default directions is + to - for X and Z, and - to + for Y<ul>
+<li>change in prefs (unfold the keymap)</li>
+</ul>
+</li>
+<li>when symmetrizing meshes with custom normals, Symmetrize will creates a pre-symmetrize stash<ul>
+<li>this is because of the clear center seam Transfer option, you may want to use</li>
+<li>you probably want to regularly clean out those stashes if they accumulate</li>
+<li>although you don’t have to, a good strategy is probably to leave all the normal manipulation and transferig to the end, just remember to stash you model before you mess up the surfaces and you will be good</li>
+</ul>
+</li>
+<li>MESHmachine menu:</li>
+<li>loops and normal tools have been put in sub menus</li>
+<li>stash tools are available from edit and object mode</li>
+<li>change mouse_wrap to hopefully fix a bug, that I can’t reproduce</li>
+</ul>
+<h2 id="v0511">v0.5.11</h2>
+<blockquote>
+<p>2018-05-14</p>
+</blockquote>
+<ul>
+<li>added Normal Flatten tool</li>
+<li>used to fix shading issues, especially for ngons, that should be flat</li>
+<li>has angle threshold value and presets</li>
+<li>only boundary faces angled below the threshold are taken into account</li>
+<li>boundary faces separated by a sharp edge are also ignored</li>
+<li>has “clear existing normals” toggle, which is as if the the Normal Clear tool were to be run before running Normal Flatten</li>
+<li>added Normal Straighten tool</li>
+<li>used to fix angular shading on straight sections of Fuse/Bevel/Bridge surfaces</li>
+<li>its effect is less noticable than Normal Flatten, but its something hat can be done in the pursuit of normal perfection</li>
+<li>added Normal Clear tool</li>
+<li>does not remove split normal data completely like Blender’ss customdata_custom_splitnormals_clear() operator does</li>
+<li>instead works on the selection only</li>
+<li>improved handling of an issue in Unfuse</li>
+</ul>
+<h2 id="v0510">v0.5.10</h2>
+<blockquote>
+<p>2018-05-08</p>
+</blockquote>
+<ul>
+<li>fix HUD offsets, Tape offsets and mousewrap issues with some layouts</li>
+<li>add Tape stroke undo/redo (ctrl + z/ctrl + shift + z, F1/F2)</li>
+<li>add flatten face/vert mode to subtitle in HUD</li>
+<li>QuadCorner slipped through the cracks:</li>
+<li>add mouse wrap</li>
+<li>add pen tablet support</li>
+</ul>
+<h2 id="v059">v0.5.9</h2>
+<blockquote>
+<p>2018-05-06</p>
+</blockquote>
+<ul>
+<li>make Flatten, Unbvel, Unchamfer and Unfuse modals too</li>
+<li>add ability to toggle modal behavior per tool</li>
+<li>fix issue in Unbevel, in LOOP mode, if reverse was enabled, which</li>
+<li>don't show mesh split or delete in the special menu</li>
+</ul>
+<h2 id="v058">v0.5.8</h2>
+<blockquote>
+<p>2018-05-03</p>
+</blockquote>
+<ul>
+<li>make Flatten, Unbvel, Unchamfer and Unfuse modals too</li>
+<li>add ability to toggle modal behavior per tool</li>
+<li>fix issue in Unbevel, in LOOP mode, if reverse was enabled, which</li>
+<li>don't show mesh split or delete in the special menu</li>
+</ul>
+<h2 id="v057">v0.5.7</h2>
+<blockquote>
+<p>2018-05-02</p>
+</blockquote>
+<ul>
+<li>
+<p>Fuse + Refuse</p>
+<ul>
+<li>fix crash to desktop bug in modal Fuse/Renfuse, when the initial run caused an exception</li>
+<li>turn off show_modal_ops (in the menu) by default</li>
+</ul>
+</li>
+<li>
+<p>UI:</p>
+</li>
+<li>add viewport contolls while in a modal, by using PASSING_THROUGH when MIDDLEMOUSE is pressed</li>
+</ul>
+<h2 id="v056">v0.5.6</h2>
+<blockquote>
+<p>2018-05-01</p>
+</blockquote>
+<ul>
+<li>improve error handling</li>
+<li>improve modals and HUDs</li>
+<li>rename the NEW/v0.6 handle method to FACE and the OLD/v0.5 handle method to LOOP</li>
+<li>basically, switch to LOOP when FACE fails</li>
+<li>improve modal performance</li>
+<li>fix projected_loop edge case, where the loop woud go in the wrong direction</li>
+<li>add HUD Corner position</li>
+</ul>
+<h2 id="v055">v0.5.5</h2>
+<blockquote>
+<p>2018-04-30</p>
+</blockquote>
+<ul>
+<li>add Average Tension setting for Fuse/Refuse</li>
+<li>improve intersection handles (NEW/v.0.6)</li>
+<li>add modal Fuse, Refuse, QuadCorner, Unf*ck</li>
+<li>add modal HUDs</li>
+<li>add Mark/Clear Loop, these are just freestyle edges for now</li>
+<li>used to force certain edges as loop edges (if one is marked)</li>
+<li>used to exclude certain edges from loop edges (if more than one is marked)</li>
+<li>lower Unf*ck minimium vert count by one</li>
+<li>support QWERTY/QWERTZ keyboard layouts</li>
+<li>QWERTY: x key used for the MESHmachine menu</li>
+<li>XX for delete</li>
+<li>QWERTZ: y key used for the MESHmachine menu</li>
+<li>YY for mesh split</li>
+<li>modals can be turned on/off in the prefs</li>
+<li>can also be turned on/off in the MESHmachine menu, if enabled</li>
+<li>HUD position can be FIXED or FLOATING</li>
+<li>HUD color can be changed in prefs</li>
+<li>HUD hints can be turned on/off in prefs</li>
+</ul>
+<h2 id="v054">v0.5.4</h2>
+<blockquote>
+<p>2018-04-26</p>
+</blockquote>
+<ul>
+<li>add ‘Modal Operators’ toggle to prefs and MESHmachine menu</li>
+<li>default ON</li>
+<li>modal Change Width</li>
+<li>mouse Left/Right for width</li>
+<li>R key for reverse (on single polygon chamfers)</li>
+<li>modal Turn Corner</li>
+<li>mouse Left/Right for width of “short side”</li>
+<li>mouse wheel up/down to select one of two corner orientations</li>
+<li>S key to set sharps (default ON)</li>
+<li>B key to set bweights (default OFF)</li>
+<li>add sharps and bweight to TurnCorner()</li>
+</ul>
+<h2 id="v053">v0.5.3</h2>
+<blockquote>
+<p>2018-04-24
+* fix issue in QuadCorner caused by recently introduced intersection handles</p>
+</blockquote>
+<h2 id="v052">v0.5.2</h2>
+<blockquote>
+<p>2018-04-24</p>
+</blockquote>
+<ul>
+<li>Unfuse</li>
+<li>properly set boundary sharps for Unfuse()</li>
+<li>add set Sharps and Beweights options to Unbevel() and Unfuse()</li>
+<li>Refuse</li>
+<li>fix bweights not being properly set based on loop edges</li>
+<li>Unbevel</li>
+<li>add the new intersection method to Unbevel</li>
+<li>
+<p>set sharps when unbeveling</p>
+</li>
+<li>
+<p>fix exception when running ChangeWidth(), Fuse() and Unchamfer() on cyclic fuse selections</p>
+</li>
+<li>fix leaving edit mode when running those same ops on non chamfer selections</li>
+</ul>
+<h2 id="v051">v0.5.1</h2>
+<blockquote>
+<p>2018-04-23</p>
+</blockquote>
+<ul>
+<li>add alternative handle creation method create_intersection_handles(), based on projected loops interecting implicit faces create from the average normals of v.link_faces</li>
+<li>add alternative unchamfer() utilizing the intersection handles</li>
+<li>add unchamfer method selection</li>
+<li>make new unchamfer method primary</li>
+<li>disable force_projected in get_loops() for the new method</li>
+<li>add fallback to create_intersection_handles() which uses the old create_handles() for each failing caseA</li>
+<li>remap the average/center value used to lerp between the two handle locations in unchamfer_intersection()</li>
+<li>optionally add MESHmache menu to Specials menu</li>
+<li>add the new handle method for fuse and unfuse</li>
+<li>remove boundary rail bweigths and set sweep beweights according to biggest value of loop edges</li>
+<li>move segments &gt; 0 check to the beginning</li>
+<li>fix issue when trying to sett beweight, while both loop edges were projected (and so no longer exist)</li>
+<li>break out of biggles_angle_loop() if the two top angles are too close together</li>
+</ul>
+<h2 id="v05">v0.5</h2>
+<blockquote>
+<p>2018-04-18</p>
+</blockquote>
+<ul>
+<li>initial release</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="circle_relax.html" class="btn btn-neutral float-left" title="Circle and Relax"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="circle_relax.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme_extra.js" defer></script>
+    <script src="js/theme.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

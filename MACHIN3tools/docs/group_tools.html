@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://machin3.io/MACHIN3tools/docs/group_tools.html" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Group Tools <sup>partly Deus Ex</sup> - MACHIN3tools</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Group Tools \u003csup\u003epartly Deus Ex\u003c/sup\u003e";
+        var mkdocs_page_input_path = "group_tools.md";
+        var mkdocs_page_url = "/MACHIN3tools/docs/group_tools.html";
+      </script>
+    
+    <script src="js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> MACHIN3tools
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Get Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="index.html">MACHIN3tools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="whatsnew.html">What's new?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Objects</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="quad_sphere.html">Quad Sphere</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tools</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="smart_vert.html">Smart Vert</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="smart_edge.html">Smart Edge</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="smart_face.html">Smart Face</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="clean_up.html">Clean Up</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="edge_constrained_transform.html">Edge Constrained Transform <sup>Deus Ex</sup></a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="extrude.html">Extrude <sup>partly Deus Ex</sup></a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="focus.html">Focus</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="mirror.html">Mirror</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="align.html">Align</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="group_tools.html">Group Tools <sup>partly Deus Ex</sup></a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#menu">Menu</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#preferences">Preferences</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#group-introduction">Group Introduction</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#select-group">Select Group</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#group-relationships-and-group-origin-adjustment">Group Relationships and Group Origin Adjustment</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#group-mode">Group Mode</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#group-poses-and-gizmos">Group Poses and Gizmos</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#setup-group-gizmos">Setup Group Gizmos</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#batch-poses">Batch Poses</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="smart_drive.html">Smart Drive</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="assetbrowser_tools.html">Assetbrowser Tools<sup>partly Deus Ex</sup></a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="filebrowser_tools.html">Filebrowser Tools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="toggle_region.html">Toggle Region</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="render.html">Render</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="smooth.html">Smooth</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="clipping_toggle.html">Clipping Toggle</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="surface_slide.html">Surface Slide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="material_picker.html">Material Picker</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="apply_transformation.html">Apply Transform</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="select.html">Select</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="mesh_cut.html">Mesh Cut</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="thread.html">Thread</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="unity.html">Unity</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="customize.html">Customize</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Pie Menus</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_modes.html">Modes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_save.html">Save</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_shading.html">Shading</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_views.html">Views</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_align.html">Align</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_cursor_origin.html">Cursor and Origin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_transform.html">Transform</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_snapping.html">Snapping</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_collections.html">Collections</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_workspace.html">Workspace</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_tools.html">Tools</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Development</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">MACHIN3tools</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Tools &raquo;</li>
+      <li>Group Tools <sup>partly Deus Ex</sup></li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="group-tools">Group Tools</h2>
+<p><strong>shortcut</strong> <code>CTRL + G</code> in <em>Object Mode</em> to run the <em>Group tool</em><br />
+<strong>shortcut</strong> <code>SHIFT + dbl LMB</code> in <em>Object Mode</em> to run the <em>Select Group</em> tool<br />
+<strong>shortcut</strong> <code>1</code> in the <em>Outliner</em> to toggle into or out of <em>Group Mode</em><br />
+<strong>shortcut</strong> <code>2</code> in the <em>Outliner</em> to expand it <br />
+<strong>shortcut</strong> <code>3</code> in the <em>Outliner</em> to collapse it <br />
+<strong>shortcut</strong> <code>4</code> in the <em>Outliner</em> to toggle display of parenting</p>
+<p>The <strong>Group</strong> tool-set allows for scene organization using empties as parents.</p>
+<!-- [Andrew Hodgson](https://www.artstation.com/andre-hodgson)'s video on [Groups in Maya and why Collections in Blender are not a replacement](https://www.youtube.com/watch?v=P_RcY0wtfSg), is what really got this started, so shout out - and thanks to - him. -->
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><em>Group Gizmos</em> and <em>Group Poses</em> are only available in the <a href="faq.html#what-is-prime-and-deusex"><em>Deus Ex</em></a> variant of MACHIN3tools.</p>
+</div>
+<h3 id="menu">Menu</h3>
+<p>3D View Sidebar &gt; MACHIN3 Tab &gt; MACHIN3tools Panel &gt; Group Tools<br />
+Object Context Menu<br />
+<a href="pie_modes.html">Modes Pie</a>  </p>
+<h3 id="preferences">Preferences</h3>
+<p><a href="img/group/preferences.png"><img alt="GroupPreferences" src="img/group/preferences.png" /></a>
+<em>Group Default Preferences</em></p>
+<h3 id="group-introduction">Group Introduction</h3>
+<div class="video">
+  <iframe src="https://www.youtube.com/embed/QjT5DmsIJUQ?rel=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen seamless frameBorder="0"></iframe>
+</div>
+
+<h3 id="select-group">Select Group</h3>
+<p>Selecting Groups behaves slightly differently in <em>Local View</em>, and automatically brings Group objects into <em>Local View</em>, while avoiding <em>Recursive Group Selection</em>, unless forced via the <code>CTRL</code> mod key.</p>
+<div class='video'>
+    <iframe src='https://www.youtube.com/embed/rrZGuH4kAho?rel=0' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' allowfullscreen seamless frameBorder='0'></iframe>
+</div>
+
+<h3 id="group-relationships-and-group-origin-adjustment">Group Relationships and Group Origin Adjustment</h3>
+<p>Group Relationships can be visualized, by drawing group hierarchies in the 3D View.<br />
+This done automatically when entering <em>Group Origin Adjustment Mode</em> or <a href="#group-mode"><em>Outliner Group Mode</em></a>.</p>
+<div class='video'>
+    <iframe src='https://www.youtube.com/embed/PEgsyw6RK7I?rel=0' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' allowfullscreen seamless frameBorder='0'></iframe>
+</div>
+
+<h3 id="group-mode">Group Mode</h3>
+<p>Toggling into Group Mode - by default via the <code>1</code> key will now automatically toggle group selection behavior such as <em>Group Auto Select</em> and <em>Group Recursive Select</em>, as well as ensure <em>Group Empty Visibility</em>. This is fully adjustable in the <a href="preferences.html">addon preferences</a>.</p>
+<p><a href="img/group/group_mode_preferences.png"><img alt="GroupModePreferences" src="img/group/group_mode_preferences.png" /></a>
+<em>Group Mode preferences</em></p>
+<div class='video'>
+    <iframe src='https://www.youtube.com/embed/BE1xl5GwX7I?rel=0' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' allowfullscreen seamless frameBorder='0'></iframe>
+</div>
+
+<div class='video'>
+    <iframe src='https://www.youtube.com/embed/squCbrrWSng?rel=0' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' allowfullscreen seamless frameBorder='0'></iframe>
+</div>
+
+<h3 id="group-poses-and-gizmos">Group Poses and Gizmos</h3>
+<blockquote>
+<p><sup><a href="faq.html#what-is-prime-and-deus-ex">DeusEx</a> only</sup> </p>
+</blockquote>
+<p>In <a href="faq.html#what-is-prime-and-deusex">DeusEx</a>, group empties can activate <em>Group Gizmos</em> - one per axis.  </p>
+<p>This allows for easy <em>rotation</em> of group empties, without having to select them first.<br />
+The intend here is to create a kind of very simple pseudo-rig.</p>
+<p><a href="img/group/transform_group.jpg"><img alt="TransformGroup" src="img/group/transform_group.jpg" /></a>
+<em>Group Transform tool rotating the ears while pre-viewing a pose</em></p>
+<p>What this also allows for is storing specific rotations as <em>Group Poses</em>, which can then easily be retrieved again later.</p>
+<h4 id="setup-group-gizmos">Setup Group Gizmos</h4>
+<p>The <em>Setup Group Gizmos</em> tools allow for easy setup of the group gizmos. With the tool running axes that should get a gizmo can be picked via the <code>X</code> <code>Y</code> or <code>Z</code> keys, or toggled based on the view's direction via the <code>TAB</code> key.  </p>
+<p>See the <em>statusbar</em> for details.</p>
+<div class='video'>
+    <iframe src='https://www.youtube.com/embed/HmBYj2kRyMo' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' allowfullscreen seamless frameBorder='0'></iframe>
+</div>
+
+<h4 id="batch-poses">Batch Poses</h4>
+<p><em>Batch Poses</em> are poses shared and linked across multiple Group Empties or a single <em>Group Hierarchy</em>. <br />
+Using <em>Batch Poses</em> the entire Group can be posed with a single button press.</p>
+<div class='video'>
+    <iframe src='https://www.youtube.com/embed/PiFNwZsnQXs?rel=0' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' allowfullscreen seamless frameBorder='0'></iframe>
+</div>
+
+<p>The Sidebar Panel is where you can name, create (set), retrieve, update or remove poses.</p>
+<p><a href="img/group/sidebar_poses.jpg"><img alt="SidebarBatchPoses" src="img/group/sidebar_poses.jpg" /></a>
+<em>Group (Batch) Poses of the active Group Empty exposed in the 3D view's sidebar</em></p>
+<p>As of MACHIN3tools 1.12, Group tools and various options are exposed in the <a href="pie_modes.html">Modes Pie</a> tool. <br />
+That includes pose access in the <a href="faq.html#what-is-prime-and-deusex">DeusEx</a>, which is <strong>super</strong> convenient.</p>
+<p><a href="img/group/modes_pie_poses.png"><img alt="ModesPiePoses" src="img/group/modes_pie_poses.png" /></a>
+<em>Group (Batch) Poses exposed in the <a href="pie_modes.html">Modes Pie</a></em></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="align.html" class="btn btn-neutral float-left" title="Align"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="smart_drive.html" class="btn btn-neutral float-right" title="Smart Drive">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="align.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="smart_drive.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme_extra.js" defer></script>
+    <script src="js/theme.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

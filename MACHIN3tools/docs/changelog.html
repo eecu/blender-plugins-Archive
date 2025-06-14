@@ -1,0 +1,4500 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://machin3.io/MACHIN3tools/docs/changelog.html" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Changelog - MACHIN3tools</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Changelog";
+        var mkdocs_page_input_path = "changelog.md";
+        var mkdocs_page_url = "/MACHIN3tools/docs/changelog.html";
+      </script>
+    
+    <script src="js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> MACHIN3tools
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Get Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="index.html">MACHIN3tools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="whatsnew.html">What's new?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Objects</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="quad_sphere.html">Quad Sphere</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="smart_vert.html">Smart Vert</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="smart_edge.html">Smart Edge</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="smart_face.html">Smart Face</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="clean_up.html">Clean Up</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="edge_constrained_transform.html">Edge Constrained Transform <sup>Deus Ex</sup></a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="extrude.html">Extrude <sup>partly Deus Ex</sup></a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="focus.html">Focus</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="mirror.html">Mirror</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="align.html">Align</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="group_tools.html">Group Tools <sup>partly Deus Ex</sup></a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="smart_drive.html">Smart Drive</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="assetbrowser_tools.html">Assetbrowser Tools<sup>partly Deus Ex</sup></a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="filebrowser_tools.html">Filebrowser Tools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="toggle_region.html">Toggle Region</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="render.html">Render</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="smooth.html">Smooth</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="clipping_toggle.html">Clipping Toggle</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="surface_slide.html">Surface Slide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="material_picker.html">Material Picker</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="apply_transformation.html">Apply Transform</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="select.html">Select</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="mesh_cut.html">Mesh Cut</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="thread.html">Thread</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="unity.html">Unity</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="customize.html">Customize</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Pie Menus</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_modes.html">Modes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_save.html">Save</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_shading.html">Shading</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_views.html">Views</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_align.html">Align</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_cursor_origin.html">Cursor and Origin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_transform.html">Transform</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_snapping.html">Snapping</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_collections.html">Collections</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_workspace.html">Workspace</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_tools.html">Tools</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Development</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="changelog.html">Changelog</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#112">1.12</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#deusex">DeusEx</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#prime">Prime</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#1111">1.11.1</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#111">1.11</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#1101">1.10.1</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#110">1.10</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#19">1.9</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#18">1.8</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#deusex_1">DeusEx</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#prime-previously-standard">Prime previously Standard</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#17">1.7</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#standard">Standard</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#deusex_2">DeusEx</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v16">v1.6</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v15">v1.5</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v141">v1.4.1</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v14">v1.4</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#standard_1">Standard</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#deusex_3">DeusEx</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v13">v1.3</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v12">v1.2</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v111">v1.1.1</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v11">v1.1</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#standard_2">Standard</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#deusex_4">DeusEx</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v102">v1.0.2</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v101">v1.0.1</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v10">v1.0</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#standard_3">Standard</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#deusex_5">DeusEx</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v0100">v0.10.0</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v090">v0.9.0</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#standard_4">Standard</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#deusex_6">DeusEx</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v080">v0.8.0</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#deusex_7">DeusEx</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#standard_5">Standard</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v071">v0.7.1</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v070">v0.7.0</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v060">v0.6.0</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v050">v0.5.0</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v041">v0.4.1</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v04">v0.4</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v0315">v0.3.15</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v0314">v0.3.14</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v0313">v0.3.13</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v0312">v0.3.12</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v0311">v0.3.11</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v0310">v0.3.10</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v039">v0.3.9</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v038">v0.3.8</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v037">v0.3.7</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v036">v0.3.6</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v035a">v0.3.5a</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v035">v0.3.5</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v034">v0.3.4</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v033">v0.3.3</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v032">v0.3.2</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v031b">v0.3.1b</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v031a">v0.3.1a</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v031">v0.3.1</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v03">v0.3</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">MACHIN3tools</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Development &raquo;</li>
+      <li>Changelog</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="_1"></h1>
+<h2 id="112">1.12</h2>
+<blockquote>
+<p>2025-05-21</p>
+</blockquote>
+<h3 id="deusex">DeusEx</h3>
+<ul>
+<li>
+<p>Assetbrowser tools</p>
+<ul>
+<li>
+<p>add EditAssembly and FinishAssemblyEdit tools</p>
+<ul>
+<li>access assembly's instance collection objects and manipulate them, then return to the previous outside-of-the-assembly state again</li>
+<li>indicate AssemblyEdit mode via red region border, and red FinishAssembly button in top bar</li>
+<li>transform the cursor relatively into the assembly edit mode, and back out again</li>
+<li>
+<p>fully support groups and wire objects within the assembly and adjusting their visibility accordingly to avoid outside-of-the-assembly clutter</p>
+</li>
+<li>
+<p>support user made instance collections too</p>
+</li>
+<li>support linked assemblies or instance collections<ul>
+<li>NOTE: you can peak inside, but can't change anything permanently, until you make it local</li>
+<li>distinguish linked and unlinked ones with a red vs green Edit icon</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>add CreateAssemblyVariant tool</p>
+<ul>
+<li>creates an independent duplicate</li>
+<li>optionally with linked object data via <code>ALT</code> mod key</li>
+</ul>
+</li>
+<li>
+<p>add TurnAssemblyIntoAsset tool</p>
+<ul>
+<li>turn any Assembly or user made Instance Collection into an Asset with Thumbnail</li>
+<li>be default with catalog, tags and meta data, but can be skipped/postponed via <code>ALT</code> mod key</li>
+</ul>
+</li>
+<li>
+<p>SetAssemblyOrigin tool (previously SetInstanceCollectionOffset)</p>
+<ul>
+<li>support setting assembly origin rotation now<ul>
+<li>by default both - location and rotation - are set now, either from the cursor or another object<ul>
+<li>use <code>ALT</code> or <code>CTR</code> mod keys, or redo panel to set only rotation, or only location</li>
+</ul>
+</li>
+<li>NOTE: since Blender only supports a translation offset for instance collections, assembly origin orientation is changed, by manipulating instance collection root object locations and rotations within the collection</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>UpdateThumbnail tool</p>
+<ul>
+<li>add Thumbnail Helper Gizmo to fine-tune automatic framing<ul>
+<li>NOTE: framing of the thumbnail is internally based on bbox(es)<ul>
+<li>but they may not represent the ideal or desired space the asset should occupy within a thumbnail</li>
+<li>so the helper gizmo will overwrite the asset's bbox</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Group tools </p>
+<ul>
+<li>
+<p>Group Mode (Outliner)</p>
+<ul>
+<li>disable group gizmos when entering Group Mode  in the outliner</li>
+<li>expose group gizmo toggle in outliner header</li>
+</ul>
+</li>
+<li>
+<p>Group Origin Adjustment Mode</p>
+<ul>
+<li>when entering disable potential axes locks (set up by the SetupGroupGizmos tool) and disable group gizmos too</li>
+<li>when finishing re-enable axes locks and gizmos, and update the Inception pose if present<ul>
+<li>NOTE: it's still highly recommend to finalize the group origin BEFORE your create any group poses</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>SetupGroupGizmos tool </p>
+<ul>
+<li>actually disable group empty's axes locks, when finishing the op with locks turned off</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Modes Pie</p>
+<ul>
+<li>group empties<ul>
+<li>expose Group Poses<ul>
+<li>adding, setting and updating of group poses, including batch poses</li>
+</ul>
+</li>
+<li>expose Setup Gizmos tool</li>
+<li>expose Group Gizmo axes and toggles</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Save Pie</p>
+<ul>
+<li>add FinishAssemblyEdit button, replacing the CreateAssembly button, when in EditAssembly mode</li>
+</ul>
+</li>
+<li>
+<p>Cursor and Origin Pie</p>
+<ul>
+<li>support changing Assembly/Instance Collection origins, including <em>only location</em> or <em>only rotation</em> via <code>ALT</code> and <code>CTRL</code> mod keys</li>
+</ul>
+</li>
+<li>
+<p>TransformGroup, SetupGroupGizmos, TransformEdgeConstrained Transform and PunchIt tools</p>
+<ul>
+<li>update status bars of all modal tools, support 4.3's extra wide even key icons</li>
+</ul>
+</li>
+<li>
+<p>TransformGroup, SetupGroupGizmos, TransformEdgeConstrained Transform tools</p>
+<ul>
+<li>support apple magic mouse <em>scrolling</em></li>
+</ul>
+</li>
+<li>
+<p>TransformEdgeConstrained and PunchIt tools</p>
+</li>
+<li>flesh out and modernize HUD</li>
+<li>
+<p>draw HUD and 3D view elements on active 3D view only</p>
+</li>
+<li>
+<p>TransformEdgeConstrained tool</p>
+<ul>
+<li>add missing tooltip</li>
+<li>expose at bottom of native <code>CTRL + E</code> <em>Edge Context menu</em></li>
+</ul>
+</li>
+<li>
+<p>sidebar</p>
+<ul>
+<li>
+<p>Group tools</p>
+<ul>
+<li>move active object's group gizmo settings and poses into sub-panels</li>
+</ul>
+</li>
+<li>
+<p>Assetbrowser tools</p>
+<ul>
+<li>expose EditAssembly and FinishAssemblyEdit buttons</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>addon preferences</p>
+<ul>
+<li>activate Group tools and Assetbrowser tools by default (DeusEx only)</li>
+</ul>
+</li>
+</ul>
+<h3 id="prime">Prime</h3>
+<ul>
+<li>
+<p>Assetbrowser tools</p>
+<ul>
+<li>
+<p>CreateAssemblyAsset tool</p>
+<ul>
+<li>support assembly/asset creation of objects with <em>severely hidden</em> children (in excluded or hidden collections)</li>
+<li>support and default to keeping decal backups and stash objects again<ul>
+<li>and only expose the option if any are present at all</li>
+</ul>
+</li>
+<li>indicate entire assembly asset object count</li>
+<li>support assembly/asset creation from selection only (and so for a part of a hierarchy only)<ul>
+<li>previously - for selection convenience - the entire object hierarchy determined and used for assembly/asset creation</li>
+<li>now you can optionally create assemblies/assets from parts only, for instance, only the thigh of a robot leg</li>
+</ul>
+</li>
+<li>support assembly/asset creation without duplication (enable in addon prefs)</li>
+<li>support adding tags and meta data</li>
+<li>base average assembly origin location on non-wire objects preferably</li>
+<li>improve main <em>_Assembly</em> collection creation (previously called <em>_Assets</em>), and support multiple (per-scene) across a single blend file</li>
+<li>rename and invert behavior of previous <em>Unlink Asset</em> prop to <em>Drop Asset into Scene</em></li>
+<li>set collection colors, green for the main <em>_Assemblies</em> collection, orange for actual assembly asset collections</li>
+<li>with a single asset browser open at time of asset creation select 'All' pseudo catalog in 'Current File' library</li>
+</ul>
+</li>
+<li>
+<p>add ResetAssemblyOrigin tool </p>
+<ul>
+<li>zero out collection's <code>instance_offset</code> and compensate collection objects accordingly<ul>
+<li>this ensures the assembly's origin is exactly in the world origin within the instance collection</li>
+</ul>
+</li>
+<li>support user made instance collections too</li>
+</ul>
+</li>
+<li>
+<p>add CleanNonAssets tool </p>
+<ul>
+<li>used to prepare a file for saving in an asset library, avoiding file bloat</li>
+<li>removes everything in a blend file that is not an asset or related to one<ul>
+<li>also keeps fake user data, that can optionally be removed manually</li>
+</ul>
+</li>
+<li>lays out all object and collection assets and fake users on the view layer<ul>
+<li>Assemblies get sorted by size, and are distributed on thew X axis</li>
+</ul>
+</li>
+<li>organizes objects and collections into three main collections: _Assemblies, _Assets, _FakeUsers<ul>
+<li>sort DECALmachine backups and MESHmachine stash objects into dedicated sub-collections</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>SetAssemblyOrigin tool (previously SetInstanceCollectionOffset)</p>
+<ul>
+<li>default to work relatively to the active assembly/instance collection empty<ul>
+<li>legacy behavior (relative to original objects) can be enabled from redo panel or via 'SHIFT' mod key</li>
+</ul>
+</li>
+<li>support user made instance collections too</li>
+</ul>
+</li>
+<li>
+<p>UpdateThumbnail tool</p>
+<ul>
+<li>support NODETREE assets</li>
+</ul>
+</li>
+<li>
+<p>DisassembleAssembly tool </p>
+<ul>
+<li>support disassembling instance collections with child collections and their contained objects<ul>
+<li>NOTE: assembly assets so far only ever contain on collection, due to <a href="https://projects.blender.org/blender/blender/issues/136100">this Blender bug</a> </li>
+</ul>
+</li>
+<li>sort disassembled decals (from DECALmachine) into decal collections, depending on DM's collection settings</li>
+</ul>
+</li>
+<li>
+<p>assetbrowser bookmarks bar</p>
+<ul>
+<li>avoid unnecessary changes to capitalization of user library names</li>
+<li>fix exception when Filebrowser tools are not active also</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Group tools</p>
+<ul>
+<li>
+<p>support drawing group relationships</p>
+<ul>
+<li>draw group origins and distinguish between active and other groups by color</li>
+<li>draw lines visualising parenting hierarchies</li>
+<li>optionally draw lines to group objects</li>
+<li>optionally draw the active group, useful for massive scenes with thousands of objects, that would otherwise slow things down</li>
+</ul>
+</li>
+<li>
+<p>Outliner</p>
+<ul>
+<li>expose parenting button to visually indicate if object parenting is shown or not</li>
+<li>significantly flesh out Group Mode (toggled via <code>1</code> key by default)<ul>
+<li>indicate if you are in group mode via red label in outliner header</li>
+<li>automatically toggle group relationship drawing</li>
+<li>improve outliner layout changes and restoration of initial state when entering/leaving group mode</li>
+<li>by default - when entering group mode - disable auto select, recursive select and group empty hiding<ul>
+<li>disabling auto select in particular, helps manually changing group hierarchies by dragging group empties around in the outliner, and avoids unindented hierarchy changes</li>
+<li>automatically respond to those changes and update internal group properties accordingly, so there is no more need to run the Group Select tool afterwards</li>
+</ul>
+</li>
+<li>avoid applying outliner <em>filter_text</em>, when there are no other empties but group empties or when group prefixes or suffixes are not actually used</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>flesh out Group Origin Adjustment mode</p>
+<ul>
+<li>automatically toggle group relationship drawing<ul>
+<li>and use different colors than when turning it on manually or via Outliner Group mode</li>
+</ul>
+</li>
+<li>disable auto select, recursive select and group empty hiding</li>
+<li>prevent running most group tools in this mode</li>
+<li>prevent toggling auto select and recursive select</li>
+</ul>
+</li>
+<li>
+<p>Ungroup tool</p>
+<ul>
+<li>draw red fading wires to highlight the now ungrouped objects</li>
+<li>draw fading labels to summarize the operation and affected objects</li>
+</ul>
+</li>
+<li>
+<p>SelectGroup tool </p>
+<ul>
+<li>change behavior when in local view<ul>
+<li>always bring the group empty and other group objects into local view now</li>
+<li>ignore recursive select setting, and instead support forcing recursive group selection via CTRL key<ul>
+<li>update tool tip accordingly</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>addon prefs</p>
+<ul>
+<li>control what Outliner Group Mode toggles, and what buttons are shown in the Outliner header</li>
+</ul>
+</li>
+<li>
+<p>fix issue with group auto naming to ensure the group suffix is always added after any potential potential index added by Blender</p>
+</li>
+<li>avoid group creation in linked collection, and pop a fading label about it</li>
+</ul>
+</li>
+<li>
+<p>SelectHierarchy tool </p>
+<ul>
+<li>completely rewrite and support <em>severely hidden</em> objects (those in excluded or hidden collections)<ul>
+<li>in HUD and redo panel indicate how many objects are still hidden, and how to reveal them</li>
+<li>in redo panel offer quick way to reveal and select everything in the hierarchy</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Extrude tools </p>
+<ul>
+<li>expose Blender native Extrude <strong>menu</strong> keymap (in addon pref's Extrude tool settings section)<ul>
+<li>deal with case where it can't be found</li>
+<li>because it was removed</li>
+<li>because of the Industry Compatible keymap (which doesn't set it)</li>
+</ul>
+</li>
+<li>expose Cursor Spin and Punch It (a little) tools at bottom of <code>CTRL + F</code> <em>Face Context menu</em></li>
+</ul>
+</li>
+<li>
+<p>SmartVert tool</p>
+<ul>
+<li>SlideExtend<ul>
+<li>add HUD</li>
+<li>support HyperCursor 0.9.18 changes</li>
+</ul>
+</li>
+<li>make merging UVs optional when merging LAST or CENTER<ul>
+<li>toggle in redo panel</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>SmartFace tool </p>
+<ul>
+<li>add <em>topo mode</em><ul>
+<li>launches modal to immediately position the new face's vert</li>
+<li>preview next vert selection and apply it when finishing or aborting vert translation</li>
+<li>supports Blender's auto merge setting</li>
+<li>optionally disable in addon prefs for legacy behavior, and optionally only enable it when<ul>
+<li>face snapping is used</li>
+<li>when retopology overlay is enabled</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>CleanUp tool </p>
+<ul>
+<li>fix rare exception, when trying to remove redundant verts</li>
+</ul>
+</li>
+<li>
+<p>ApplyTransformations tool</p>
+<ul>
+<li>when applying Scale in addition to compensating Bevel mods, also compensate the following mod types now:<ul>
+<li>Solidify</li>
+<li>Displace</li>
+<li>Welds</li>
+<li>Linear and Linear Hyper Arrays</li>
+<li>Helix Offset in Radial Hyper Arrays</li>
+</ul>
+</li>
+<li>when applying rotation rotate the Linear and Linear Hyper Array offset vectors accordingly to compensate</li>
+<li>support applying transform on parented objects</li>
+<li>in addition to comensating DECALmachine backups, also compensate MESHmachine's stashes now</li>
+<li>improve applying scale/rotation on multiple objects of the same hierarchy</li>
+<li>expose at bottom of the native <code>CTRL + A</code> <em>Apply menu</em> with direct <em>Rotation</em>, <em>Scale</em> and <em>Rotation &amp; Scale</em> buttons</li>
+</ul>
+</li>
+<li>
+<p>MaterialPicker tool</p>
+<ul>
+<li>improve raycasting internals<ul>
+<li>avoid hitting undesired objects when in local view</li>
+<li>avoid hitting wire objects</li>
+</ul>
+</li>
+<li>fix exception picking a material in edit mode</li>
+<li>fix exception picking <em>None</em> material from Assembly/Instance Collection object</li>
+<li>fix material appended from asset browser not being cleared as an asset</li>
+<li>fix import method LINK being used when asset browser is set to FOLLOW_PREFS</li>
+</ul>
+</li>
+<li>
+<p>Thread tool </p>
+<ul>
+<li>add missing tooltip</li>
+<li>draw fading message for illegal selections</li>
+</ul>
+</li>
+<li>
+<p>AlignRelative tool </p>
+<ul>
+<li>add <code>D</code> key as primary instance/duplicate toggle (scrolling still works however)</li>
+<li>flesh out HUD a little more</li>
+<li>draw HUD and 3D view elements on active 3D view only</li>
+<li>add missing tooltip</li>
+</ul>
+</li>
+<li>
+<p>Annotate, AlignRelative and Mirror tools</p>
+<ul>
+<li>support apple magic mouse <em>scrolling</em></li>
+</ul>
+</li>
+<li>
+<p>Mirror tool </p>
+<ul>
+<li>fix mirror object being recognized as misaligned, just because it's scaled differently</li>
+<li>draw HUD and only on active 3D view</li>
+</ul>
+</li>
+<li>
+<p>Filebrowser tools </p>
+<ul>
+<li>AdjustThumbnailSize tool <ul>
+<li>fix thumbnail size not being drawn in some 3d views when dragging size in asset shelf</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Toggle Region tool </p>
+<ul>
+<li>asset shelf toggling is enabled by default now (addon prefs)<ul>
+<li>when asset shelf is present, the shelf will be toggled instead of the asset browser</li>
+</ul>
+</li>
+<li>always restore 'All' pseudo library when either 'All' or 'Unassigned' was set at time of closing asset browser split</li>
+</ul>
+</li>
+<li>
+<p>Filebrowser tools</p>
+<ul>
+<li>when cycling asset libraries via <code>1</code> key select 'All' pseudo catalog too</li>
+</ul>
+</li>
+<li>
+<p>Customize tool </p>
+<ul>
+<li>keymaps<ul>
+<li>change native size 'radial_control' keymaps to use <em>release_confirm</em><ul>
+<li>Sculpt Mode</li>
+<li>Grease Pencil Sculpt Mode</li>
+<li>Grease Pencil Brush Stroke</li>
+<li>Image Paint Brush</li>
+</ul>
+</li>
+<li>re-enable 'mesh.loop_multi_select' keymap<ul>
+<li>now using 'ALT + SHIFT + CLICK_DRAG SOUTH' for loop selection, which conflict with MESHmachine's 'ALT + LMB' select wrapper</li>
+</ul>
+</li>
+<li>disable all hide_collection keymaps</li>
+</ul>
+</li>
+<li>startup file<ul>
+<li>disable showing object content in Outliner</li>
+</ul>
+</li>
+<li>in 4.4 input prefs<ul>
+<li>disable NDOF (Show) Orbit Center</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>AlignRelative, MaterialPick, Mirror, Annotate, SmartVert/Slide Extend tools</p>
+<ul>
+<li>update status bars, support 4.3's extra wide even key icons</li>
+</ul>
+</li>
+<li>
+<p>Modes pie</p>
+<ul>
+<li>support adjustable top button (in addon prefs)<ul>
+<li>previously it always was the <em>Edit</em> button, which is now disabled by default</li>
+<li>support <em>Sculpt</em> button, enabled by default</li>
+<li>with Group tools active, support <em>Group</em>, <em>Group Select</em> and <em>Ungroup</em> at the top, depending on active object/selection</li>
+<li>support showing a stack multiple buttons on top, combining any of the previous<ul>
+<li>NOTE: won't allow quick swiping motion</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>support EditAssembly Button at the bottom and Finish AssemblyEdit button at the top<ul>
+<li>optionally disable in addon prefs, and access from the sidebar, topbar or Save pie</li>
+</ul>
+</li>
+<li>flesh out empty object support<ul>
+<li>regular empties<ul>
+<li>expose empty's display type and display size</li>
+<li>add Groupify tool, when groups tools are enabled, and the active empty has children</li>
+</ul>
+</li>
+<li>image empties<ul>
+<li>expose side, depth, opacity and gizmo properties</li>
+</ul>
+</li>
+<li>group empties<ul>
+<li>expose auto select, recursive select and hide empties settings</li>
+<li>expose group name and size</li>
+<li>expose Origin Adjustment mode toggle</li>
+<li>expose Draw Group Relations toggles</li>
+<li>expose Ungroup tool (optionally)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>in SCULPT mode expose Symmetry, Dyntopo and Remesh options</li>
+<li>add library reload button, if active object is linked or has linked data</li>
+<li>for both <em>Library Reload</em> and <em>MakeLocal</em> buttons, preview EXACTLY what is linked in the tooltip</li>
+</ul>
+</li>
+<li>
+<p>Save pie</p>
+<ul>
+<li>in Image/UV Editor expose<ul>
+<li>save image, save image as, open image, close image, pick image, new image, pack/unpack image and edit image externally</li>
+</ul>
+</li>
+<li>add OpenCurrentDir tool <ul>
+<li>opens current folder in system's file browsers</li>
+<li>when current file is startup file, open Blender's config folder</li>
+</ul>
+</li>
+<li>show * indicators in pie buttons, if blend file or image is unsaved</li>
+<li>expose FBX <em>apply scale all</em> prefs directly in the pie<ul>
+<li>use the unity icon for it</li>
+</ul>
+</li>
+<li>expose CleanNonAssets tool <ul>
+<li>and remove previous 'CTRL' mode of the <em>Save As</em> tool, which could be used for the same purpose (but did it worse)</li>
+</ul>
+</li>
+<li>ScreenCast<ul>
+<li>improve synergy with Screencast Keys extension</li>
+<li>support disabling Screencast Keys, even when MACHIN3tools operator casting is itself no longer active<ul>
+<li>this happens when you start a new file while Screencasting is enabled</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Shading pie</p>
+<ul>
+<li>Shade Smooth/Flat<ul>
+<li>support recursive shading of <em>severely hidden</em> objects (in excluded or hidden collections)</li>
+<li>fix exception when 'boolean_auto_smooth' is disabled</li>
+<li>fix issues with linked objects/data or partial selections, that include linked objects/data</li>
+<li>ALT Smooth mode<ul>
+<li>skip sharpening HyperCursor's edge weight based edge bevels and HyperBevel objects</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>expose <em>Retopology Overlay</em> toggle</li>
+<li>expose Mist Settings when <em>Mist Pass</em> is enabled, and <code>scene.world</code> is set</li>
+<li>optimize when <em>Backface Culling</em> and <em>Face Orientation</em> toggles are shown</li>
+<li>in 4.4, update Bloom Threshold and Size props for new Input types</li>
+</ul>
+</li>
+<li>
+<p>Cursor and Origin pie</p>
+<ul>
+<li>support changing Assembly/Instance Collection origins from here<ul>
+<li>support to Cursor and to Object</li>
+</ul>
+</li>
+<li>support resetting the origin</li>
+</ul>
+</li>
+<li>
+<p>Snapping pie</p>
+<ul>
+<li>expose global <code>use_snap</code> toggle</li>
+<li>expose Snap Preset Targets in addon prefs</li>
+<li>support alternating between SURFACE and FACE_NEAREST snapping toggling the Surface preset button a second time<ul>
+<li>optionally disable in addon prefs</li>
+</ul>
+</li>
+<li>optionally disable fading HUD in addon prefs</li>
+<li>use non-alphabetic sorting order for multiple-snap-element indications at the top of the pie, and in the HUD<ul>
+<li>always sort it VERTEX &gt; EDGE &gt; FACE etc.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Workspace pie</p>
+<ul>
+<li>remember if <code>.alt</code> workspace was last used, and then switch back to it directly the next time</li>
+</ul>
+</li>
+<li>
+<p>Views pie</p>
+<ul>
+<li>Smart Cam<ul>
+<li>if <em>Mist Pass</em> is enabled, enable <code>use_mist</code> Camera Viewport Display option</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Transform pie</p>
+<ul>
+<li>avoid showing empty 3rd box on top for modes other than EDIT_MESH and OBJECT</li>
+</ul>
+</li>
+<li>
+<p>Quad Sphere object</p>
+<ul>
+<li>expose default settings in addon prefs</li>
+<li>support Unwrapping: None, Cross, Cubic, Cylindrical or Spherical</li>
+</ul>
+</li>
+<li>
+<p>sidebar</p>
+<ul>
+<li>modernize using new <code>layout.panel</code> elements</li>
+<li>
+<p>add Get Support and Documentation panels,
+    -both enabled by default, but can be disabled from the Help button in the header or the addon prefs</p>
+</li>
+<li>
+<p>Assetbrowser tools</p>
+<ul>
+<li>indicate if assembly or instance collection is linked, including for potential child assemblies</li>
+<li>for instance collections that aren't local assembly assets, expose the collection selector, instead of just the collection name</li>
+<li>fix exception when drawing <code>instance_offset</code> of nested assemblies/instance collections</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>addon preferences</p>
+<ul>
+<li>modernize using new <code>layout.panel</code> elements</li>
+<li>expose HUD shadow prefs</li>
+<li>keep track of and display registered operator and keymaps counts</li>
+<li>fix issue where some tools caused an empty Tool Settings box to appear, or where it would be missing</li>
+<li>disable Toggle Region tool by default</li>
+</ul>
+</li>
+<li>
+<p>remove DECALmachine and MESHmachine post-asset drop cleanups</p>
+<ul>
+<li>done by each addon separately by now</li>
+</ul>
+</li>
+</ul>
+<h2 id="1111">1.11.1</h2>
+<blockquote>
+<p>2024-11-25</p>
+</blockquote>
+<ul>
+<li>
+<p>Assetbrowser tools</p>
+<ul>
+<li>when changing asset origin, prevent asset from jumping around by compensating for new translation offset</li>
+</ul>
+</li>
+<li>
+<p>MaterialPicker tool</p>
+<ul>
+<li>fix Windows-only issue when assigning materials from asset browser due undocumented API change affecting how paths within blend files are represented</li>
+</ul>
+</li>
+<li>
+<p>Modes pie</p>
+<ul>
+<li>without an active object, draw a message about it in the pie</li>
+</ul>
+</li>
+<li>
+<p>Group tools</p>
+<ul>
+<li>handle occasional <em>Restricted Context</em> exceptions</li>
+</ul>
+</li>
+<li>
+<p>Customize tool</p>
+<ul>
+<li>when customizing startup file shading, prevent exception in 4.3 due to API change</li>
+</ul>
+</li>
+</ul>
+<h2 id="111">1.11</h2>
+<blockquote>
+<p>2024-11-09</p>
+</blockquote>
+<ul>
+<li>
+<p>bump minimum Blender version to 4.2 LTS</p>
+</li>
+<li>
+<p>Align tool</p>
+<ul>
+<li>support aligning selection to active's local axes</li>
+<li>support aligning selection to cursor's local axes</li>
+<li>rework the redo panel, and in particular the <em>align in between</em> and <em>align to bone</em> modes<ul>
+<li>for both add a distance slider, allowing you to tweak how an object is positioned</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>AssetBrowser tools</p>
+<ul>
+<li>CreateAssemblyAsset tool<ul>
+<li>expose instance collection offset in Assetbrowser tools sidebar panel, including <em>from Cursor</em> and <em>from Object</em> ops</li>
+<li>set asset empty size based on asset object dimensions</li>
+<li>fix issue where asset empty was not positioned properly, when disabling the unlink option</li>
+</ul>
+</li>
+<li>UpdateAssetThumbnail tool<ul>
+<li>support creating <code>COLLECTION</code>, <code>MATERIAL</code> and <code>POSE</code>/<code>ACTION</code> asset thumbnails<ul>
+<li>NOTE: all still require an OBJECT selection in the 3D view</li>
+</ul>
+</li>
+<li>support <code>ALT</code> mod key to ensure overlays are rendered too, useful if you want armatures to show up in the thumbnail for instance</li>
+</ul>
+</li>
+<li>fix exception in asset browser, when active asset is not of type OBJECT</li>
+</ul>
+</li>
+<li>
+<p>FileBrowser tools</p>
+<ul>
+<li>in AssetBrowser<ul>
+<li>import method selection is now a modal tool<ul>
+<li>hold <code>4</code> key and move mouse horizontally</li>
+</ul>
+</li>
+<li>support modal thumbnail size adjustment in asset shelfs too now<ul>
+<li>like in the File- or AssetBrowser, hold <code>3</code> key while over an asset shelf, and move mouse horizontally</li>
+</ul>
+</li>
+<li>drop legacy non-modal behavior (then still optional) and remove option to disable it in addon prefs accordingly</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>MaterialPicker tool</p>
+<ul>
+<li>support picking materials from objects within instance collection assets</li>
+</ul>
+</li>
+<li>
+<p>SmartVert tool</p>
+<ul>
+<li>use <code>uvs=True</code> arg when center- or last-merging</li>
+</ul>
+</li>
+<li>
+<p>SmartEdge tool</p>
+<ul>
+<li>support creasing, when invoked via <code>SHIFT + 2</code></li>
+</ul>
+</li>
+<li>
+<p>SmartFace tool</p>
+<ul>
+<li>when multiple objects are in edit mesh mode, support creating multiple new objects from face selections</li>
+<li>optionally support joining multiple separated objects into one</li>
+<li>by default clear mods on separated objects now</li>
+</ul>
+</li>
+<li>
+<p>Focus tool</p>
+<ul>
+<li>in View Selected mode, ignore arrays by default now too, unless disabled in redo panel<ul>
+<li>just as already done with mirror mods, focus on the original, not the evaluated results of these modifiers</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Mirror tool</p>
+<ul>
+<li>support mirroring Grease Pencil v3 objects in Blender 4.3</li>
+</ul>
+</li>
+<li>
+<p>Customize tool</p>
+<ul>
+<li>
+<p>disable <code>F</code> keymap in grease pencil edit mode</p>
+<ul>
+<li>you can still toggle cyclicity using <code>ALT + C</code></li>
+<li>but with <code>F</code> freed, <code>view_selected</code> can take over now</li>
+</ul>
+</li>
+<li>
+<p>M3 theme</p>
+<ul>
+<li>set asset shelf colors</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Tools pie</p>
+<ul>
+<li>
+<p>like the SurfaceDraw tool before, move Grease Pencil options from Modes pie to here as well now:</p>
+<ul>
+<li>ShrinkWrapGreasePencil tool and surface distance prop</li>
+<li>Thickness and Opacity modifier access, when present</li>
+</ul>
+</li>
+<li>
+<p>add Annotation Note tool</p>
+<ul>
+<li>
+<p>point the cursor at part of an object, call the pie, pick the Note tool, start typing</p>
+<ul>
+<li>
+<p>finish via <code>LEFTMOUSE</code> or <code>CTRL + RETURN</code></p>
+</li>
+<li>
+<p>see statusbar for options:</p>
+<ul>
+<li>screen X aligned by default, toggle Cursor X align via <code>CTRL + S</code> or <code>CTRL + C</code></li>
+<li>size is determined automatically, but can be changed by scrolling mouse</li>
+<li>remove words via <code>CTRL + W</code>, remove all via <code>CTRL + U</code> or <code>CTRL + BACKSPACE</code></li>
+</ul>
+</li>
+<li>
+<p>in 4.2 Notes are Annotation based</p>
+</li>
+<li>in 4.3 due to crippling of the annotation API, Grease Pencil objects will be created instead<ul>
+<li>pro<ul>
+<li>parented to object</li>
+</ul>
+</li>
+<li>contra<ul>
+<li>pollutes scene</li>
+<li>in solid shading has solid color, not annotation color</li>
+<li>may require multiply blend to be legible</li>
+<li>minimum stroke thickness hard cap, limiting small notes</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>ToggleAnnotation tool</p>
+<ul>
+<li>update to fully support annotation note gpv3 objects in 4.3<ul>
+<li>it toggles both, regular annotation and the layers on the GP note objects</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>SurfaceDraw tool</p>
+<ul>
+<li>update for 4.3's v3 Grease Pencils</li>
+<li>when invoking Line tool using <code>SHIFT</code> mod key, ensure sufficient subdivision count when subdivisions are currently &lt; 10<ul>
+<li>NOTE: you can always simplify later again, but you want to avoid having not enough subdivisions when drawing on curved surfaces</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>ShrinkwrapGreasePencil tool</p>
+<ul>
+<li>update for 4.3's v3 Grease Pencils</li>
+</ul>
+</li>
+<li>
+<p>with an active GP object, expose it's layers and some layer props now too</p>
+</li>
+<li>
+<p>when in Grease Pencil <code>PAINT</code> mode, expose Draw, Line and Erase tools</p>
+<ul>
+<li>with Line tool selected, expose line subdivisions prop too</li>
+</ul>
+</li>
+<li>
+<p>when in Grease Pencil <code>EDIT</code> mode, expose native <em>Stroke Simplify</em> tool</p>
+</li>
+<li>
+<p>fix HOps menu not appearing when installed as extension</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Save pie</p>
+<ul>
+<li>avoid exposing fbx export when default fbx addon is disabled</li>
+<li>add glTF import/export support</li>
+<li>
+<p>add Better FBX import/export support</p>
+</li>
+<li>
+<p>Load Next/Previous tools</p>
+<ul>
+<li>pop confirmation dialog when file has unsaved changes, to avoid accidental data loss</li>
+</ul>
+</li>
+<li>
+<p>Clean out scene tool</p>
+<ul>
+<li>support 4.3 annotations removal and empty annotation layer re-creation</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Modes pie</p>
+<ul>
+<li>support Blender 4.3 Grease Pencil v3 rewrite</li>
+<li>move grease pencil options from here to Tools pie<ul>
+<li>Shrinkwarp tool, Surface distance prop, Thickness and Opacity modifier access, when present</li>
+</ul>
+</li>
+<li>add VERTEX_GPENCIL / VERTEX_GREASE_PENCIL modes to tiny modes bar when active object is GP</li>
+<li>in grease pencil paint mode, expose stroke placement popup</li>
+<li>flesh out <code>SCULPT</code>, <code>PAINT_TEXTURE</code>, <code>PAINT_WEIGHT</code>, <code>PAINT_VERTEX</code> and <code>PARTICLE</code> modes<ul>
+<li>in each expose object, vert, edge and face mode toggles now</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Snapping pie</p>
+<ul>
+<li>support setting snap element additively using <code>ALT</code> mod key</li>
+<li>indicate snap element(s) at the top of the pie</li>
+<li>draw fading label when setting one of the presets indicating the current snap target and snap element(s)</li>
+<li>use <code>CLOSEST</code> target for absolute grid snapping</li>
+<li>enable <code>snap_show_absolute_grid</code> prefs by default now</li>
+</ul>
+</li>
+<li>
+<p>Shading pie</p>
+<ul>
+<li>
+<p>expose rotation, if mapping node is connected to image node, which in turn is connected to the background node</p>
+</li>
+<li>
+<p>fix exception for world setup using background node with connected image texture</p>
+</li>
+<li>
+<p>when detecting a trace_max_roughness of 0 while raytracing is enabled, reset it to its default of 0.5</p>
+<ul>
+<li>opening up pre-4.2 files seems to set this value to 0, but with it at 0, all metals will look like plastic</li>
+<li>print warning message to terminal when doing this</li>
+</ul>
+</li>
+<li>
+<p>fix angle prop not being in degrees when replacing invalid auto smooth</p>
+<ul>
+<li>also recreate show_expanded and use_pin_to_last props</li>
+</ul>
+</li>
+<li>
+<p>when adding auto smooth mod via the toggle (not via the presets), ensure an angle of 20° is used, not the default 30°</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Transform pie</p>
+<ul>
+<li>indicate current choice of pivot and orientation by depressing buttons accordingly</li>
+</ul>
+</li>
+<li>
+<p>Cursor Pie</p>
+<ul>
+<li>fix <em>Origin to Cursor</em> button width when multiple mesh modes are selected at the same time</li>
+</ul>
+</li>
+<li>
+<p>addon preferences</p>
+<ul>
+<li>
+<p>be more verbose in filebrowser/assetbrowser keymap labels in keymaps tab</p>
+</li>
+<li>
+<p>GetSupport tool</p>
+<ul>
+<li>check for and list workspaces that have addon filtering enabled</li>
+</ul>
+</li>
+<li>
+<p>fix assetbrowser tool prefs not showing up</p>
+</li>
+<li>remove some legacy prefs that are no longer used</li>
+</ul>
+</li>
+<li>
+<p>indicate if a MACHIN3tools update is available in 3D view's sidebar and addon prefs</p>
+</li>
+</ul>
+<h2 id="1101">1.10.1</h2>
+<blockquote>
+<p>2024-08-05</p>
+</blockquote>
+<ul>
+<li>
+<p>AssetBrowser tools</p>
+<ul>
+<li>
+<p>rework MakeLocal tool completely</p>
+<ul>
+<li>fix issues on more complex linked assets of assets, and sometimes even on simple linked assets</li>
+<li>making objects local (regular or instance collection) is tiered now<ul>
+<li>by default and if the selected object is linked, only the object itself will be made local<ul>
+<li>this allows you to position, scale, and rotate the object, while its data or linked instance collection remain linked, and so only exist in an external file</li>
+</ul>
+</li>
+<li>only on the second run, or when holding down <code>SHIFT</code>, or when the object itself is not linked and only its data or instance collection is, are data and/or instance collection made local too</li>
+</ul>
+</li>
+<li>instance collections are only ever made local one level down<ul>
+<li>so for recursive linked instance collections, you could keep the lower level linked while making the upper level local or disassemble it</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>CreateAssemblyAsset tool</p>
+<ul>
+<li>fix occasional black thumbnails</li>
+<li>fix exception, when choosing to not unlink empty</li>
+</ul>
+</li>
+<li>
+<p>DisassembleAssembly tool</p>
+<ul>
+<li>use new logic from MakeLocal tool to ensure linked assemblies are made local properly</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Save pie</p>
+<ul>
+<li>add ReloadLibraries tool<ul>
+<li>reload libraries when linked data blocks are used</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Modes pie</p>
+<ul>
+<li>improve handling of linked or partially linked objects by detecting if object data or instance collection is linked, even if object itself is not linked (anymore)</li>
+</ul>
+</li>
+<li>
+<p>Group tool</p>
+<ul>
+<li>add workaround for Blender 4.2 "object loses transform bug on redo" bug</li>
+</ul>
+</li>
+<li>
+<p>Cursor and Origin pie</p>
+<ul>
+<li>OriginToBottomBounds tool<ul>
+<li>add workaround for Blender 4.2 "object loses transform bug on redo" bug</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>CreateDoFEmpty (Prime only)</p>
+<ul>
+<li>fix exception when drawing fading label</li>
+</ul>
+</li>
+<li>
+<p>SmartEdge tool</p>
+<ul>
+<li>fix issue in Korean Bevel mode</li>
+</ul>
+</li>
+<li>
+<p>remove unnecessary imports all over</p>
+</li>
+</ul>
+<h2 id="110">1.10</h2>
+<blockquote>
+<p>2024-08-01</p>
+</blockquote>
+<ul>
+<li>
+<p>AssetBrowser tools</p>
+<ul>
+<li>
+<p>CreateAssemblyAsset tool</p>
+<ul>
+<li>rework completely and massively simplify the UX and exposed options<ul>
+<li>always duplicate the original objects for use in the instance collection<ul>
+<li>and always removed MM stashes and DM backups on those duplicates</li>
+</ul>
+</li>
+<li>avoid moving instance collection objects into world origin, make use of <code>instance_offset</code> instead</li>
+<li>always add asset collection to the viewlayer in the new <em>_Assets</em> collection, which itself is on, but excluded from the view layer (so isn't rendered)<ul>
+<li>this aims to make things more transparent, bc you can now can easily see which asset collections exist in the file</li>
+</ul>
+</li>
+<li>by default, unlink the asset empty, so the asset only appears in the AssetBrowser's LOCAL/Current File library<ul>
+<li>if disabled bring back an instance of it, offset in front of the original object(s)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>redo thumbnail rendering<ul>
+<li>perfectly frame the asset automatically, no matter where it is on the viewport, incl. for recursive assets (of assets)</li>
+<li>support camera view rendering (incl. Depth of Field) and cycles rendering</li>
+</ul>
+</li>
+<li>support placing asset empty in Cursor location</li>
+</ul>
+</li>
+<li>
+<p>add Disassemble tool</p>
+<ul>
+<li>replaces previously awkwardly named AssembleInstanceCollection tool</li>
+<li>makes assembly asset/instance collection objects accessible</li>
+<li>when assembly is linked, make it local first</li>
+<li>support Rigid Body setup if assembly objects make use of it</li>
+</ul>
+</li>
+<li>
+<p>add MakeLocal tool</p>
+<ul>
+<li>makes assembly local without disassembling</li>
+<li>unlike the native op it properly deals with only the selection, but also goes recursively through the entire assert, to deal with linked assets of assets<ul>
+<li>whereas the native <code>make_local</code> op would have to be run with the ALL argument, which would then affect ALL linked id types in the entire blend file however</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>add RemoveAssemblyAsset tool</p>
+<ul>
+<li>by default it removes the assembly empty + instance collection, if that no longer has any other users (such as other assemblies using the same instance collection)</li>
+<li>for local assets, it can optionally completely remove the entire asset and all instances of it from the file<ul>
+<li>naturally, this then removes it from the asset browser too</li>
+</ul>
+</li>
+<li>for legacy assets (those created with prior versions, that didn't duplicate the original objects yet) just disassemble the asset/assembly and let the user decide if the collection objects should be removed</li>
+</ul>
+</li>
+<li>
+<p>add UpdateAssetThumbnail tool</p>
+<ul>
+<li>can be called from the 3D view's sidebar simply by selecting any local assembly asset</li>
+<li>or alternatively from thee asset browser's sidebar<ul>
+<li>here it requires selecting the asset itself, and any object(s) in the 3D view</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>expose assembly asset collection name in asset browser's sidebar</p>
+</li>
+<li>
+<p>AssetBrowser Bookmarks</p>
+<ul>
+<li>
+<p>add pseudo-bookmark for LOCAL (Current File) library</p>
+<ul>
+<li>keymapped to <code>ALT + ^</code> by default</li>
+<li>when using this, MACHIN3tools will auto size thumbnails based on asset browser dimensions</li>
+<li>NOTE: it's not possible to set All or Unassigned catalogs from the API<ul>
+<li>so instead MACHIN3tools will select the most used catalog in the file to ensure something is shown at all</li>
+<li>also note, that Blender doesn't even list catalogs that exist in a file, if that file is not stored in an asset library location</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>fix some issues where the wrong library and catalog where displayed in the header</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Material Picker tool</p>
+<ul>
+<li>support multiple 3d views and asset browsers open at the same time<ul>
+<li>pick/assign from any 3d view or asset browser on the workspace</li>
+</ul>
+</li>
+<li>support picking from and assigning to FONT, SURFACE and META objects</li>
+</ul>
+</li>
+<li>
+<p>Filebrowser tools</p>
+<ul>
+<li>support modal thumbnail size adjustment<ul>
+<li>just hold down the <code>3</code> and move the mouse horizontally<ul>
+<li>feel free to remap to <code>CTRL + MIDDLEMOUSÈ</code> click-drag, to mirror Blender native panel scaling</li>
+<li>you can disable this modal behavior in the addon preferences for legacy-style thumbnail size cycling using <code>3</code> and <code>ALT + 3</code> accordingly</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>fix opening active folder in system's file browser via <code>O</code></li>
+</ul>
+</li>
+<li>
+<p>Group tools</p>
+<ul>
+<li>
+<p>Outliner Group mode toggle (via <code>1</code> key)</p>
+<ul>
+<li>when group auto-naming is enabled in addon preferences, further filter the outliner to consider the group prefix and/or suffix<ul>
+<li>this way you can truly only have group empties show up, instead of all empties</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>CreateGroup tool</p>
+<ul>
+<li>when un-groupable (already parented) objects are among the selection, indicate that they weren't added to the group<ul>
+<li>also increase fading label time when there are un-groupable objects</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Groupify tool</p>
+<ul>
+<li>stop adding _GROUP to the empty names</li>
+<li>support auto-naming addon pref<ul>
+<li>and with it disabled, just keep the original empty names accordingly</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>redo/simplify general group naming logic</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Smart Edge tool</p>
+<ul>
+<li>support connecting lose/non-manifold verts, thanks Artem!</li>
+</ul>
+</li>
+<li>
+<p>Align tool</p>
+<ul>
+<li>add workaround in 4.2 for "object loses transform on redo" <a href="https://projects.blender.org/blender/blender/issues/125335">bug</a></li>
+</ul>
+</li>
+<li>
+<p>Customize tool</p>
+<ul>
+<li>
+<p>in Blender 4.2, support addon installation from extensions repo</p>
+<ul>
+<li>Icon Viewer</li>
+<li>LoopTools</li>
+<li>Screencast Keys</li>
+</ul>
+</li>
+<li>
+<p>preferences</p>
+<ul>
+<li>enable GPU compositing</li>
+</ul>
+</li>
+<li>
+<p>keymaps</p>
+<ul>
+<li>change <code>curve.select_more</code> and <code>curve.select_less</code> keymaps to <code>SHIFT + WHEEL UP/DOWN</code>, inline with mesh and UV selections</li>
+<li>change outliner <code>CTFL + F</code> search keymap to <code>/</code></li>
+<li>in Blender 4.2 remap new Sculpt mode visibility filtering keymaps to use SHIFT mod key, thereby avoiding conflicts with Shading and Views pies</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Shading pie</p>
+<ul>
+<li>update for Eevee Next in Blender 4.2<ul>
+<li>None, Low, High and Ultra Presets, check tooltips for details</li>
+<li>support finding and applying user-created raytrace presets</li>
+<li>expose passes incl. quick access to Shadow and Ambient Occlusion</li>
+<li>expose fast GI related props</li>
+<li>introduce <em>multi props</em> for resolution, thickness and quality(precision)<ul>
+<li>these set screen-trace and fast GI props at the same time</li>
+</ul>
+</li>
+<li>add bloom and dispersion toggles<ul>
+<li>both are setup and then toggled via realtime compositing</li>
+</ul>
+</li>
+<li>add volume rendering toggle<ul>
+<li>with volume objects present, toggle volume object filtering in the viewport</li>
+<li>without volume objects, the world volume (node) is toggled, or created when there is none yet</li>
+<li>force world volume creation via <code>SHIFT</code> when volume objects are present, but you want to setup a world volume too</li>
+<li>when enabled, expose main world volume node props</li>
+</ul>
+</li>
+<li>in MATERIAL or RENDERED Eevee shading expose new <em>World Shadow</em> and "Sun Angle" props for adjustment of HDRI/world based shadows</li>
+</ul>
+</li>
+<li>Cycles<ul>
+<li>expose bloom and dispersion toggles here too</li>
+<li>same for Volume rendering</li>
+</ul>
+</li>
+<li>expose world environment props, if found<ul>
+<li>generic support for props named: 'Power', 'Multiply', 'Rotate Z', 'Rotation', 'Blur'</li>
+<li>Easy HDRI support for props: 'Sun Strength', 'Sky Strength', 'Custom Background', 'Solid Color', 'Rotation'</li>
+</ul>
+</li>
+<li>Shade Smooth and Toggle Auto Smooth<ul>
+<li>in Blender 4.2 prevent unintended removal of an existing auto smooth mod caused change in behavior of native Smooth operator</li>
+<li>replace all invalid Auto Smoth mods (often as a result of appending or pasting legacy objects)</li>
+</ul>
+</li>
+<li>Shade Flat<ul>
+<li>fix fading HUD instance counter in 4.1, and ensure auto smooth removals are counted properly in 4.2</li>
+</ul>
+</li>
+<li>Blender 4.1+<ul>
+<li>unmark the Smooth by Angle node group asset when bringing it in from the ESSENTIALS lib</li>
+</ul>
+</li>
+<li>Bevel Shader<ul>
+<li>exclude CURVES, VOLUME, ARMATURE, LATTICE and META object types from bevel shader setup attempts</li>
+</ul>
+</li>
+<li>update Wireframe button to better show what being toggled depending on context</li>
+</ul>
+</li>
+<li>
+<p>Views pie</p>
+<ul>
+<li>Smart Cam<ul>
+<li>by default, support perfect viewport matching now<ul>
+<li>adjusts scene resolution ratio to match viewport region</li>
+<li>matches viewport Field of View</li>
+<li>sets camera's <em>sensor width</em> to 72</li>
+<li>can be disabled in addon preferences</li>
+</ul>
+</li>
+<li>add fading HUD</li>
+</ul>
+</li>
+<li>Next/Prev Camera tools<ul>
+<li>add fading HUD</li>
+</ul>
+</li>
+<li>when in camera view<ul>
+<li>support naming the camera</li>
+<li>expose camera sensor width</li>
+<li>add Depth of Field utilities<ul>
+<li>add CreateDoFEmpty tool<ul>
+<li>quickly sets up an empty as the DoF focus object and invokes translate tool, ready to snap the empty to a surface</li>
+</ul>
+</li>
+<li>add Select DoF object tool<ul>
+<li>select (and reveal if hidden) currently used DoF focus object</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Save pie</p>
+<ul>
+<li>in Blender 4.2<ul>
+<li>ScreenCasting<ul>
+<li>default to ScreenCast Keys extension over SKRIBE</li>
+<li>make Toggle Region op show up in screencasted operator list</li>
+</ul>
+</li>
+<li>Purge Orphans<ul>
+<li>preview purging, by invoking the tool with <code>SHIFT</code> key pressed</li>
+</ul>
+</li>
+<li>fix .stl import/export due to API change</li>
+</ul>
+</li>
+<li>Export tools<ul>
+<li>expose custom export folders per-export type in addon preferences<ul>
+<li>if set, the exporter will open in theses folders, instead of in the home dir</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Purge tool<ul>
+<li>remove empty collections, which native Blender doesn't do as long as they are on the viewlayer</li>
+</ul>
+</li>
+<li>Clean out .blend file tool<ul>
+<li>remove node groups explicitly now, otherwise there may be left over ones, IF they are still marked as asset or fake user</li>
+<li>update custom brush removal in Blender 4.2</li>
+<li>remove libraries too now</li>
+<li>disable <code>use_scene_world</code> and <code>use_scene_lights</code></li>
+<li>update poll to reflect all the data types that are to be removed</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Tools pie</p>
+<ul>
+<li>add annotate line tool</li>
+<li>with active annotation tool<ul>
+<li>add Show/Hide Annotations tool<ul>
+<li>hides and reveals annotation layers</li>
+<li>remembers previously hidden layers and only reveals those, that were previously visible</li>
+</ul>
+</li>
+<li>expose surface placement settings as buttons, not as list</li>
+</ul>
+</li>
+<li>bring back BoxCutter and HardOps support due to popular demand</li>
+<li>bring back SurfaceDraw tool (previously in the Modes pie)<ul>
+<li>by default disabled in the addon preferences</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Modes pie</p>
+<ul>
+<li>add Guide mesh &lt; &gt; Final Mesh Editor support for quick access to the addon's <em>Dual Mesh Edit</em> mode</li>
+<li>prevent initiating Surface Slide, when mesh has shapekeys</li>
+<li>prevent rare exception when trying to sync tools</li>
+</ul>
+</li>
+<li>
+<p>Workspace pie</p>
+<ul>
+<li>in Blender 4.2, support Blender <em>Icon Viewer</em>  installation from extensions repo<ul>
+<li>it's exposed in the addon preferences</li>
+</ul>
+</li>
+<li>when syncing viewports from one workspace to another, sync <code>shading.use_compositor</code> and <code>shading.render_pass</code> too now</li>
+</ul>
+</li>
+<li>
+<p>Snapping Pie</p>
+<ul>
+<li>fix absolute grid snapping exception in 4.2 due to API change</li>
+</ul>
+</li>
+<li>
+<p>addon preferences</p>
+<ul>
+<li>Keymaps<ul>
+<li>in Blender 4.2, point out Shading pie and Views pie conflicts, due to new native Page Up/Down keymappings for Sculpt mode visibility filtering<ul>
+<li>expose these keymappins for easy remapping, if desired</li>
+</ul>
+</li>
+<li>Restore Missing Keymaps tool<ul>
+<li>add debug output and print to the system console which keymap items have been missing and now restored</li>
+</ul>
+</li>
+<li>fix potential exception</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="19">1.9</h2>
+<blockquote>
+<p>2024-05-23</p>
+</blockquote>
+<ul>
+<li>
+<p>MaterialPicker tool</p>
+<ul>
+<li>add <code>RIGHTMOUSE</code> keymap<ul>
+<li>for now disabled by default, so please enable manually in addon prefs</li>
+<li>if you use <code>RIGHTMOUSE</code> for the context menu, you can add a mod key in the MACHIN3tools keymap prefs for RMB-material-picking/assigning</li>
+<li>I highly recommend you try this, IMO it's a game changer</li>
+</ul>
+</li>
+<li>the tool is only active on views that show materials: MATERIAL shading, RENDERED shading, and SOLID shading IF MATERIAL is chosen as the <code>color_type</code><ul>
+<li>NOTE: in SOLID shading make use of the Colorize Materials tool in the Shading pie, if all your materials show as white</li>
+</ul>
+</li>
+<li>the tool existing in 3 <em>modes</em>: PICK, ASSIGN, ASSIGN_FROM_ASSETBROWSER<ul>
+<li>which one of these are available, depends on presence of material editor, asset browser, object or face selection</li>
+<li>for instance, without a material editor or asset browser on the workspace, but with an object selection present, the tool will invoke into ASSIGN mode automatically</li>
+</ul>
+</li>
+<li>with an object or face selection present, support clearing materials using <code>X</code></li>
+<li>when appending material from assetbrowser attempt to set the material's viewport color</li>
+<li>support assigning material from asset browser to entire object selection using <code>ALT</code><ul>
+<li>as opposed to just the object the mouse is over via <code>LEFTMOUSE</code></li>
+</ul>
+</li>
+<li>in the HUD<ul>
+<li>try to draw picked or to-be-assigned material's color under its name, fetched from the <em>Base Color</em> input of the last node</li>
+<li>in object mode list objects that are to be assigned a material and lightly draw object wires</li>
+<li>in edit mode indicate if material is to be assigned to face selection</li>
+</ul>
+</li>
+<li>fix button not appearing in RENDERED viewport (even though enabled in addon prefs)</li>
+</ul>
+</li>
+<li>
+<p>Filebrowser tools, Assetbrowser tools, AssetBrowser Bookmarks, Toggle Region tool</p>
+<ul>
+<li>support asset browser <code>display_type</code> cycling + storage<ul>
+<li>NOTE: this is not natively exposed in the Blender UI, but internally the asset browser is still just a Filebrowser in Blender, and so the <code>display_type</code> can still be changed</li>
+<li>cycle between display types:<ul>
+<li>THUMBNAIL</li>
+<li>LIST_VERTICAL</li>
+<li>LIST_HORIZONTAL</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>use the <code>2</code> key, just as in the Filebrowser (same keymap item in fact) for asset browser <code>display_type</code> cycling</li>
+<li>use previously unused (in asset browser) <code>4</code> keymap to cycle asset import method now</li>
+<li>also draw button to cycle through Assetbrowser <code>display_types</code> in asset browser header</li>
+</ul>
+</li>
+<li>
+<p>Shading pie</p>
+<ul>
+<li>4.1 Auto Smooth<ul>
+<li>expose and make the auto smooth angle accessible, even on meshes with custom normals</li>
+<li>expose setting in addon prefs to keep Auto Smooth mod expanded in mod stack, not collapsed</li>
+<li>if not found itn he file already, append <em>Smooth by Angle</em> nodegroup from ESSENTIALS lib, without relying native op</li>
+<li>when opening the pie look for invalid auto smooth mod and remove it<ul>
+<li>Blender can <em>sometimes</em> create these, especially when pasting or appending objects from legacy files</li>
+<li>terminal will complain about missing <em>Angle</em> or <em>Ignore Sharps</em> inputs in that case</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>in SOLID shading with MATERIAL <code>color_type</code> chosen, expose active object's active material's viewport color</li>
+<li>support wireframe toggling and wireframe opacity adjustment in SCULPT mode</li>
+<li>BevelShader setup<ul>
+<li>prevent exception when materials without node_tree are encountered, like Blender's Fur Material</li>
+</ul>
+</li>
+<li>Shade Smooth tool<ul>
+<li>update description to mention sharp edges are based on operator prop, not auto smooth angle any longer</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Modes pie</p>
+<ul>
+<li>support EDIT_CURVES + SCULPT_CURVES modes</li>
+<li>disable "SurfaceDraw"-pseudo-mode, use Annotate tools from tools pie instead!</li>
+</ul>
+</li>
+<li>
+<p>Tools pie</p>
+<ul>
+<li>add annotate buttons at the bottom</li>
+<li>remove out Hops/BC buttons, I don't think anybody uses the pie for these?</li>
+<li>simplify HyperCursor / Select Box alternation<ul>
+<li>this now allows easy switching from HC to annotating, and back</li>
+<li>avoid always force-enabling HC gizmos, when switching into HC tool too</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Workspace Pie</p>
+<ul>
+<li>add Geo Nodes workspace to bottom left</li>
+</ul>
+</li>
+<li>
+<p>SelectHierarchy tool</p>
+<ul>
+<li>support selecting geo nodes mod objects</li>
+</ul>
+</li>
+<li>
+<p>ToggleSmooth tool</p>
+<ul>
+<li>use <code>SHIFT + TAB</code> as the default on Windows</li>
+</ul>
+</li>
+<li>
+<p>ApplyTransform tool</p>
+<ul>
+<li>ensure object has data block, so transform can actually be applied</li>
+</ul>
+</li>
+<li>
+<p>addon preferences</p>
+<ul>
+<li>mention Bevel Shader in Render tools description<ul>
+<li>it is exposed through the Shading pie, but enabled through the Render tools</li>
+</ul>
+</li>
+<li>add ResetKeymaps and RestoreKeymaps buttons in keymaps tab IF there are user modified keymaps or missingkeymaps (due to user removal, accidental or not)</li>
+<li>improve how keymap items are drawn</li>
+</ul>
+</li>
+<li>
+<p>Customize tool</p>
+<ul>
+<li>M3 theme<ul>
+<li>define compliant colors for Attribute Editor/Spreadsheet space</li>
+<li>use fully transparent color for front-facing face orientation color</li>
+<li>lower the alpha of the back-facing face orientation color (red)</li>
+</ul>
+</li>
+<li>overlays<ul>
+<li>when the M3 theme is being installed enable the face orientation overlays</li>
+</ul>
+</li>
+<li>startup file<ul>
+<li>set (annotate) stroke placement to SURFACE and set eraser size to 50px</li>
+</ul>
+</li>
+<li>keymaps<ul>
+<li>disable <code>node.select</code> keymappings in <em>Node Tool: Select Box</em> keymap</li>
+<li>in 2.7x keymap<ul>
+<li>set <code>node.select</code> keymappings in <em>Node Editor</em> keymap from <code>RIGHTMOUSE</code> to <code>LEFGMOUSE</code> using <code>PRESS</code> events</li>
+<li>this allows for additive and subtractive node selection using <code>SHIFT + LMB</code> without delay</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>system<ul>
+<li>enable experimental asset debug info</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="18">1.8</h2>
+<blockquote>
+<p>2024-03-22</p>
+</blockquote>
+<h4 id="deusex_1">DeusEx</h4>
+<ul>
+<li>SetupGroupGizmos tool<ul>
+<li>add option to lock axes, that don't carry a gizmo<ul>
+<li>this then allows for easy and lazy group rotation using the native op, without having to pick the right axis, and even with the rotation gizmo(s) disabled</li>
+<li>disable locking via <code>R</code> or <code>L</code> keys</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="prime-previously-standard">Prime <sup><sup><sup>previously Standard</sup></sup></sup></h4>
+<ul>
+<li>Assetbrowser tools<ul>
+<li>add Assetbrowser Bookmarks<ul>
+<li>draw buttons for 10 bookmarks in the asset browser header</li>
+<li>support jumping to library/catalog via click, saving via <code>SHIFT</code> click, and clearing bookmarks via <code>CTRL</code> click, see tooltips</li>
+<li>support jumping to library/catalog via new <code>ALT + 1</code> to <code>ALT + 0</code> keymaps</li>
+<li>bookmarks store and recall library, catalog and thumbnail size</li>
+<li>bookmarks are stored on disk in <code>assetbrowser_bookmarks.json</code> in Blender's config folder</li>
+</ul>
+</li>
+<li>with the catalog sidebar closed, display the library and catalog in the asset browser header</li>
+<li>support maintaining bookmarks, across Library renames (Blender restart required)</li>
+<li>NOTE: you can't bookmark any catalog in the 'Current File' library<ul>
+<li>and you can't bookmark any library's 'Unassigned' catalog either</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Shading Pie<ul>
+<li>BevelShader<ul>
+<li>support toggling it per-object</li>
+<li>add arrow buttons to increase or decrease the global or per-object radius<ul>
+<li>halve and double the current value by default</li>
+<li>with SHIFT held down, do -25% or +33% instead for smaller adjustments</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Smooth, Flat, Auto Smooth tools<ul>
+<li>redo them completely, and maintainthe same look and UX in 4.1 as before</li>
+<li>in Blender 4.1<ul>
+<li>support Auto Smooth toggling byp adding/removing goe node mod<ul>
+<li>sort it at the end of the stack, but before mirror and array mods</li>
+<li>support instanced objects</li>
+</ul>
+</li>
+<li>support Auto Smooth for CURVE objects</li>
+</ul>
+</li>
+<li>support SURFACE objects in object mode (Blender does too, so why not)</li>
+<li>properly deal with hidden children and mod objects when in local view and when either or both are included in a Smooth or Flat shading operation</li>
+<li>when shading Smooth, optionally (but by default) enable Auto Smooth for objects carrying boolean mods</li>
+<li>when shading Smooth with <code>ALT</code> pressed, sharpen edges via new operator angle property, not via a mesh's auto smooth angle prop as before</li>
+<li>when Flat shading with <code>ALT</code> pressed to clear sharps, seams, etc, also disable Auto Smooth, if enabled, or present</li>
+<li>limit options, that are exposed in redo panel, depending on context, hide what doesn't apply</li>
+<li>when Flat shading and removing creases, make option, that avoids removal of creases while subd mods with <code>use_crease</code> are present, work per-object not globally or entire selection</li>
+<li>add object mode fading HUD summarizing the shading changes</li>
+</ul>
+</li>
+<li>display Clear Custom Normals op, independently of Auto Smooth being enabled in 4.1<ul>
+<li>neither custom normals nor sharp edges require Auto Smooth anymore</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Modes Pie<ul>
+<li>Surface Slide tool<ul>
+<li>support instanced meshes</li>
+</ul>
+</li>
+<li>avoid exception when trying to mode change a linked object with library override</li>
+</ul>
+</li>
+<li>MaterialPicker tool<ul>
+<li>support fetching materials from and assigning them to CURVE objects</li>
+</ul>
+</li>
+<li>SelectHierarchy tool<ul>
+<li>indicate number of hidden parents/children in fading HUD</li>
+</ul>
+</li>
+<li>Group Add/Remove tools<ul>
+<li>add little fading HUD to visually confirm what happened</li>
+</ul>
+</li>
+<li>ToggleRegion tool<ul>
+<li>avoid exception when library stored asset browser settings, is no longer registered</li>
+</ul>
+</li>
+<li>Thread, ToggleSmooth and QuadSphere tools<ul>
+<li>deal with Auto Smooth changes in 4.1</li>
+</ul>
+</li>
+<li>CreateAssemblyAsset tool<ul>
+<li>fix issues caused by 1.7's change to UUID based catalog storage</li>
+</ul>
+</li>
+<li>addon preferences<ul>
+<li>add GetSupport tool, placed at the top of the addon prefs</li>
+<li>add custom updater<ul>
+<li>NOTE: since it's only introduced now in 1.8, it will only be of use for upcoming releases, so can't be used to install this very  1.8 update yet</li>
+<li>allows for very easy addon update installation from .zip file, and from inside of Blender, instead of manually from the file browser</li>
+<li>finds matching .zip file(s) in home and Downloads folder</li>
+<li>allows selecting one of them them or manually selecting a file in any other location</li>
+<li>extracts the file to a temporary location, and installs update when quitting Blender</li>
+<li>like a manual update installation from the filebrowser, this maintains previous addon settings and custom keys</li>
+<li>see installation instructions for details</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Customize tool<ul>
+<li>tweak M3 theme<ul>
+<li>adjust to edit mode color changes in 4.1</li>
+<li>make crease edges green</li>
+</ul>
+</li>
+<li>when customizing the startup file, while the Shading Pie has been activated, disable native cursor display and activate custom cursor and object axes drawing instead</li>
+<li>fix issues modifying keymap in 4.1</li>
+<li>add hidden Toolbar Popup keymaps<ul>
+<li>set Annotate to <code>D</code></li>
+<li>set Annotate Erase to <code>E</code></li>
+<li>without deliberately creating these keymaps, the default keymaps will change depending on the active tool, now they persist</li>
+</ul>
+</li>
+<li>invert Transform Modal Map's proportional editing keymaps<ul>
+<li>increase the size by scrolling UP and decrease by scrolling DOWN</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="17">1.7</h2>
+<blockquote>
+<p>2024-02-10</p>
+</blockquote>
+<h4 id="standard">Standard</h4>
+<ul>
+<li>SelectHierarchy tool<ul>
+<li>support UP selection too now<ul>
+<li>including recursive, and unhiding</li>
+<li>keymaped to <code>UP</code>, <code>SHIFT+UP</code>, <code>CTRL+UP</code> and <code>SHIFT+CTRL+UP</code> accordingly</li>
+</ul>
+</li>
+<li>add fading HUD<ul>
+<li>indicate if top or bottom are reached</li>
+<li>when not undhiding, indicate if top or bottom with hidden parents/children is reached</li>
+</ul>
+</li>
+<li>if a group empty is among the new selection, ensure the highest in the hierarchy becomes the active object</li>
+</ul>
+</li>
+<li>ToggleRegion tool<ul>
+<li>support toggling toolbar and sidebar in all node editors</li>
+<li>support toggling toolbar and sidebar in UV/Image editor</li>
+<li>avoid unnecessarily drawing "Not enough space" warning when toggling sidebar, while <code>region_overlap</code> disabled<ul>
+<li>Blender is weird sometimes</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Thread tool<ul>
+<li>raise maximum fade from 50% to 100% (one revolution)</li>
+</ul>
+</li>
+<li>Filebrowser tools<ul>
+<li>in AssetBrowser<ul>
+<li>fix exception when trying to open asset without having an active asset chosen</li>
+</ul>
+</li>
+<li>fix rare issue not being able to open an asset's path in system filebrowser or to open asset .blend file in second Blender instance<ul>
+<li>it turns out the same catalog can be present multiple times, with different UUIDs</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>SmartEdge tool<ul>
+<li>fix issue with Offset Edges mode, when undoing</li>
+</ul>
+</li>
+<li>Groups<ul>
+<li>change empty draw type of active group to SPHERE, while others remaining CUBE</li>
+<li>update group panel in sidebar</li>
+</ul>
+</li>
+<li>Group tool<ul>
+<li>draw a fading message when no group could be created, because the entire selection is parented to something already</li>
+</ul>
+</li>
+<li>SurfaceSlide, Focus and Screencast HUDs<ul>
+<li>take <code>region_overlap</code> and theme's header alpha into account as well!</li>
+<li>it turns out a theme's header alpha at 1, essentially force-disables <code>region_overlap</code></li>
+</ul>
+</li>
+<li>Modes pie<ul>
+<li>SurfaceSlide<ul>
+<li>fix bottom HUD offset, depending on header and tool header positioning</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Shading pie<ul>
+<li>Bevel Shader<ul>
+<li>in Blender 4 connect to <em>Coat Normal</em> input too</li>
+<li>support bevel shader on DECALmachine panel decals and trimsheet materials<ul>
+<li>automatically adjust panel decal bevel shader width, when parent object's bevel width is modulated</li>
+</ul>
+</li>
+<li>fix 2 nodes not being removed when, when bevel shader is disabled again</li>
+</ul>
+</li>
+<li>support creating new world if none is present in scene and setting/picking a world</li>
+<li>add shadow catcher and holdout toggles to Cyclces box</li>
+<li>add MACHIN3tool's draw object axes toggle in MATERIAL and RENDERED shading modes too</li>
+<li>flesh out and clarify the 3 different kinds of wireframe "modes" depending on context<ul>
+<li>toggle wire for selected objects</li>
+<li>toggle wire globally (all / overlay) with no object selected</li>
+<li>toggle wire in edit mode (xray, legacy 2.79 style wireframe)</li>
+<li>all three and any combination of them are now dynamically indicated accordingly when active</li>
+</ul>
+</li>
+<li>Screencast<ul>
+<li>support DECALmachine Material Override (including undoing it)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Workspace pie<ul>
+<li>change default keymap pie from <code>PAUSE</code> key to <code>F12</code><ul>
+<li>for some reason <code>PAUSE</code> key output from the <em>Naga Pro V2</em> is not recognizd in Blender? <sup>on Linux only?</sup></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>addon preferences<ul>
+<li>fix issue of "double-drawing" 0 and 1 values</li>
+</ul>
+</li>
+<li>rework when and how handler logic is executed<ul>
+<li>resolve conflicts with ZenUV/ZenSets, GridModeler, ArchiPack and NodeTreeStore<ul>
+<li>thanks Alex, kushiro and Stephen! 🙏</li>
+</ul>
+</li>
+<li>fix Blender crash related to real-time compositing and groups</li>
+<li>skip DECALmachine post-asset-drop decal backup object cleanup, when DM has that capability already<sup>next update</sup></li>
+<li>skip MESHmachine post-asset-drop stash object cleanup, when MM has that capability already<sup>next update</sup></li>
+</ul>
+</li>
+</ul>
+<h4 id="deusex_2">DeusEx</h4>
+<ul>
+<li>Groups<ul>
+<li>support multiple poses (any number) per group empty</li>
+<li>expose group poses in group panel in sidebar<ul>
+<li>support setting, recalling, updating, previewing, sorting and naming of poses</li>
+<li>support creating batch poses<ul>
+<li>batch poses are poses on different empties in the the same group hierarchy, that are linked together</li>
+<li>they can be batch-recalled too<ul>
+<li>think hand poses, where each finger joint empty has it's own pose, but they are all tied together to create a hand pose</li>
+</ul>
+</li>
+<li>support (temporarily) unlinking specific batch poses from the other poses in the batch</li>
+</ul>
+</li>
+<li>support retrieving poses even when group gizmos are not shown</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Group + Groupify tools<ul>
+<li>automatically create <em>Inception</em> poses on group creation</li>
+</ul>
+</li>
+<li>add SetupGroupGizmo tool<ul>
+<li>modal tool to quickly and conveniently setup the group gizmos directly from the 3D view instead of from the sidebar panel</li>
+<li>support view based axis selection and toggling via <code>TAB</code> or <code>T</code> keys</li>
+<li>support axis toggling via <code>X</code>, <code>Y</code>, <code>Z</code> keys accordingly</li>
+<li>support all-axes toggling via <code>A</code> key</li>
+<li>support gizmo size adjustment via mouse wheel (or 1 and 2 keys)<ul>
+<li>support precision adjustment via <code>SHIFT</code> and <code>CTRL</code> mod keys</li>
+</ul>
+</li>
+<li>support toggling gizmo display via <code>S</code> or <code>D</code> keys</li>
+</ul>
+</li>
+<li>TransformGroup tool<ul>
+<li>flesh out HUD and draw line from group origin to mouse, HyperCursor style</li>
+<li>support selecting group empty (and finishing without rotating) via <code>G</code> key</li>
+<li>support switching to SetupGroupGizmo tool (and finishing without rotating) via <code>Q</code> key</li>
+<li>remove gizmo size adjustment via mouse wheel<sup>use SetupGroupGizmo tool now</sup></li>
+<li>support creating new pose and finish via <code>S</code> key (as before, but now you can create any number of poses per group)</li>
+<li>support previewing and selecting poses by scrolling<ul>
+<li>release <code>LMB</code> to recall the previewed pose and finish</li>
+<li>press <code>SPACE</code> to finish without recalling the selected pose</li>
+</ul>
+</li>
+<li>when invoking the rotation, initiate pose selection automatically, when group empty is already at a certain pose, when group rotation is initiated<ul>
+<li>except for the Inception pose</li>
+</ul>
+</li>
+<li>mark selected pose for removal via <code>X</code> key, and removal of all via <code>A</code></li>
+<li>remove previous <code>R</code> keymap for pose retrieval</li>
+<li>remove previous <code>K</code> keymap for auto-keying for now</li>
+</ul>
+</li>
+<li>SavePie<ul>
+<li>Screencast<ul>
+<li>support group pose tools (Set, Retrieve, Update, etc)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="v16">v1.6</h2>
+<blockquote>
+<p>2023-11-10</p>
+</blockquote>
+<ul>
+<li>add ToggleRegion tool<ul>
+<li>a single <code>T</code> keymap to toggle Toolbar <code>T-Panel</code>, Sidebar <code>N-Panel</code>, and asset shelf/browser depending on mouse position on the screen<ul>
+<li>NOTE: the new asset shelf is not very useful in Blender 4.0 yet, so toggling that is disabled by default, but can be enabled and used, if desired</li>
+<li>more interesting is toggling a new asset browser area at the top or bottom of the 3d view<ul>
+<li>it will remember the previously chosen library and catalog_id as well as all asset browser settings<ul>
+<li>such as thumbnail_size, import_method, filter choices and filter search term, as well as header alignment</li>
+</ul>
+</li>
+<li>the previously set height of the asset browser area is remembered too</li>
+<li>and all of this per-workspace!<ul>
+<li>so on each workspace you can have 2 different asset browsers that can be neatly tucked away or revealed when needed</li>
+</ul>
+</li>
+<li>an asset browser can then be closed not only with the mouse in the 3d view, but with the mouse in center of the asset browser too, as if it were a region, not an area<ul>
+<li>with the mouse towards the sides of the asset browser, you can toggle the library/catalog selection or active asset details, also just via a <code>T</code> press</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>NOTE: this tool is enabled by default in MACHIN3tools now</li>
+<li>ALSO: check addon prefs for some tweaks in behavior you can make, and make sure you watch the short video about the tool, due to some Blender shenanigans</li>
+</ul>
+</li>
+<li>Shading Pie<ul>
+<li>store per-shading type overlay visibility on scene level</li>
+<li>expose default overlay visibility settings to addon prefs</li>
+<li>deal with out of sync overlay visibility settings, which can happen if the user toggles overlays using other means</li>
+<li>Bevel Shader<ul>
+<li>add option (default on) to consider mesh dimensions to modulate the bevel shader<ul>
+<li>this prevents small object from having massive bevels</li>
+<li>you still have the option to modulate per-object on top of that</li>
+</ul>
+</li>
+<li>compensate for object scaling</li>
+</ul>
+</li>
+<li>Shade Smooth/Flat tools<ul>
+<li>fix 4.0 issues due to bevel weight and crease API changes</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Save Pie<ul>
+<li>ScreenCast<ul>
+<li>fix vertical positioning</li>
+</ul>
+</li>
+<li>support .stl import/export, disabled by default</li>
+</ul>
+</li>
+<li>Views Pie<ul>
+<li>SmartViewCam<ul>
+<li>add poll to ensure it only runs in object mode</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Collection Pie<ul>
+<li>remove custom AddToCollection() and MoveToCollection() ops<ul>
+<li>Blender's the native ops now work properly in local view, even without outliner context overrides</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Cursor and Origin Pie<ul>
+<li>switch position of Origin to Cursor with Origin to Active/Selection buttons<ul>
+<li>Cursor is on the right now, the other Cursor buttons in the pie above</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Filebrowser/Assetbrowser tools<ul>
+<li>support opening the folder of an asset from the assetbrower in the system file browser using <code>O</code> key, just like in the filebrowser</li>
+<li>show fading warning when attempting top open asset's .blend file, if it is already open right now</li>
+</ul>
+</li>
+<li>CreateAssemblyAsset tool<ul>
+<li>fix and simplify thumbnail assignment in Blender 4.0</li>
+</ul>
+</li>
+<li>SmartEdge<ul>
+<li>fix 4.0 issues due to bevel weight and crease API changes</li>
+<li>fix KnifeProject Cut Through typo</li>
+</ul>
+</li>
+<li>Mirror tool<ul>
+<li>simplify moving normal transfer mod on DM decals</li>
+</ul>
+</li>
+<li>Material Picker tool<ul>
+<li>silence warnings when checking for asset browser presence</li>
+</ul>
+</li>
+<li>Customize tool<ul>
+<li>rename Navigation Preferences to Input and Navigation<ul>
+<li>do NDOF setup</li>
+</ul>
+</li>
+<li>change NFOF_BUTTON_FIT view_selected keymap to NDOF_BUTTON_1 view_center_pick</li>
+<li>disable shift + B zoom_border keymap</li>
+<li>change curve.select_linked keymap from CTRL + L to SHIFT dbl LEFTMOUSE</li>
+<li>in Blender 4.0 disable (require) alt_navigation for translate, rotate and resize ops in object, mesh and curve modes</li>
+</ul>
+</li>
+<li>SmartVert tool<ul>
+<li>SlideExtend<ul>
+<li>support HyperCursor 0.9.15 alongside previous pre-release versions</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>addon preferences<ul>
+<li>change addon category to 3D View</li>
+<li>introduce registration_debug setting to control whether (un)registration confirmation is written to the terminal</li>
+<li>simplify and refactor how the various settings are drawn</li>
+<li>fix issue in addon keymap section where warning hint was not displayed when all keymapped tools or pies are disabled</li>
+<li>add CURVEmachine and HyperCursor links to about section</li>
+</ul>
+</li>
+<li>Group Context Menu<ul>
+<li>force INVOKE_DEFAULT executing context to support calling this (sub) menu from a keymap</li>
+</ul>
+</li>
+<li>fully support Blender 4.0<ul>
+<li>drop dpi arg in blf.size()</li>
+<li>support new shader names</li>
+<li>deal with asset browser related API changes</li>
+</ul>
+</li>
+<li>fix np.float issue with newer numpy versions</li>
+<li>silence reload_modules() debug output for good</li>
+</ul>
+<h2 id="v15">v1.5</h2>
+<blockquote>
+<p>2023-06-27</p>
+</blockquote>
+<ul>
+<li>bump minimum Blender version to 3.6</li>
+<li>MaterialPicker tool<ul>
+<li>add prefs to show it on Material and/or Render shaded views, no matter the workspace</li>
+</ul>
+</li>
+<li>Focus tool<ul>
+<li>with "Un-Mirror" enabled, only ignore mirror mods, that use a mirror object</li>
+<li>fix rare exception when encountering None object in focus history</li>
+</ul>
+</li>
+<li>Customize tool<ul>
+<li>update <code>select_linked</code> keymaps to delimit by MATERIAL, SEAM and SHARP</li>
+</ul>
+</li>
+<li>Save Pie - Screencasting<ul>
+<li>add <a href="https://curve.machin3.io">CURVEmachine</a> support</li>
+</ul>
+</li>
+<li>add workaround to prevent Blender crash related to real-time compositing and groups</li>
+<li>take system's UI scaling into account for all modal HUDs</li>
+<li>switch all timer modals to new system clock based method<ul>
+<li>fixes a long time issue, where timer modals would sometimes run much faster than they should</li>
+</ul>
+</li>
+<li>remove bgl completely</li>
+</ul>
+<h2 id="v141">v1.4.1</h2>
+<blockquote>
+<p>2023-04-19</p>
+</blockquote>
+<ul>
+<li>Cursor/Origin Pie<ul>
+<li>fix cursor and origin to edge alignment</li>
+</ul>
+</li>
+</ul>
+<h2 id="v14">v1.4</h2>
+<blockquote>
+<p>2023-04-18</p>
+</blockquote>
+<h4 id="standard_1">Standard</h4>
+<ul>
+<li>Save Pie<ul>
+<li>support Plasticiy import/export (.obj export with axes set properly)</li>
+<li>Clean out .blend tool<ul>
+<li>support keeping object selection</li>
+<li>also remove text, actions, worlds and custom brushes</li>
+<li>also remove post-purge meshes not part of the selected objects (fake user meshes basically)</li>
+</ul>
+</li>
+<li>add optional pre-Undo saving, enabled in addon prefs, toggled in the pie<ul>
+<li>can be useful, if you notice undoing has a tendency to cause crashes</li>
+<li>files are saved to the temp dir with <em>_undosave</em> suffix<ul>
+<li>backup files will be created too, depending on your Blender prefs</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>show warning in pie, if currently loaded file is in temp dir<ul>
+<li>this is done so the users doesn't recover a fil, and then just keeps working in the temp dir</li>
+</ul>
+</li>
+<li>replace native RecoverAutoSave op with custom OpenTemp op</li>
+<li>LoadNext and LoadPrevious tools<ul>
+<li>improve poll to prevent execution when there are no next or previous files</li>
+<li>update descriptions (tooltips) informing exactly what next or previous file is going to be loaded ahead of time</li>
+<li>support loading backupfiles, .blend1, .blend2, etc. via <code>CTRL</code></li>
+</ul>
+</li>
+<li>Screencast tool<ul>
+<li>support screencasting keys via <a href="https://proxe.gumroad.com/l/skribe">SKRIBE</a>, and prefer it over the Screencast Keys addon<ul>
+<li>for MACHIN3tools to find SKRIBE, there needs to be a skribe binary, shell script or alias in the system</li>
+</ul>
+</li>
+<li>enable ScreenCast Keys addon, when it's installed but not enabled</li>
+<li>expose <code>use_skribe</code> and <code>use_screencast_keys</code> toggles to prefs, if they can be detected</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Shading Pie<ul>
+<li>add bevel shader toggle<ul>
+<li>automatically add/remove bevel shader setup to visible materials</li>
+<li>support per-object radius modulation</li>
+</ul>
+</li>
+<li>Shade Smooth and Flat tools<ul>
+<li>for SHIFT and CTRL modes, ensure children or boolean mod objects are in local view, if local view is being used</li>
+</ul>
+</li>
+<li>Shade Flat tool<ul>
+<li>support clearing sharps, bweights, creases and seams independently, instead of always all of them</li>
+<li>automatically disable clearing creases, if a subd mod which uses creases is present</li>
+</ul>
+</li>
+<li>expose PASSES enum in eevee and cycles boxes</li>
+<li>expose 3.5 viewport compositing settings in MATERIAL and RENDERED views</li>
+<li>add 15 to auto smooth angle preset</li>
+</ul>
+</li>
+<li>Cursor/Origin Pie<ul>
+<li>add Origin to Bottom Bounds tools<ul>
+<li>set object origin based on center of bottom bounding box</li>
+<li>optionally based on the evaluated mesh using <code>ALT</code></li>
+</ul>
+</li>
+<li>tweak how orientations are calculated from faces or edges to be more in line with Blender behavior<ul>
+<li>Blender ensures the Y axis is aligned with the view's (screen space) up direction</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Modes Pie<ul>
+<li>highlight currently active edit mesh modes by depressing the buttons accordingly</li>
+<li>support extending selection type using <code>SHIFT</code></li>
+<li>add tooltips explaining expand/contract behavior based on current and chosen selection modes</li>
+</ul>
+</li>
+<li>MaterialPicker tool<ul>
+<li>support assigning materials from the asset browser using <code>CTRL</code> key<ul>
+<li>support applying to face selections in edit mode too</li>
+<li>in object mode, don't finish the tool when applying material<ul>
+<li>this allows to easily apply materials to multiple objects, without having to recall the tool each time</li>
+<li>use <code>SPACE</code> key to finish</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>remove fading label at the end</li>
+<li>instead draw selected material name in HUD in real time</li>
+</ul>
+</li>
+<li>Filebrowser tools<ul>
+<li>when opening blend file or asset in separate Blender instance using <code>ALT + O</code>, do it asynchronously instead of locking the initial Blender instance</li>
+<li>when toggling hidden files via <code>4</code> key, toggle backup .blend visibility too</li>
+<li>in Asset Browser<ul>
+<li>support cycling through all asset libraries, including new 3.5 ALL and ESSENTIAL libs</li>
+<li>support new 3.5 FOLLOW_PREFS import type</li>
+<li>switch default keys, use <code>1</code> for lib cycling, and <code>2</code> for import type cycling</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>SelectHierarchy tool<ul>
+<li>optionally include mod objects (that aren't parented)</li>
+</ul>
+</li>
+<li>Group tools<ul>
+<li>make removal of empty groups optional, by toggling it in addon prefs</li>
+</ul>
+</li>
+<li>ClippingToggle tool<ul>
+<li>change medium default clip_start value to 0.05 for less wobbly HC object gizmos</li>
+</ul>
+</li>
+<li>Thread tool<ul>
+<li>work around rare rotation issue</li>
+</ul>
+</li>
+<li>preferences<ul>
+<li>fix render_enforce_hide_render description</li>
+</ul>
+</li>
+</ul>
+<h4 id="deusex_3">DeusEx</h4>
+<ul>
+<li>GroupTransform tool<ul>
+<li>avoid unnecessary selections when rotating using the group gizmos</li>
+</ul>
+</li>
+</ul>
+<h2 id="v13">v1.3</h2>
+<blockquote>
+<p>2023-01-01</p>
+</blockquote>
+<ul>
+<li>Shading Pie<ul>
+<li>expose auto smooth angle preset values to preferences</li>
+<li>draw Shade Smooth/Flat buttons, when active object is CURVE too</li>
+<li>ShadeSmooth, ShadeFlat<ul>
+<li>optionally smooth children and boolean modifier objects too</li>
+<li>expand ScreenCast support</li>
+<li>prevent issues with non-MESH objects among the selection</li>
+<li>optionally and by default avoid setting sharps for HyperCursor's EdgeBevel edges</li>
+</ul>
+</li>
+<li>support Cycles' Fast GI toggle and it's viewport and render AO bounces</li>
+<li>support Cursor axis drawing again<ul>
+<li>adapt how it is drawn based on whether the cursor itself is shown or hidden</li>
+<li>only show cursor axes when HyperCursor gizmos aren't shown</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Save pie<ul>
+<li>Purge<ul>
+<li>provide feedback about what, if any has been removed</li>
+<li>also run DECALmachine orphan removal, if DM is registered</li>
+<li>add screencast support to distinguish recursive purging via <code>ALT</code> key</li>
+</ul>
+</li>
+<li>add SaveVersionedStartupFile tool<ul>
+<li>mapped to <code>CTRL + U</code> by default, not accessed from the pie itself (yet?)</li>
+<li>addon prefs: support toggling <code>CTRL + U</code> keymap override, which if enabled calls the SaveVersionedStartupFile op instead of Blender's native op to save the startup file</li>
+</ul>
+</li>
+<li>fix the pie not completely unregistering due to bl_idname typo</li>
+</ul>
+</li>
+<li>Modes Pie<ul>
+<li>support HyperCursor's geometry gizmo preview + toggle</li>
+</ul>
+</li>
+<li>SelectHierarchy tool<ul>
+<li>support local view</li>
+<li>add <code>CTRL + DOWN</code> keymap - unhide hierarchy</li>
+<li>add <code>SHIFT + CTRL + DOWN</code> keymap - unhide hierarchy and include parent in selection</li>
+</ul>
+</li>
+<li>Render tools<ul>
+<li>optionally and by default enforce hide_render setting of objects when Cycles viewport rendering (so not camera rendering)</li>
+<li>accessed from Shading Pie</li>
+</ul>
+</li>
+<li>Mirror tool<ul>
+<li>undo initiating Cursor mode when HyperCursor gizmos are visible, too confusing</li>
+<li>fix how misaligned mirror objects are determined once and for all (the previous fix introduced another issue)</li>
+</ul>
+</li>
+<li>Thread tool<ul>
+<li>fix depth value not really being percentage based, as was claimed</li>
+</ul>
+</li>
+<li>MeshCut tool<ul>
+<li>support redoing</li>
+<li>fix it not working with HyperCursor objects (and other addons using custom edge data layers)</li>
+</ul>
+</li>
+<li>SmartEdge tool - Sharpen via <code>SHIFT + 2</code><ul>
+<li>improve working with lazy (mixed) edge selections<ul>
+<li>this avoids the notorious double key presses</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Customize tool<ul>
+<li>enable Cycles preview denoising<ul>
+<li>set the start sample to 2, which allows it to have viewport nav to be as fast as without denoising</li>
+<li>also set input passes from Albedo to None (RGB), which allows denoising to work for refractive materials</li>
+</ul>
+</li>
+<li>enable cycles Fast GI<ul>
+<li>set viewport and render bounces to 2</li>
+<li>this creates a more punchier AO, which is great for details in shadowy areas</li>
+</ul>
+</li>
+<li>set select linked keymap to delimit SHARP not the default SEAM</li>
+<li>fix keymap issue in 3.1.2, where the 3.2 keymap was attempted to be set</li>
+</ul>
+</li>
+<li>preferences<ul>
+<li>cleanup and improve structure/usability</li>
+<li>make individual tool and pie settings collapsible, and collapse them all by default</li>
+</ul>
+</li>
+<li>various ongoing HyperCursor <sup><a href="https://patreon.com/machin3">on Patreon</a></sup> integrations</li>
+</ul>
+<h2 id="v12">v1.2</h2>
+<blockquote>
+<p>2022-11-26</p>
+</blockquote>
+<ul>
+<li>add SelectHierarchy tool<ul>
+<li>optionally and by default select children recursively</li>
+<li>optionally unhide them too</li>
+</ul>
+</li>
+<li>MaterialPicker tool<ul>
+<li>fix assign mode due to Blender's drawing functions no longer receiving an updated event prop</li>
+<li>fix exception when assigning material to objects without a data block</li>
+</ul>
+</li>
+<li>SmartVert tool<ul>
+<li>fix rare exception when connecting paths</li>
+</ul>
+</li>
+<li>Mirror tool<ul>
+<li>fix removal issue, where mirror object misalignment wasn't recognized</li>
+</ul>
+</li>
+<li>AssetBrowser tools<ul>
+<li>fix op bl_idname in sidebar panel</li>
+</ul>
+</li>
+<li>Filebrowser tools<ul>
+<li>fix issue with keymaps not unregistering</li>
+</ul>
+</li>
+<li>Asset Drops<ul>
+<li>check if MESHmachine or DECALmachine are actually installed before attempting to unlink stash objects or decal backups</li>
+</ul>
+</li>
+<li>Customize tool<ul>
+<li>customize workspace pie</li>
+</ul>
+</li>
+<li>Save Pie<ul>
+<li>add usd import/export support</li>
+<li>support toggling obj/fbx/usd (addon preferences)</li>
+<li>support Blender's experimental obj import/export</li>
+</ul>
+</li>
+<li>Shading Pie<ul>
+<li>Object Axes Drawing<ul>
+<li>optionally draw it at fixed screen-space size</li>
+<li>lower default axes size to 0.1 and alpha to 0.5</li>
+<li>fix exception when object becomes invalid</li>
+<li>fix execution when context.visible_object</li>
+</ul>
+</li>
+<li>add Denoise toggle in Cycles settings</li>
+</ul>
+</li>
+<li>Cursor/Origin Pie<ul>
+<li>CursorToSelected tool<ul>
+<li>disable setting Cursor Orientation preset by default (addon preferences)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Views Pie<ul>
+<li>Custom Views<ul>
+<li>disable setting Cursor Orientation preset by default (addon preferences)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>various, ongoing HyperCursor<sup>unreleased</sup> integrations</li>
+</ul>
+<h2 id="v111">v1.1.1</h2>
+<blockquote>
+<p>2022-09-12</p>
+</blockquote>
+<ul>
+<li>Mirror tool<ul>
+<li>fix cursor mirroing when using old (non-flick) keymap</li>
+</ul>
+</li>
+<li>Asset Browser tools<ul>
+<li>fix sidebar panel exception to do old bl_idname</li>
+</ul>
+</li>
+</ul>
+<h2 id="v11">v1.1</h2>
+<blockquote>
+<p>2022-09-10</p>
+</blockquote>
+<h4 id="standard_2">Standard</h4>
+<ul>
+<li>Mirror tool<ul>
+<li>add support for flick mode, and default to single key <code>SHIFT + ALT + X</code> keymap</li>
+<li>support flick mirroring across cursor(empty)<ul>
+<li>support re-using existing empty at cursor location</li>
+</ul>
+</li>
+<li>support flick removal of mirror mods for the active object</li>
+<li>support removal of all mirror mods of all selected objects</li>
+<li>expose flick distance in addon prefs</li>
+</ul>
+</li>
+<li>Assetbrowser tools<ul>
+<li>CreateAssemblyAsset tool<ul>
+<li>support setting asset empty location to Average, Average Floor (default) or World<ul>
+<li>this makes creating Assembly Assets not located in the world origin very easy</li>
+</ul>
+</li>
+<li>support putting asset empty in asset objects' collections</li>
+<li>improve readability of redo panel</li>
+<li>optionally toggle overlays when rendering asset thumb</li>
+<li>fix wire hiding</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Focus tool<ul>
+<li>support ignoring lights<ul>
+<li>this will keep them them always visible</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Filebrowser tools<ul>
+<li>Open tool<ul>
+<li>support opening .blend file using <code>ALT + O</code><ul>
+<li>works in filebrowser and assetbrowser</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Select tools<ul>
+<li>SelectWireObjects tool<ul>
+<li>include objects with BOUNDS display type</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>SmartVert tool<ul>
+<li>fix SlideExtend not working anymore in 3.0+</li>
+</ul>
+</li>
+<li>Customize tool<ul>
+<li>fix keymap issues in 3.2+ due to changes in TWEAK keymaps</li>
+</ul>
+</li>
+<li>Workspace Pie<ul>
+<li>support setting it up the prefs addon prefs</li>
+</ul>
+</li>
+<li>Shading Pie<ul>
+<li>completely rework how object axes are drawn<ul>
+<li>toggle it per-object</li>
+<li>toggle it for the active object</li>
+<li>persists across blender starts and scene loads</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Modes Pie<ul>
+<li>support new Sculpt Curves (Hair) mode in 3.3</li>
+</ul>
+</li>
+<li>Snapping Pie<ul>
+<li>support volume snapping</li>
+</ul>
+</li>
+<li>UV Align Pie<ul>
+<li>prevent exception when aligning with multiple objects in edit mode, but the active having no loops(verts/edges in UV space) selected</li>
+</ul>
+</li>
+<li>Views Pie<ul>
+<li>fix aligning to active, local or cursor in 3.2+<ul>
+<li>due to a change in blender behavior, it is now necessary to switch to an ortho side view afterwards, if you want to be able to rotate back into a perspective view utilizing Blender's use_auto_perspective pref</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Save Pie<ul>
+<li>fix Blender crash issues when starting new file</li>
+</ul>
+</li>
+<li>various updates for HyperCursor(unreleased) support and integration</li>
+</ul>
+<h4 id="deusex_4">DeusEx</h4>
+<ul>
+<li>GroupTransform tool<ul>
+<li>support auto keying group empty rotation</li>
+<li>also allow keying initial rotation and activate auto keying using <code>K</code> key</li>
+</ul>
+</li>
+<li>Extrude tools<ul>
+<li>activate by default</li>
+</ul>
+</li>
+<li>Shading Pie<ul>
+<li>support toggling group gizmo visibility</li>
+</ul>
+</li>
+</ul>
+<h2 id="v102">v1.0.2</h2>
+<blockquote>
+<p>2022-04-24</p>
+</blockquote>
+<ul>
+<li>Customize tool<ul>
+<li>map select parent/child to up/down arrows</li>
+</ul>
+</li>
+<li>avoid light visibility/renderability synching even when render tools are disabled</li>
+<li>fix typos</li>
+</ul>
+<h2 id="v101">v1.0.1</h2>
+<blockquote>
+<p>2022-04-16</p>
+</blockquote>
+<ul>
+<li>AlignRelative tool<ul>
+<li>fix it being out of sync with the DeusEx version</li>
+</ul>
+</li>
+<li>CreateAssemblyAsset tool<ul>
+<li>fix thumbnail saving on Windows</li>
+<li>automatically assign thumbnail to asset</li>
+</ul>
+</li>
+</ul>
+<h2 id="v10">v1.0</h2>
+<blockquote>
+<p>2022-04-15</p>
+</blockquote>
+<h4 id="standard_3">Standard</h4>
+<ul>
+<li>raise minimum Blender version to 3.0</li>
+<li><strong>add Documentation</strong></li>
+<li>add Assetbrowser tools<ul>
+<li>add CreateAssemblyAsset tool<ul>
+<li>create multi-object asset for the Asset Browser</li>
+<li>automatically assign to chosen library catalog</li>
+<li>keep parent-child relationships</li>
+<li>keep drivers</li>
+<li>optionally clear Decal Backups and Stashes</li>
+<li>optionally create thumbnail</li>
+<li>automatically switch to preferred Asset Browser workspace</li>
+<li>automatically switch Asset Browser to Local</li>
+<li>optionally hide wire objects</li>
+<li>support creation of assets made of assets</li>
+</ul>
+</li>
+<li>add AssembleCollectionInstance tool<ul>
+<li>used to access individual collection instance asset objects</li>
+<li>also works for non-asset collection instances</li>
+<li>optionally keep empty as root parent via ALT key</li>
+<li>optionally hide wire objects</li>
+<li>support assembling assets made of assets</li>
+</ul>
+</li>
+<li>automatically unlink decal backups and stash objects when appending assets using Asset Browser</li>
+</ul>
+</li>
+<li>add Render tools<ul>
+<li>add QuickRender tool<ul>
+<li>quickly render different quality settings and automatically save the result relative to the blend file</li>
+</ul>
+</li>
+<li>add SeedRender tool<ul>
+<li>render 3 different seeds and combine them to remove fireflies</li>
+</ul>
+</li>
+<li>add FinalRender and FinalSeedRender tools<ul>
+<li>force .exr, create Cryptomatte and setup Compositor</li>
+</ul>
+</li>
+<li>add DuplicateNodes tool<ul>
+<li>duplicate nodes normally, except when a CryptomatteV2 node is active</li>
+<li>in that case keep the input link and clear out the matte ids</li>
+</ul>
+</li>
+<li>optionally show render buttons in light properties panel</li>
+<li>optionally sync light visibility/renderability when rendering</li>
+</ul>
+</li>
+<li>add AlignRelative tool<ul>
+<li>duplicate/instance selected objects and align the relatively to chosen target objects</li>
+</ul>
+</li>
+<li>add PunchIt (a little) tool<ul>
+<li>simple, but functional manifold extrusions</li>
+</ul>
+</li>
+<li>Filebrowser tools<ul>
+<li>CycleThumbs tool<ul>
+<li>support backwards cycling using <code>SHIFT + 3</code></li>
+</ul>
+</li>
+<li>in Asset Browser support<ul>
+<li>cycling import_types using <code>1</code></li>
+<li>toggling LOCAL/Library using <code>2</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Groups<ul>
+<li>support Group Origin adjustment from the<ul>
+<li>Tools Tab in the 3D View's sidebar</li>
+<li>Active Tool tab in the Properties View</li>
+<li>Group section in MACHIN3tools panel</li>
+</ul>
+</li>
+<li>fix group selection issues in local view, that prevented (De)Select All from working correctly</li>
+</ul>
+</li>
+<li>CursorSpin tool<ul>
+<li>add angle presets</li>
+<li>add adaptive steps</li>
+<li>add offset</li>
+<li>force consistent positive extrusion, unless inverted</li>
+<li>activate along Punchit with the Extrude button in addon prefs</li>
+</ul>
+</li>
+<li>CleanUp tool<ul>
+<li>draw red HUD label when post-clean-up non-manifold edges are found</li>
+</ul>
+</li>
+<li>ToggleSmooth tool<ul>
+<li>support multiple subd mods per object</li>
+</ul>
+</li>
+<li>SmartVert SlideExtend tool<ul>
+<li>fix snapping in local view</li>
+</ul>
+</li>
+<li>Save Pie<ul>
+<li>add custom SaveAs tool<ul>
+<li>ALT: Save as Copy</li>
+<li>CTRL: Save as Asset<ul>
+<li>removes all objects in a file not belonging to an asset</li>
+<li>it then invokes Save as Copy</li>
+<li>useful to save assets to external library</li>
+<li>save normally before running this op, or undo after it</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>.fbx export: make applying 'FBX_SCALE_ALL' optional in addon prefs<ul>
+<li>good for Unity, but bad for Unreal</li>
+</ul>
+</li>
+<li>optionally hide Screen Cast</li>
+<li>remove Material + World appending tools in favour of Blender's native asset workflow</li>
+</ul>
+</li>
+<li>Shading Pie<ul>
+<li>make setting use_scene_lights and use_scene_world optional when changing eevee presets</li>
+<li>with the Render tools activated<ul>
+<li>support adjusting area light intensity when switching between Eevee and Cycles</li>
+<li>area lights adjustment has 3 triggers<ul>
+<li>render init/cancel/complete</li>
+<li>switching shading from material to rendered cycles or back in the pie</li>
+<li>switching render engine from Eevee to Cycles or back in the pie</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>indicate if edit_mesh_wire (xray) is enabled using the blue wire icon</li>
+</ul>
+</li>
+<li>Modes Pie<ul>
+<li>support particle edit mode</li>
+<li>when the passthrough toggle or the edit mode wireframe toggle (shading pie) are used<ul>
+<li>make toggling X-Ray optional (addon prefs) when entering or leaving edit mode</li>
+</ul>
+</li>
+<li>in SurfaeDrawMode, avoid enabling auto-key to allow for grease pencil drawing</li>
+</ul>
+</li>
+<li>Save Pie, ScreenCast<ul>
+<li>distinguish new MESHmachine Symmetrize modes</li>
+</ul>
+</li>
+<li>Workspace Pie<ul>
+<li>re-enable Compositing workspace</li>
+</ul>
+</li>
+<li>MACHIN3tools Panel<ul>
+<li>hide the entire panel or only sub-sections, depending on mode and activated tools</li>
+<li>add Extrude section in edit mode with CursorSpin and PunchIt buttons</li>
+</ul>
+</li>
+<li>preferences<ul>
+<li>allow disabling MACHIN3tools sidebar panel completely</li>
+<li>redo about tab</li>
+</ul>
+</li>
+<li>Customize tool<ul>
+<li>map ui.reset_default_button to MMB</li>
+</ul>
+</li>
+</ul>
+<h4 id="deusex_5">DeusEx</h4>
+<ul>
+<li>add Group Transform Operator and Gizmos<ul>
+<li>rotate Groups around specific axes without have to select said groups first</li>
+<li>add global Group Gizmo toggle in 3D View's sidebar and the Object Context menu</li>
+<li>add per-group Gizmo visibility and per-axis rotation toggles</li>
+<li>set group gizmo size per-group and globally<ul>
+<li>set group gizmo size from the sidebar and from the Group Transform operator</li>
+</ul>
+</li>
+<li>set and recall rest poses for the active group groups down the hierarchy at once<ul>
+<li>set and recall rest poses from the sidebar or from the Group Transform operator</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>add PunchIt tool<ul>
+<li>advanced manifold extrusions, same as in the dedicated <a href="https://machin3.io/PUNCHit">PUNCHit addon</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v0100">v0.10.0</h2>
+<blockquote>
+<p>2022-03-14</p>
+</blockquote>
+<ul>
+<li>add AssembleCollection tool<ul>
+<li>assemble all objects of a collection instance, making them accessible</li>
+<li>works for linked and appended collection instance assets, brought in via the Asset Browser</li>
+<li>accessed from the Modes Pie</li>
+</ul>
+</li>
+</ul>
+<h2 id="v090">v0.9.0</h2>
+<blockquote>
+<p>2021-11-27</p>
+</blockquote>
+<h4 id="standard_4">Standard</h4>
+<ul>
+<li>support Blender 3.0</li>
+<li>Save Pie<ul>
+<li>add ScreenCast tool<ul>
+<li>optionally show DM, MM, M3, HO and BC addon prefixes</li>
+<li>automatically enable Screencast Keys for shortcut display, if that addon is installed</li>
+</ul>
+</li>
+<li>Add ReloadLinkedLibraries tool (thanks TitusLVR)</li>
+<li>SaveIncremental tool<ul>
+<li>support two-digit versioning using <code>ALT</code><ul>
+<li>useful to create sub-versions of already incrementally saved blend files like <code>myfile_007_01.blend</code>, instead of proceeding to <code>myfile_008.blend</code></li>
+</ul>
+</li>
+<li>preview path in tool tip/description for clarity</li>
+</ul>
+</li>
+<li>Purge<ul>
+<li>use recursive purging now via <code>ALT</code> instead of running it multiple times</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Snapping Pie
+        - add layout toggle (same as in addon prefs)
+        - add second layout with grid snapping toggle</li>
+<li>Shading Pie<ul>
+<li>add 'Use Flat Shadows' toggle<ul>
+<li>toggle viewport shadows only for flat shaded lighting</li>
+</ul>
+</li>
+<li>simplify switching shading into single SwitchShading() operator</li>
+</ul>
+</li>
+<li>Collection Pie<ul>
+<li>support local view for AddToCollection and MoveToCollection tools<ul>
+<li>requires Outliner to be visible on the screen, so won't work with maximized 3d view</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Cursor and Origin Pie:<ul>
+<li>prevent offsetting MESHmachine stashes on object's whose origin is not changed (aka "self stashes")</li>
+</ul>
+</li>
+<li>SmartVert tool<ul>
+<li>support CENTER merging edge/face selections (per sequence/island)</li>
+<li>support LAST merging edge/face selections to mouse (per sequence/island)<ul>
+<li>edge/face selection don't have a LAST(active) vert, so merge to the vert closest to the mouse instead</li>
+</ul>
+</li>
+<li>SlideExtend<ul>
+<li>add Flatten mode <code>F</code></li>
+<li>use new Snapping approach</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>SmartEdge tool<ul>
+<li>support selecting adjacent faces/edges (as an alternative to Bounds/Region)<ul>
+<li>edge selection: select adjacent faces</li>
+<li>face selection: select adjacent edges</li>
+</ul>
+</li>
+<li>support setting bevel weight(as an alternative to setting sharp)<ul>
+<li>support 2 new modes: CHAMFER and KOREAN<ul>
+<li>for both of these: add bevel mod if not present already</li>
+<li>remove bevel mod again, if no bweights are set on the mesh anymore</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>fix rare error when connecting vert paths fails</li>
+</ul>
+</li>
+<li>SmartFace tool<ul>
+<li>support going into Focus mode when creating a new mesh object from a face selection</li>
+</ul>
+</li>
+<li>Filebrowser tools<ul>
+<li>add CycleThumbs tool (file browser tools) mapped to <code>3</code></li>
+<li>remap hidden files toggle to <code>4</code></li>
+</ul>
+</li>
+<li>CleanUp tool<ul>
+<li>fix issue when active object is not selected</li>
+</ul>
+</li>
+<li>Customize tool<ul>
+<li>update node editor shortcuts<ul>
+<li>use <code>F</code> for <code>node.view_selected</code></li>
+<li>use <code>SHIFT + F</code> for <code>node.view_all</code></li>
+<li>disable <code>F</code> for <code>node.link_make</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>ToggleSmooth tool<ul>
+<li>prevent meshes without any faces causing exceptions</li>
+</ul>
+</li>
+<li>addon preferences<ul>
+<li>expose HUD size and per-tool HUD fade time out settings<ul>
+<li>applies to CleanUp, ClippingToggle, MaterialPicker, SurfaceSlide, Focus, Group, TransformEdgeConstrained and Tools Pie</li>
+</ul>
+</li>
+<li>add option for alternative Snapping Pie layout showing absolute grid snapping button</li>
+<li>add option for legacy line smoothing</li>
+</ul>
+</li>
+<li>replace previous parenting and unparenting logic</li>
+<li>use safe matrix inversion everywhere</li>
+<li>fix some poll issues when doing operator search in non-3d view editors</li>
+<li>remove legacy code for Blender pre-2.93</li>
+<li>drop bgl module use for view3d drawing (except for legacy line smoothing)</li>
+</ul>
+<h4 id="deusex_6">DeusEx</h4>
+<ul>
+<li>TransformEdgeConstrained tool<ul>
+<li>fix <code>MMB</code> axis lock issue with tiny scaled objects, due to axis vector being too small</li>
+</ul>
+</li>
+</ul>
+<h2 id="v080">v0.8.0</h2>
+<blockquote>
+<p>2021-04-16</p>
+</blockquote>
+<h4 id="deusex_7"><a href="whatsnew.html#deus-ex">DeusEx</a></h4>
+<ul>
+<li>add TransformEdgeConstrained tool<ul>
+<li>rotate and scale while being constrained to edges</li>
+<li>transform in view space and local space via axis locking</li>
+<li>median, active, cursor and individual origins</li>
+<li>support direction locking for scaling</li>
+<li>quick access to zero scaling</li>
+<li>keymaped to <code>ALT + R</code> in edit mesh mode</li>
+</ul>
+</li>
+</ul>
+<h4 id="standard_5">Standard</h4>
+<ul>
+<li>add ToggleSmooth tool<ul>
+<li>toggle smoothing in Korean Bevels and SubD workflows</li>
+<li>in object mode support multiple objects and equalize the smoothness state across all objects</li>
+<li>keymaped to <code>ALT + Tab</code></li>
+</ul>
+</li>
+<li>SmartVert, SlideExtend<ul>
+<li>support sliding verts in edge mode</li>
+<li>support snapping to faces (of any object in edit mode)</li>
+</ul>
+</li>
+<li>CleanUp tool<ul>
+<li>add HUD indicating how much if any geometry was removed</li>
+<li>make it easier to lower the dissolve_redundant_angle when dragging the prop in the redo panel</li>
+</ul>
+</li>
+<li>SmartEdge tool<ul>
+<li>narrow down scenarios where knife project is used</li>
+</ul>
+</li>
+<li>CursorSpin tool<ul>
+<li>make activation optional</li>
+</ul>
+</li>
+<li>Customize tool<ul>
+<li>keep wire threshold at 1 instead of changing it to 0.99</li>
+</ul>
+</li>
+<li>Shading pie<ul>
+<li>expose wire opacity instead of threshold</li>
+</ul>
+</li>
+</ul>
+<h2 id="v071">v0.7.1</h2>
+<blockquote>
+<p>2021-03-28</p>
+</blockquote>
+<ul>
+<li>fix exception in CursorToSelected tool</li>
+<li>Modes pie - SurfaceDrawMode<ul>
+<li>enable <code>toolsettings.use_keyframe_insert_auto</code> in 2.93 due to behavior change</li>
+</ul>
+</li>
+</ul>
+<h2 id="v070">v0.7.0</h2>
+<blockquote>
+<p>2021-03-27</p>
+</blockquote>
+<ul>
+<li>Save pie<ul>
+<li>add Clean tool<ul>
+<li>remove all objects, materials, images, collections from current blend file</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Modes pie<ul>
+<li>SurfaceDrawMode<ul>
+<li>create black GP material + set brush strength to 1</li>
+<li>add opacity and thickness mods</li>
+</ul>
+</li>
+<li>add ShrinkwrapGreasePencil tool</li>
+<li>expose opacity and thickness factors, if mods are present</li>
+<li>expose Grease Pencil <code>zdepth_offset</code></li>
+<li>expose Grease Pencil <code>use_curve_edit</code> in 2.92+</li>
+</ul>
+</li>
+<li>Align pie - AlignEditMesh tool<ul>
+<li>refactor and support redo panel</li>
+<li>optionally align <strong>each</strong> edge loop or face island</li>
+</ul>
+</li>
+<li>Shading pie - Matcap Switch<ul>
+<li>optionally switch background too</li>
+<li>optionally disable overlays for Matcap 2</li>
+</ul>
+</li>
+<li>Views/Cams pie<ul>
+<li>simplify orbit method (Trackball/Turntable) into single toggle</li>
+<li>add orbit around selection toggle</li>
+<li>fix SmartViewCam not working in EDIT_MESH mode</li>
+</ul>
+</li>
+<li>SmartVert tool<ul>
+<li>Slide Extend mode<ul>
+<li>fix snapping issue with zero length edges</li>
+</ul>
+</li>
+<li>support CENTER when merging vertex paths</li>
+</ul>
+</li>
+<li>SmartEdge tool - Knife Project mode<ul>
+<li>allow disabling Knife Project in redo panel<ul>
+<li>useful if you want to select the boundary loop, even though the current selection is separated from the mesh</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>CleanUp tool<ul>
+<li>support multiple edit meshes</li>
+</ul>
+</li>
+<li>Customize tool<ul>
+<li>fix <code>node.links_cut</code> and <code>node.add_reroute</code> KMIs in 2.92+</li>
+<li>support 2.7x keymap in 2.93</li>
+<li>set Filebrowser search KMI to <code>/</code></li>
+</ul>
+</li>
+<li>fix keymap issues when running Blender in background mode</li>
+</ul>
+<h2 id="v060">v0.6.0</h2>
+<blockquote>
+<p>2021-01-20</p>
+</blockquote>
+<ul>
+<li>add comprehensive, export friendly Group tool set<ul>
+<li>group objects by parenting to empties</li>
+<li>tools include Group <code>CTRL + G</code> , Ungroup, Groupify, Add and Remove Objects/Groups from Group, Select <code>SHIFT + dbl-LMB</code>and Duplicate Group</li>
+<li>support auto-select, recursive-select and group-empty hiding - all enabled by default - and more</li>
+<li>Outliner shortcuts <code>1</code>, <code>2</code>,<code>3</code>, <code>4</code> to Toggle Group Mode, Expand and Collapse, and Toggle Children</li>
+</ul>
+</li>
+<li>add Add Thread tool<ul>
+<li>in edit mesh context menu</li>
+</ul>
+</li>
+<li>add CursorSpin tool<ul>
+<li>in the Extrude <code>Alt + E</code> menu</li>
+<li>CursorSpin basically just fixes Blender's native Spin operator<ul>
+<li>Blender's native op is still stuck in a world where the Cursor had no rotation</li>
+<li>and so there is no convenient way to set the spin axis</li>
+<li>while the spin center is properly initiated from the cursor location, the axis isn't</li>
+<li>the only way to use Blender's spin op is using the Spin tool, which does it properly</li>
+<li>CursorSpin does the same, but is also directly available from the Extrude menu, so there's no need for the Spin tool</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>add SelectWireObjects tool<ul>
+<li>select wire objects, such as ones commonly used for booleans</li>
+<li><code>ALT</code> Hide them</li>
+<li><code>CTRL</code> include Empties too</li>
+</ul>
+</li>
+<li>Align tool<ul>
+<li>support aligning active between 2 selected object</li>
+<li>support groups</li>
+<li>support "Affect Only Parents" transform option</li>
+</ul>
+</li>
+<li>SmartVert tool<ul>
+<li>support vert bevel for single vert selections</li>
+</ul>
+</li>
+<li>SmartEdge tool<ul>
+<li>add Knife Project capability<ul>
+<li>if the selection is separated from the rest of the mesh, run knife project</li>
+<li>useful to quickly knife project duplicated edge or face selections</li>
+</ul>
+</li>
+<li>Offset Edges (Korean Bevel)<ul>
+<li>properly remove sharps, when the Bevel tool is chosen</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Material Picker tool<ul>
+<li>expose workspace names in addon prefs to filter which workspaces the tool's button should appear on</li>
+<li>add Material Picker to Object Context menu</li>
+<li>optionally assign material too, using ALT</li>
+</ul>
+</li>
+<li>CleanUp tool<ul>
+<li>add option to find/select non-planar faces</li>
+</ul>
+</li>
+<li>SelectedToCursor tool<ul>
+<li>support "Affect Only Parents" transform option</li>
+<li>properly support group auto-selections<ul>
+<li>if the active object is a group empty, ignore all other selected objects</li>
+<li>this means you can easily move a group to the cursor or the cursor to a group, without having to disable auto-select</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>CursorToSelected tool<ul>
+<li>properly support group auto-selections</li>
+</ul>
+</li>
+<li>Focus tool<ul>
+<li>fix invert mode being initiated via ALT modifier key</li>
+</ul>
+</li>
+<li>SurfaceSlide tool<ul>
+<li>fix issues with booleans, by stripping all mods from the surface reference object</li>
+</ul>
+</li>
+<li>Customize tool<ul>
+<li>Overlays<ul>
+<li>disable show_fade_inactive edit mode overlay</li>
+</ul>
+</li>
+<li>Keymap<ul>
+<li>ensure <code>CTRL + B</code> bevel keymap uses OFFSET</li>
+<li>change <code>SHIFT + CTRL + B</code> vert bevel keymap to edge percent bevel instead<ul>
+<li>you can easily do vert bevels using SmartVert, or regular bevels switched to vert via <code>V</code> in the modal</li>
+<li>switching mode using <code>M</code> in the modal is cumbersome however, hence the extra keymap</li>
+</ul>
+</li>
+<li>force bevel keymap profile of 0.6</li>
+<li>this is helpful when alternating between Smart Edge Offset Edges, which forces a profile of 1</li>
+<li>deactivate <code>mesh.fill</code> <code>ALT + F</code> keymap<ul>
+<li>this means <code>ALT + F</code> can be used from edit mesh mode to center the view on the mouse, just like in object mode</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Shading pie<ul>
+<li>add ColorizeObjectsFromGroups tool<ul>
+<li>recursively assign random colors to each group in the selection</li>
+<li><code>ALT</code> use existing group empty colors, instead of new random colors, to unify group objects colors</li>
+<li><code>CTRL</code> only colorize the active group</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Transform pie<ul>
+<li>add "Affect Only Group Origin" option<ul>
+<li>this enables "Affect Only Parents", and disables Group Auto-Select at the same time, allowing for convenient "Group Origin" changes</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Modes pie<ul>
+<li>fix several gpencil ("Surface Draw mode") issues due to 2.83+ API changes</li>
+</ul>
+</li>
+<li>Tools pie<ul>
+<li>fix issue when not in Object or EDIT_MESH modes</li>
+<li>fix issue when drawing tool name, if the pie's tools are customized</li>
+</ul>
+</li>
+<li>M3 theme<ul>
+<li>tone down outliner selection color</li>
+</ul>
+</li>
+</ul>
+<h2 id="v050">v0.5.0</h2>
+<blockquote>
+<p>2020-12-26</p>
+</blockquote>
+<ul>
+<li>add MaterialPicker tool<ul>
+<li>accessed from the Shading/Material workspace</li>
+</ul>
+</li>
+<li>add SurfaceSlide tool<ul>
+<li>accessed from the Modes pie</li>
+</ul>
+</li>
+<li>rebuild SmartVert Slide Extend mode<ul>
+<li>support multi target sliding<ul>
+<li>this requires making a distinction between how the selection is made<ul>
+<li>make a manual selection of each vert, then every second vert will be a target for the previous one</li>
+<li>to use a single target for multiple verts, use box or circle select, followed by selecting the active vert target</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>support snapping (to edges of all edit mode objects) using <code>CTRL</code></li>
+<li>support diverged snapping using <code>CTRL + ALT</code></li>
+<li>draw proximity and ortho coords</li>
+<li>dissolve edges if necessary</li>
+<li>add statusbar info</li>
+<li>make it more responsive and take mouse direction into account to control the slide</li>
+<li>improve performance significantly on heavy meshes</li>
+<li>stop taking mouse inputs when passing through to adjust viewport using <code>MMB</code></li>
+</ul>
+</li>
+<li>Mirror tool<ul>
+<li>support mirroring across cursor</li>
+</ul>
+</li>
+<li>Unmirror tool<ul>
+<li>remove empties created when mirrored across cursor</li>
+</ul>
+</li>
+<li>Focus tool<ul>
+<li>add inverted local view mode, mapped to <code>CTRL + ALT + F</code> by default<ul>
+<li>focus on the inverted selection</li>
+</ul>
+</li>
+<li>ViewSelected mode<ul>
+<li>treat no selection in edit mode like no selection in object mode: focus on everything</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>ClippingToggle tool<ul>
+<li>add fading HUD</li>
+<li>use 0.01 as the default value for MEDIUM (same as Blender default)</li>
+</ul>
+</li>
+<li>Customize tool<ul>
+<li>deactivate transform.translate <code>SHIFT + T</code> (texture space) keymap</li>
+</ul>
+</li>
+<li>Cursor/Origin pie menu<ul>
+<li>add SelectedToCursor tool<ul>
+<li>like all custom tools in the Cursor/Origin pie, supports aligning location and rotation or only either one</li>
+</ul>
+</li>
+<li>add OriginToCursor tool<ul>
+<li>like all custom tools in the Cursor/Origin pie, supports aligning location and rotation or only either one</li>
+</ul>
+</li>
+<li>CursorToOrigin tool<ul>
+<li>support resetting only location <code>ALT</code> or only rotation <code>CTRL</code> to world origin</li>
+</ul>
+</li>
+<li>by default disable Cursor to Grid and Snap to Grid<ul>
+<li>can be re-enabled prefs</li>
+</ul>
+</li>
+<li>CursorToSelected, CursorToOrigin<ul>
+<li>optionally toggle cursor axes drawing, can be disabled in prefs</li>
+<li>optionally set/reset cursor transform preset, can be disabled in prefs</li>
+</ul>
+</li>
+<li>move CursorToSelected down to the left, and CursorToOrigin to the top left instead</li>
+<li>fix edge alignment issue in CursorToSelected and OriginToActive</li>
+</ul>
+</li>
+<li>Views pie - Custom Views<ul>
+<li>toggle object or cursor axes, can be disabled in prefs</li>
+</ul>
+</li>
+<li>Modes pie<ul>
+<li>support syncing tools, can be disabled in prefs</li>
+</ul>
+</li>
+<li>Save pie<ul>
+<li>LoadMostRecent, LoadPrevious, LoadNextm Save and SaveIncremental tools<ul>
+<li>add statusbar output</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Shading pie<ul>
+<li>add 'in front' object display option when in wireframe shading</li>
+</ul>
+</li>
+<li>Tools pie<ul>
+<li>add fading HUD</li>
+</ul>
+</li>
+</ul>
+<h2 id="v041">v0.4.1</h2>
+<blockquote>
+<p>2020-10-18</p>
+</blockquote>
+<ul>
+<li>Tools pie<ul>
+<li>fix BoxCutter tool not appearing for some people</li>
+<li>add HardOps menu in edit mode</li>
+</ul>
+</li>
+<li>Align<ul>
+<li>fix Align tool's <code>ALT + A</code> shortcut not working, due to Blender's (De)Select All shortcut taking precedence<ul>
+<li>discard 3D View Generic keymap, add Object and Pose mode keymap items instead</li>
+</ul>
+</li>
+<li>fix bone alignment, take Armature matrix into account</li>
+</ul>
+</li>
+</ul>
+<h2 id="v04">v0.4</h2>
+<blockquote>
+<p>2020-10-16</p>
+</blockquote>
+<ul>
+<li>change addon preferences<ul>
+<li>by default only enable the Modes pie and Focus tool to prevent new users feeling overwhelmed and to emphasize the customizability</li>
+</ul>
+</li>
+<li>add Tools pie Menu <code>Q</code><ul>
+<li>BoxCutter and HardOps support</li>
+<li>optionally draw Quick Menu and Toolsbar</li>
+</ul>
+</li>
+<li>Add Snapping pie</li>
+<li>Viewport pie<ul>
+<li>add ResetViewport</li>
+<li>add optional orbit method selection (enable in addon prefs)</li>
+<li>ViewAxis<ul>
+<li>use ORTHO when <code>ALT</code> aligning to a selection</li>
+</ul>
+</li>
+<li>add Custom Views, either in Local or Cursor space<ul>
+<li>optionally set trackball navigation when using custom views</li>
+<li>optionally set transform preset when switching them on</li>
+<li>turn off ortho grid when using custom view, as it isn't drawn properly anyway</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Transform pie<ul>
+<li>use VIEW preset instead of GLOBAL in custom views</li>
+<li>add <em>correct face attributes</em> settings</li>
+</ul>
+</li>
+<li>Shading pie<ul>
+<li>prevent accidentally switching to solid shading, when attempting to smooth in Material mode</li>
+<li>prevent accidentally clearing custom normals when toggling cavity</li>
+<li>add stats toggle (2.90 only)</li>
+<li>add curve properties</li>
+<li>add RotateStudioLight<ul>
+<li>rotate studiolight by 180 degrees</li>
+<li>optionally rotate visible light sources too <code>ALT</code></li>
+</ul>
+</li>
+<li>ToggleObjectAxes - draw cursor axes (in addition to object axes)</li>
+</ul>
+</li>
+<li>Align pie<ul>
+<li>Align - support aligning in cursor space <code>CTRL</code></li>
+<li>Center - support centering in cursor space <code>CTRL</code></li>
+</ul>
+</li>
+<li>Cursor and Origin pie<ul>
+<li>OriginToActive<ul>
+<li>support edit mode alignment to Verts/Edges/Faces</li>
+<li>support multi Vert/Edge/Face selections<ul>
+<li>the location is averaged, the rotation taken from the active</li>
+</ul>
+</li>
+<li>support only setting location <code>ALT</code> or rotation <code>CTRL</code></li>
+<li>DECALmachine support:<ul>
+<li>automatically change origins of projected/sliced decals and update decal backup matrices</li>
+</ul>
+</li>
+<li>MESHmachine support:<ul>
+<li>automatically change origins of stashed objects and update stash object matrices</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>CursorToSelected<ul>
+<li>use median weighted center instead of bounds center when aligning to face<ul>
+<li>because Blender's bounds center can produce locations not in the plane of the face</li>
+</ul>
+</li>
+<li>represent edit mode selection state in button label</li>
+<li>support only setting location <code>ALT</code> or rotation <code>CTRL</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Save pie<ul>
+<li>LoadMostRecent - ensure most recent file path still exists</li>
+<li>MatcapSwitch - add option to force single color mode</li>
+<li>fix rare unicode related exception when writing to the recent_files list/file</li>
+<li>fbx export - use <em>FBX_SCALE_ALL</em></li>
+</ul>
+</li>
+<li>Workspace pie<ul>
+<li>SwitchWorkspace - also sync shading and overlays to non-alt workspaces, if <code>ALT</code> is pressed</li>
+</ul>
+</li>
+<li>add MACHIN3tools panel<ul>
+<li>add SmartDrive tool<ul>
+<li>easily drive one object's location/rotation with the location/rotation of another</li>
+</ul>
+</li>
+<li>add Unity Export (Preparation) tool<ul>
+<li>for now<ul>
+<li>support mesh objects</li>
+<li>support armatures</li>
+<li>support meshes parented to other meshes or bones</li>
+<li>support bevel, mirror and displace mods</li>
+</ul>
+</li>
+<li>prepare objects to achieve 0 rotation imports</li>
+<li>swivel y and z scale props</li>
+<li>add optional triangulation</li>
+<li>already integrated in DECALmachine 2.0's Atlas Export</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Focus tool<ul>
+<li>Local View mode<ul>
+<li>add Focus Level HUD</li>
+<li>also allow going up a level if selected objects == visible objects<ul>
+<li>so no need to deselect in that case</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>View Selected mode<ul>
+<li>if nothing is selected, focus on all visible objects</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Align tool<ul>
+<li>support aligning to active bone<ul>
+<li>optionally parent to the bone</li>
+<li>optionally align object Z to bone Y</li>
+<li>optionally roll when aligning to Bone</li>
+</ul>
+</li>
+<li>prevent odd undo issue when calling the tool first thing in Blender's startup scene</li>
+</ul>
+</li>
+<li>Cleanup tool<ul>
+<li>add removal of redundant verts and/or edges (replaces previous 2-edged vert removal)</li>
+</ul>
+</li>
+<li>SmartEdge tool<ul>
+<li>add bridge capability and expose bridge props to Redo panel</li>
+<li>add <a href="https://twitter.com/machin3io/status/1272635357746606080">"Korean Bevel"</a> capability <code>CTRL + 2</code><ul>
+<li>create "fake" bevel shading via support edges</li>
+<li>uses offset edges or bevel, depending on topological conditions</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Customize tool<ul>
+<li>update for 2.90</li>
+<li>add statusbar changes for 2.90+</li>
+<li>add extremely verbose terminal output for every change that is done (shading, overly, keymaps, etc)</li>
+<li>enable use_uv_select_sync for startup file customization</li>
+</ul>
+</li>
+<li>fix Quadsphere exception in edit mode</li>
+<li>fix PurgeOrphans tool not unregistering</li>
+</ul>
+<h2 id="v0315">v0.3.15</h2>
+<blockquote>
+<p>2020-06-08</p>
+</blockquote>
+<ul>
+<li>add Filebrowser Toggle tool<ul>
+<li>keymaped to <code>i</code>, <code>2</code> and <code>3</code>keys by default<ul>
+<li>toggle sorting alpha numerically or by time</li>
+<li>toggle display type vertical list or thumbnail</li>
+<li>toggle visibility of hidden files (linux users only?)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Quadsphere object<ul>
+<li>smooth by default it</li>
+</ul>
+</li>
+<li>Customize tool<ul>
+<li>add outliner customization</li>
+<li>startup file customization<ul>
+<li>hide toolbar</li>
+<li>set view matrix</li>
+</ul>
+</li>
+<li>shading customization<ul>
+<li>set new studiolight_background blur and alpha settings to 1</li>
+<li>disable eevee volumetrics</li>
+<li>enable eevee AO and SSR</li>
+</ul>
+</li>
+<li>fix 2.82+ viewport prefs issue, due to removal of multi_sample prefs</li>
+</ul>
+</li>
+<li>Shading pie<ul>
+<li>refactor, making it more contextually aware</li>
+<li>add world space lighting toggle for solid shading in studio mode</li>
+<li>for armatures set bone axes and armature display type, not object axis and object display type</li>
+<li>ultra eevee preset<ul>
+<li>setup a volume node when switching to this, if none is connected to the world</li>
+</ul>
+</li>
+<li>add cycles settings when in rendered shading</li>
+<li>expose new bg strength and blur props</li>
+<li>expose volumetric shadow props</li>
+<li>add auto smooth presets</li>
+<li>indicate if toggles are enabled</li>
+<li>move object related settings into their own box</li>
+<li>separate overlay and solid shading related settings</li>
+<li>add tooltips everywhere</li>
+</ul>
+</li>
+<li>Save pie<ul>
+<li>add Purge Orphans tool, which optionally purges 5 times in sequence (ALT key), and without a confirmation dialog</li>
+<li>automatically set export operator's use_selection prop, based on current selection</li>
+</ul>
+</li>
+<li>Align pie<ul>
+<li>add AlignObjectToVert tool</li>
+</ul>
+</li>
+<li>Cursor pie<ul>
+<li>add OriginToActive tool</li>
+</ul>
+</li>
+<li>Modes pie<ul>
+<li>UV Editor<ul>
+<li>remember pre-uv_sync-toggle selection and restore it when switching back</li>
+<li>when disabling uv_sync_selection, sync edit mesh mode to to uv select mode (EDGE to EDGE, VERT or FACE to VERT)<ul>
+<li>the idea being, there is little reason being in face mode when turning off selection sync:<ul>
+<li>faces - being present only once in uv space - can just as well be transformed with sync enabled</li>
+<li>the most likely scenario is, you'd want to edit vertices or edges, because unlike faces, they are present multiple times in uv space</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>fix edge mode icon</li>
+</ul>
+</li>
+<li>Workspace pie<ul>
+<li>sync all(most?) shading and overlay properties to <em>.alt</em> workspaces</li>
+</ul>
+</li>
+<li>Transform pie<ul>
+<li>use NORMAL orientation for Individual and Active presets, when in EDIT_ARMATURE mode</li>
+</ul>
+</li>
+<li>fix keymap drawing issue in prefs</li>
+<li>fix rare Focus tool exception</li>
+</ul>
+<h2 id="v0314">v0.3.14</h2>
+<blockquote>
+<p>2019-12-22</p>
+</blockquote>
+<ul>
+<li>Align pie<ul>
+<li>add View mode</li>
+<li>add Center tool</li>
+<li>add Straighten tool</li>
+</ul>
+</li>
+<li>UV Align pie
+    add view mode</li>
+<li>Save pie - LoadPrevious and LoadNext tools<ul>
+<li>add alternative "don't load ui" mode</li>
+</ul>
+</li>
+<li>raise blender version to 2.81 due to the 'affect only' Transform pie options</li>
+</ul>
+<h2 id="v0313">v0.3.13</h2>
+<blockquote>
+<p>2019-12-11</p>
+</blockquote>
+<ul>
+<li>add Transform pie<ul>
+<li>pivots, orientations and 'affect only'</li>
+</ul>
+</li>
+<li>add UV Align pie menu</li>
+<li>Shading pie<ul>
+<li>add Eevee presets</li>
+<li>add ToggleObjectAxes tool</li>
+<li>fix grid toggle in non-side-view ortho views</li>
+</ul>
+</li>
+<li>Align pie<ul>
+<li>add AlignObjectToEdge tool</li>
+</ul>
+</li>
+<li>Save pie<ul>
+<li>AppendMaterial tool<ul>
+<li>avoid duplicate material appending in object's material stack, re-use existing material slot indices</li>
+</ul>
+</li>
+<li>LoadNext and LoadPrevious tools - warn if current file is unsaved</li>
+</ul>
+</li>
+<li>Cursor pie<ul>
+<li>add CursorToSelected tool (cursor rotation support)</li>
+</ul>
+</li>
+<li>Workspace pie<ul>
+<li>maintain viewport location, rotation and distance when changing workspaces</li>
+<li>support switching to alternative workspaces<ul>
+<li>maintain shading when switching to and from alternative workspace</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Modes pie<ul>
+<li>UV Editor - create UV channel if none is present, when entering UV editing</li>
+<li>fix potential performance issue (on Windows only?) with Modes pie due to addon checks</li>
+</ul>
+</li>
+<li>add Open tool<ul>
+<li>in Blender's filebrowser, open current folder in system's file browser when O is pressed</li>
+</ul>
+</li>
+<li>Focus tool<ul>
+<li>add <em>ViewSelected mode</em>, mapped to F by default</li>
+</ul>
+</li>
+<li>Mirror + Unmirror tools<ul>
+<li>support grease pencil objects</li>
+</ul>
+</li>
+<li>Mirror tool<ul>
+<li>fix drawing bisect_z and flip_z in operator properties</li>
+</ul>
+</li>
+<li>MeshCut tool<ul>
+<li>in SEAM mode, mark edges as 'MESHCUT' (in addition to marking them seams as before)</li>
+<li>remove straight 2-edged verts for SEAM(SHIFT) cuts</li>
+</ul>
+</li>
+<li>CleanUp tool<ul>
+<li>remove ALL straight edged verts based on the angle threshold, not just the outside verts</li>
+</ul>
+</li>
+<li>Customize tool<ul>
+<li>clean out startup scene</li>
+</ul>
+</li>
+</ul>
+<h2 id="v0312">v0.3.12</h2>
+<blockquote>
+<p>2019-06-27</p>
+</blockquote>
+<ul>
+<li>MeshCut<ul>
+<li>redo internals and improve performance</li>
+</ul>
+</li>
+<li>Save pie<ul>
+<li>reverse material order, when using Populate to bring in materials list from another blend</li>
+</ul>
+</li>
+<li>Modes pie<ul>
+<li>support opening blends from linked objects in subprocess</li>
+</ul>
+</li>
+<li>Customize<ul>
+<li>update full screen keymapping, due to API changes</li>
+<li>update loop and ring selection keymappings, due to API changes</li>
+</ul>
+</li>
+<li>fix issue when removing old version and installing new one in the same Blender session</li>
+<li>fix broken Views and Collections pie's due to API changes</li>
+</ul>
+<h2 id="v0311">v0.3.11</h2>
+<blockquote>
+<p>2019-05-20</p>
+</blockquote>
+<ul>
+<li>add QuadSphere object</li>
+<li>Views pie<ul>
+<li>add custom Perspective/Ortho Toggle<ul>
+<li>toggles viewport between Perspective or Orthographic<ul>
+<li>if preferences.inputs.use_auto_perspective is enabled, it will be turned of when going into ortho</li>
+<li>it will be re-enabled when going into perspective again</li>
+<li>this ensures the viewport doesn't go into perspective automatically, when rotating out of front, side or top view ortho views, unless you've been in perspective mode before</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Modes pie<ul>
+<li>add "pseudo-mode" SurfaceDraw</li>
+<li>select an object, press the Pencil button in the modes pie</li>
+<li>this creates a gpencil object and parents it to the active, and sets it up for surface drawing</li>
+<li>if there is already a GPencil child on the active, create a new 'SurfaceLayer' instead</li>
+<li>with SHIFT pressed, the Line shape is selected</li>
+<li>perfect for DECAlmachine's GPanel tool, but generally useful to quickly draw on surfaces</li>
+</ul>
+</li>
+<li>SmartEdge<ul>
+<li>add toggle sharp mode, keymapped to shift + 2</li>
+</ul>
+</li>
+<li>Shading pie<ul>
+<li>add show_edge_seams toggle</li>
+<li>ToggleGrid<ul>
+<li>add support ortho front, top, right, etc. views</li>
+</ul>
+</li>
+<li>add alternative modes for Smooth and Flat Toggles<ul>
+<li>ALT Smooth sets sharp edges based on auto smooth angle</li>
+<li>ALT Flat removes all sharps, seams, bevel weights and creases</li>
+<li>both can be run from object and edit mode and always affect the entire mesh</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Customize<ul>
+<li>set overlay.wireframe_threshold to 0.99 instead of the default 1<ul>
+<li>otherwise obj.show_all_edges has no effect</li>
+<li>useful for hiding the internal edges on MEShmachine's plug handles</li>
+</ul>
+</li>
+<li>disable preference auto-save</li>
+<li>fix error due to Blender API change</li>
+</ul>
+</li>
+<li>fix MeshCut issue due to recent depsgraph changes</li>
+<li>tweak theme</li>
+</ul>
+<h2 id="v0310">v0.3.10</h2>
+<blockquote>
+<p>2019-04-12</p>
+</blockquote>
+<ul>
+<li>redo ClippingToggle tool<ul>
+<li>allow custom min, med and max values</li>
+</ul>
+</li>
+<li>Customize tool<ul>
+<li>remap mesh.merge default keymap from Alt + M to M to make room for HardOps's material menu in edit mode</li>
+<li>deactivate VIEW3D_MT_edit_mesh_select_mode keymapping in the MESH keymap</li>
+</ul>
+</li>
+<li>Focus tool<ul>
+<li>fix issue when leaving local view and there's no history</li>
+</ul>
+</li>
+<li>Collections pie<ul>
+<li>add visibility toggles</li>
+</ul>
+</li>
+<li>Save pie - Append Material<ul>
+<li>if DM is present, don't apply materials to decals</li>
+<li>fix issue when empties or other unsupported objects are among the selection</li>
+<li>fix UI list issue due to API change</li>
+</ul>
+</li>
+<li>Modes pie<ul>
+<li>update GroupPro main menu idname</li>
+</ul>
+</li>
+</ul>
+<h2 id="v039">v0.3.9</h2>
+<blockquote>
+<p>2019-03-26</p>
+</blockquote>
+<ul>
+<li>add MeshCut tool<ul>
+<li>knife intersect at object level</li>
+<li>optionally flatten target's modifier stack</li>
+<li>optionally mark seams</li>
+</ul>
+</li>
+<li>Save pie: Append Materials Menu<ul>
+<li>avoid appending material, if it's already in the scene, except when shift is pressed</li>
+<li>so now the menu can be used to apply the listed materials (repeatedly), without creating duplicates</li>
+</ul>
+</li>
+<li>AlignEditMesh<ul>
+<li>support redo last</li>
+</ul>
+</li>
+<li>Customize<ul>
+<li>disable screen.animation_play kmi's (Alt + A)</li>
+<li>disable view3d.object_mode_pie_or_toggle kmi</li>
+</ul>
+</li>
+<li>fix registration error due to strict enforcement of idnames in blender b24a255ca678</li>
+<li>fix issue with runtime Apply tool registration</li>
+</ul>
+<h2 id="v038">v0.3.8</h2>
+<blockquote>
+<p>2019-03-13</p>
+</blockquote>
+<ul>
+<li>Focus<ul>
+<li>rewrite, use new local_view API tools</li>
+</ul>
+</li>
+<li>Align<ul>
+<li>add Origin and Cursor align modes</li>
+</ul>
+</li>
+<li>fix registration issue due to recent API change</li>
+</ul>
+<h2 id="v037">v0.3.7</h2>
+<blockquote>
+<p>2019-03-08</p>
+</blockquote>
+<ul>
+<li>add Collections pie<ul>
+<li>mapped to shift + C</li>
+<li>add to, remove from, move to and create new and purge empty collections</li>
+<li>select a collection's objects and with SHIFT select all a collection's objects</li>
+<li>with ALT subtract a collection's objects from selection, with SHIFT + ALT do the same for all objects of a collection</li>
+<li>with CTRL disable viewport selection of a collection's objects(but not the collection itself)</li>
+<li>GroupPro, BatchOps and DECALmachine integration</li>
+</ul>
+</li>
+<li>add ApplyTransformations tool (specials menu)<ul>
+<li>apply Scale and/or Rotation of selected objects, while keeping Child transformations and Bevel width values intact</li>
+</ul>
+</li>
+<li>add SelectCenterObjects tool (specials menu)<ul>
+<li>first of potentially more selection tools</li>
+<li>selects objects if their bounding box crosses both sides of the chosen axis</li>
+</ul>
+</li>
+<li>Views and Cams pie<ul>
+<li>make Orthographic/Perspective button and lens prop context sensitive: adjust camera if view is aligned with one</li>
+</ul>
+</li>
+<li>Shading pie<ul>
+<li>Colorize Objects based on Collection membership</li>
+<li>add wireframe_color_type selection</li>
+</ul>
+</li>
+<li>Customize<ul>
+<li>map F key to focus on active in outliner</li>
+<li>disable SHIFT + X object mode delete keymap item</li>
+<li>fix keymap + use_save_prompt issues due to API changes</li>
+</ul>
+</li>
+<li>Align pie<ul>
+<li>fix CursorToOrigin issues due to API changes</li>
+</ul>
+</li>
+<li>Modes pie<ul>
+<li>remember pass_through and show_edit_mesh_wire states when leaving edit mode</li>
+<li>re-enable xray shading accordingly the next time entering edit mode</li>
+<li>support loading external blends of linked instance collections in subprocess</li>
+</ul>
+</li>
+<li>Focus<ul>
+<li>for local view, use frame_selected=False</li>
+</ul>
+</li>
+<li>Save pie<ul>
+<li>add incremental save path to recent files list</li>
+</ul>
+</li>
+<li>SmartVert<ul>
+<li>add execute() to allow for redoing/tool properties to work</li>
+</ul>
+</li>
+</ul>
+<h2 id="v036">v0.3.6</h2>
+<blockquote>
+<p>2019-02-14</p>
+</blockquote>
+<ul>
+<li>add UnMirror<ul>
+<li>removes last mirror mod in the stack of the selected objects, works on mirrored Group Prop collections as well</li>
+</ul>
+</li>
+<li>add Object Specials menu<ul>
+<li>includes only UnMirror for now</li>
+</ul>
+</li>
+<li>Shading pie<ul>
+<li>support object coloring</li>
+<li>add Colorize from Active</li>
+<li>add Colorize from Materials</li>
+</ul>
+</li>
+<li>Align pie<ul>
+<li>fix issue due to Blender API change</li>
+<li>add CursorToOrigin op<ul>
+<li>unlike view3d.snap_cursor_to_center(), CursorToOrigin also resets the cursor rotation</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Modes pie<ul>
+<li>improve Group Pro integration</li>
+</ul>
+</li>
+<li>Focus<ul>
+<li>add alternative Local View mode, performs better in heavy scenes</li>
+</ul>
+</li>
+<li>Mirror<ul>
+<li>support mirroring Group Pro collections, incl. with Decals</li>
+</ul>
+</li>
+<li>Align<ul>
+<li>support dropping empties to the floor</li>
+</ul>
+</li>
+<li>Customize<ul>
+<li>fix mirror keymap issue with selection tool</li>
+<li>fix issue with HEADER position due to API change</li>
+</ul>
+</li>
+</ul>
+<h2 id="v035a">v0.3.5a</h2>
+<blockquote>
+<p>2019-01-23</p>
+</blockquote>
+<ul>
+<li>Modes pie<ul>
+<li>fix issue in pose and edit armature modes</li>
+</ul>
+</li>
+</ul>
+<h2 id="v035">v0.3.5</h2>
+<blockquote>
+<p>2019-01-22</p>
+</blockquote>
+<ul>
+<li>Shading pie<ul>
+<li>fix template icon scaling issue due to recent change in template_icon_view()</li>
+</ul>
+</li>
+<li>Modes pie<ul>
+<li>add GroupPro pie button, if it's installed</li>
+<li>add mode switch buttons for TEXTURE_PAINT, WEIGHT_PAINT, VERTEX_PAINT and SCULPT for MESH objects</li>
+<li>add support for CURVE, FONT, SURFACE, META, LATTICE object types</li>
+<li>add GPENCIL support</li>
+<li>move Occlude/PassThrough button to the bottom left</li>
+<li>fix issue where cavity was enabled when leaving edit mode, even if it was turned off before entering edit mode</li>
+</ul>
+</li>
+<li>Save pie<ul>
+<li>fix issue when appending ALL materials</li>
+</ul>
+</li>
+<li>Smart Vert<ul>
+<li>rebuild Slide Extend</li>
+</ul>
+</li>
+<li>Mirror<ul>
+<li>add support for decals</li>
+<li>support single object mirroring and expose bisect and flip settings in that case</li>
+<li>support mirroring Decals</li>
+</ul>
+</li>
+<li>Customize<ul>
+<li>update preference customization according to latest API and layout changes</li>
+<li>overlay: set vertex_opacity = 1</li>
+</ul>
+</li>
+<li>tweak theme</li>
+</ul>
+<h2 id="v034">v0.3.4</h2>
+<blockquote>
+<p>2018-12-26</p>
+</blockquote>
+<ul>
+<li>Savepie - Append Materials<ul>
+<li>add Populate tool to fetch material names from source blend file</li>
+<li>add AddSeparator tool</li>
+<li>automatically add a material name, that is typed in manually, once return key is pressed</li>
+<li>fix error in Append menu, when appendmats collection is empty</li>
+</ul>
+</li>
+<li>adapt to API changes:<ul>
+<li>fix context.user_preferences errors</li>
+<li>fix overlay.show_backface_culling errors</li>
+<li>fix cursor keymap error</li>
+</ul>
+</li>
+<li>update theme</li>
+</ul>
+<h2 id="v033">v0.3.3</h2>
+<blockquote>
+<p>2018-12-02</p>
+</blockquote>
+<ul>
+<li>allow material appending in edit mode with edit mesh selection</li>
+<li>update Customize<ul>
+<li>Matcaps and Default Shading<ul>
+<li>disable setting shading type to SOLID to avoid crash since Blender 1b870bce85d</li>
+</ul>
+</li>
+<li>Keymaps<ul>
+<li>set 3D View set_cursor kmi's orientation property to GEOM</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>SmartFace<ul>
+<li>fix distance sorting error</li>
+</ul>
+</li>
+<li>Shadingpie<ul>
+<li>reset xray_alpha to 0.5 wen leaving edit mode</li>
+</ul>
+</li>
+<li>Preferences - Modes pie<ul>
+<li>disable Rotate Around Selection by default</li>
+</ul>
+</li>
+</ul>
+<h2 id="v032">v0.3.2</h2>
+<blockquote>
+<p>2018-11-28</p>
+</blockquote>
+<ul>
+<li>Shading pie:<ul>
+<li>add Curvature toggle</li>
+<li>allow eevee gtao factor dragging beyond 1</li>
+</ul>
+</li>
+<li>tweak theme</li>
+<li>fix 2.7x keymap preset loading on MacOS</li>
+<li>fix edit mesh wire toggle and occlude/pass through toggle not updating when leaving edit mode with x ray enabled</li>
+</ul>
+<h2 id="v031b">v0.3.1b</h2>
+<blockquote>
+<p>2018-11-26</p>
+</blockquote>
+<ul>
+<li>fix world path issue on Windows</li>
+</ul>
+<h2 id="v031a">v0.3.1a</h2>
+<blockquote>
+<p>2018-11-26</p>
+</blockquote>
+<ul>
+<li>fix matcap path issue on Windows</li>
+</ul>
+<h2 id="v031">v0.3.1</h2>
+<blockquote>
+<p>2018-11-26</p>
+</blockquote>
+<ul>
+<li>add cavity toggle to modes pie</li>
+<li>allow flexible addon folder naming</li>
+</ul>
+<h2 id="v03">v0.3</h2>
+<blockquote>
+<p>2018-11-25</p>
+</blockquote>
+<ul>
+<li>initial 2.80 release</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="pie_tools.html" class="btn btn-neutral float-left" title="Tools"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="pie_tools.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme_extra.js" defer></script>
+    <script src="js/theme.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

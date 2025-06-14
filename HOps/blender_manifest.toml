@@ -1,0 +1,12 @@
+schema_version = "1.0.0"
+blender_version_min = "4.2.0"
+
+id = "hardops"
+name = "Hard Ops 9"
+version = "0.9.88"
+type = "add-on"
+tagline = "Hard Ops 9 - Francium"
+license = ["SPDX:GPL-3.0-or-later"]
+tags = ["3D View"]
+
+maintainer = "AR, MX, proxe, bonjorno7, Neerhom, c0, MACHIN3, st3, General Ginsu, Jacques Lucke, Ivan Santic, Robert Fornoff, Johnathan Mueller, Batfinger, SE, PL, MKB, CGStrive, PG, AX, Adam K, WZ, PW, and you"

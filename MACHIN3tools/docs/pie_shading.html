@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://machin3.io/MACHIN3tools/docs/pie_shading.html" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Shading - MACHIN3tools</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Shading";
+        var mkdocs_page_input_path = "pie_shading.md";
+        var mkdocs_page_url = "/MACHIN3tools/docs/pie_shading.html";
+      </script>
+    
+    <script src="js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> MACHIN3tools
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Get Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="index.html">MACHIN3tools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="whatsnew.html">What's new?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Objects</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="quad_sphere.html">Quad Sphere</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="smart_vert.html">Smart Vert</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="smart_edge.html">Smart Edge</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="smart_face.html">Smart Face</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="clean_up.html">Clean Up</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="edge_constrained_transform.html">Edge Constrained Transform <sup>Deus Ex</sup></a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="extrude.html">Extrude <sup>partly Deus Ex</sup></a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="focus.html">Focus</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="mirror.html">Mirror</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="align.html">Align</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="group_tools.html">Group Tools <sup>partly Deus Ex</sup></a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="smart_drive.html">Smart Drive</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="assetbrowser_tools.html">Assetbrowser Tools<sup>partly Deus Ex</sup></a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="filebrowser_tools.html">Filebrowser Tools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="toggle_region.html">Toggle Region</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="render.html">Render</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="smooth.html">Smooth</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="clipping_toggle.html">Clipping Toggle</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="surface_slide.html">Surface Slide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="material_picker.html">Material Picker</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="apply_transformation.html">Apply Transform</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="select.html">Select</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="mesh_cut.html">Mesh Cut</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="thread.html">Thread</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="unity.html">Unity</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="customize.html">Customize</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Pie Menus</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="pie_modes.html">Modes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_save.html">Save</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="pie_shading.html">Shading</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#solid-shading">Solid Shading</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#material-shading">Material Shading</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#rendered-shading">Rendered Shading</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#wire-shading">Wire Shading</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#preferences">Preferences</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tools">Tools</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#autosmooth">Autosmooth</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#using-the-shading-pie">Using the Shading Pie</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#bloom">Bloom</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#volumes">Volumes</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#world">World</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#recursive-smoothing-and-bevel-shader">Recursive Smoothing and Bevel Shader</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#decalmachine">DECALmachine</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_views.html">Views</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_align.html">Align</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_cursor_origin.html">Cursor and Origin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_transform.html">Transform</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_snapping.html">Snapping</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_collections.html">Collections</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_workspace.html">Workspace</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_tools.html">Tools</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Development</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">MACHIN3tools</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Pie Menus &raquo;</li>
+      <li>Shading</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="shading-pie">Shading Pie</h2>
+<p><strong>shortcut</strong> <code>Page Up</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This default shortcut may seem odd, given how frequently the pie is used.<br />
+But if you can access <code>Page Up</code> using your mouse, it makes a lot of sense.</p>
+</div>
+<p>The <strong>Shading Pie</strong> is one of the most powerful and most used menus in MACHIN3tools.<br />
+It allows you to toggle all kinds of <em>shading</em> (viewport and object based) and <em>overlay</em> settings, without having to search for them in menus at the border of the view port, or in the properties panel.  </p>
+<p>Furthermore it facilitates quick <em>shading type</em> switching. Of note here, is that the pie supports <em>overlay</em> toggling <strong>per shading type</strong>, which means you can have overlays enabled for <em>Solid</em> shading, and have them automatically disable, when switching to <em>Material</em> shading for instance.</p>
+<h3 id="solid-shading">Solid Shading</h3>
+<p><img alt="PieShadingSolid" src="img/pie_shading/solid.png" />
+<em>shading pie in solid shading, with overlays enabled</em></p>
+<h3 id="material-shading">Material Shading</h3>
+<p><img alt="PieShadingMaterial" src="img/pie_shading/material.png" />
+<em>shading pie in eevee powered material shading, with overlays disabled</em></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The shading pie allows you to adjust Eevee settings (see above) in <em>Material</em> shading, even when Cycles is set as the render engine, which is otherwise not possible natively in Blender.</p>
+</div>
+<h3 id="rendered-shading">Rendered Shading</h3>
+<p><img alt="PieShadingRendered" src="img/pie_shading/rendered.png" />
+<em>shading pie in rendered shading, with overlays disabled, and the render engine set to cycles</em></p>
+<p>With Cycles as the Renderer the pie allows toggling of an object's shadow caster and holdout props.</p>
+<p><img alt="ShadingPieShadowCaster" src="img/pie_shading/shadow_catcher.gif" />
+<em>Shadow Catcher toggle for Active Object in Cycles box of the Shading Pie</em></p>
+<h3 id="wire-shading">Wire Shading</h3>
+<p><img alt="PieShadingWire" src="img/pie_shading/wire.png" />
+<em>shading pie in wire shading, with overlays enabled</em></p>
+<h3 id="preferences">Preferences</h3>
+<p>The shading pie exposes a few <a href="preferences.html">preferences</a>. In particular for the <em>Overlay</em> toggling behavior, the <em>Autosmooth</em> tool, the <em>Matcap Switch</em> tool.</p>
+<p><img alt="PieShadingPreferences" src="img/pie_shading/preferences.png" /></p>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>Shade Smooth in object and edit modes, optionally utilizing the Autosmooth angle + setting sharps based on it</li>
+<li>Shade Flat in object and edit modes, optionally clearing all sharps</li>
+<li>Autosmooth Angle Presets</li>
+<li>Toggle Grid</li>
+<li>Toggle Wireframe, globally as an overlay, or per object, or in edit mode using XRay to mirror 2.79s wire mode behavior, usefull to select through</li>
+<li>Toggle Object Axes</li>
+<li>Toggle Cursor Axes</li>
+<li>Toggle Outline</li>
+<li>Toggle Cavity</li>
+<li>Toggle Curvature</li>
+<li>Toggle Overlays</li>
+</ul>
+<p>Also:</p>
+<ul>
+<li>Matcap Switch - cycle between two predetermined matcaps</li>
+<li>Colorize Materials - set material viewport colors from last node in material</li>
+<li>Colorize from Active - set object viewport colors from active object</li>
+<li>Colorize from Materials - set object viewport colors from material</li>
+<li>Colorize from Collections - set object viewport colors based on collections</li>
+<li>Colorize from Groups - set object viewport colors based on <a href="group_tools.html">groups</a> </li>
+</ul>
+<p>As well as:</p>
+<ul>
+<li>180° Studio Light Rotation</li>
+<li>Eevee Presets</li>
+<li>Bevel Shader toggle - in <em>Rendered Shading</em></li>
+</ul>
+<h4 id="autosmooth">Autosmooth</h4>
+<p>As of Blender 4.1, <em>Autosmooth</em> is <a href="https://developer.blender.org/docs/release_notes/4.1/modeling/">no longer a mere mesh property</a>, but instead a <em>Modifier</em>.<br />
+I think this change is very welcome, as it gets rid of some odd legacy Blender behavior.</p>
+<p>The Shading Pie and its <em>Shade Smooth</em>, <em>Shade Flat</em> and <em>AutoSmooth</em> tools fully support this change and the UX is unchanged compared to previous versions.<br />
+<em>Autosmooth</em> remains a toggle in the pie, just as if it still were a <em><code>boolean</code> property</em>.</p>
+<p><img alt="AutoSmooth" src="img/pie_shading/autosmooth.jpg" />
+<em>Autosmooth in 4.1+ looks behaves identical to how it looks in previous Blender versions</em></p>
+<p>Under the hood, instead of toggling the <code>mesh.use_auto_snmooth</code> property, MACHIN3tools will add or remove the new geo node <em>Smooth by Angle</em> modifier to enable or disable Auto Smooth.
+MACHIN3tools will automatically add/remove the mod on unselected-but-instanced objects too.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note that the Auto Smooth mod should be kept at or towards the the end of the stack.
+When MACHIN3tools adds the mod, it will be added at the end, but before any Mirror or Array mods, that may be at the end already.
+So far this seems like a good general solution. Inevitably we'll probably see use cases, where we may have to manually adjust its position though.</p>
+</div>
+<p>Personally I like, that you no longer even need to use Auto Smooth for sharp edges to be considered, and neither when using custom normals. Both just work, as you would expect on any smooth shaded mesh object.
+Beyond that I like, that we can auto-smooth CURVE objects now, and that it plays well with boolean mods on objects with custom normals, which previously would have their shading messed up.</p>
+<div class="admonition warning">
+<p class="admonition-title">Keep in mind</p>
+<p>Addons like HardOps, BoxCutter or HyperCursor<sup>in pre-release on <a href="http://www.patreon.com/machin3">Patreon</a></sup>, tend do do their own modifier sorting, which can be very useful and avoids having to micro-manage modifier stack order.</p>
+</div>
+<h3 id="using-the-shading-pie">Using the Shading Pie</h3>
+<div class="video">
+  <iframe src="https://www.youtube.com/embed/WdqpxrTLnOc?start=387&rel=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen seamless frameBorder="0"></iframe>
+</div>
+
+<div class="video">
+  <iframe src="https://www.youtube.com/embed/HdKkskyFDN4?start=109&rel=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen seamless frameBorder="0"></iframe>
+</div>
+
+<div class='video'>
+    <iframe src='https://www.youtube.com/embed/y7WEwouCx1g?rel=0' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' allowfullscreen seamless frameBorder='0'></iframe>
+</div>
+
+<div class='video'>
+    <iframe src='https://www.youtube.com/embed/vOSPR2nHWCQ?start=114&rel=0' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' allowfullscreen seamless frameBorder='0'></iframe>
+</div>
+
+<p>Blender 4.2 introduced a new version or Eevee called <em>Eevee Next</em>, which brings realtime raytracing, and along with that a completely different way to set things up and tweak it all.<br />
+The <em>Material Shading</em> parts of <em>Shading Pie</em> was updated accordingly.</p>
+<p><a href="img/whatsnew/eevee_next_high_preset.jpg"><img alt="EeveeNextHighPreset" src="img/whatsnew/eevee_next_high_preset.jpg" /></a></p>
+<p>As in previous version you can quickly adjust the Eevee settings (which are used in MATERIAL shading too), even when your render engine is set to Cycles.
+Also as before you have preset buttons at the top of the Eevee box, that allow you to quickly change multiple settings at once. Refer to the tooltips for details.</p>
+<p>New in Blender 4.2 are user-presets, which can be set from the Properties editor in the Raytracing panel. If you set some of these up for yourself, the Shading Pie will find and expose them for you.</p>
+<p><a href="img/whatsnew/eevee_next_user_presets.jpg"><img alt="EeveeNextHighPreset" src="img/whatsnew/eevee_next_user_presets.jpg" /></a></p>
+<p>Now, your first reaction to this Eevee Next panel may be being overwhelmed, but I assure you it's easier and more efficient than the alternative.
+The only things you will want to adjust in 99% of the cases are 1. the presets and 2. the thickness value, which is why I chose to highlight it in red.</p>
+<p>Also, if you look at it with the <em>None</em> preset chosen you will see it's not so bad :)</p>
+<p><a href="img/whatsnew/eevee_next_none_preset.jpg"><img alt="EeveeNextNonePreset" src="img/whatsnew/eevee_next_none_preset.jpg" /></a></p>
+<p>To make life easier, I have combined 6 settings into 3 "multi-props".
+Adjusting Thickness, Resolution, or Precision (Quality) will adjust the natively independent Screen-Trace and Fast GI settings of the same name at the same time.</p>
+<p>For example, changing resolution from 1:2 to 1:4, will change both the Screen-Trace resolution and the Fast GI resolution accordingly.</p>
+<p>I've also exposed the Shadow and AO passes directly for quick access. Shadow in particular can be very cool to get a very graphic visual read of a scene or design.</p>
+<div class="video">
+  <iframe src="https://www.youtube.com/embed/mj9vcaRwB0Y?rel=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen seamless frameBorder="0"></iframe>
+</div>
+
+<h4 id="bloom">Bloom</h4>
+<p>Eevee Next no longer has a Bloom toggle. But the Shading Pie still does!</p>
+<div class="video">
+  <iframe src="https://www.youtube.com/embed/h3x5Fv1kkvA?rel=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen seamless frameBorder="0"></iframe>
+</div>
+
+<p>In Blender 4.2, the Bloom toggle of the Shading Pie will set up Bloom via the compositor for you, or toggle it, if it has been set up already. I've thrown in a Dispersion toggle on top of it too.
+What's cool is, not only are these effects shown and adjustable in realtime, they also work just the same in Cycles!</p>
+<h4 id="volumes">Volumes</h4>
+<p>Similarly, there is no Volume toggle in native Blender, but there is on in the Shading Pie!</p>
+<p>It does two things, because volumes exist in either of 2 ways:</p>
+<ol>
+<li>a global world volume set up by nodes in your world</li>
+<li>volume objects</li>
+</ol>
+<p>Without volume objects being present, turning on Volume rendering will setup a basic world volume for you, and expose some basic settings in the pie.
+With volume objects being present, their visibility will be toggled by adjusting viewport filtering. This way individual object visibility states are never touched and changed.</p>
+<p>If you have volume objects present, but in addition you also want to add a world volume, you can do so by <code>SHIFT</code> clicking on the volume toggle.</p>
+<div class="video">
+  <iframe src="https://www.youtube.com/embed/hV7_2nBOa_8?rel=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen seamless frameBorder="0"></iframe>
+</div>
+
+<h4 id="world">World</h4>
+<p>More World properties are being exposed now.</p>
+<p>Blender 4.2 introduced the ability to toggle world shadows, so shadows dynamically created from HDRIs! Cool.
+You can even soften them by increasing the Sun Angle (size).</p>
+<div class="video">
+  <iframe src="https://www.youtube.com/embed/q9TIpPZpBU0?rel=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen seamless frameBorder="0"></iframe>
+</div>
+
+<p>Also, if you use the scene world, MACHIN3tools will check your world node setup and look for a number of generic property names, such as <em>Rotation</em> or <em>Rotation Z</em>, which - if found - allows you to rotate your world directly from the pie.
+Also also, if you use the EasyHDRI addon, then know that its node groups are supported too.</p>
+<h4 id="recursive-smoothing-and-bevel-shader">Recursive Smoothing and Bevel Shader</h4>
+<div class='video'>
+    <iframe src='https://www.youtube.com/embed/YoizxDjK5yQ?rel=0' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' allowfullscreen seamless frameBorder='0'></iframe>
+</div>
+
+<div class='video'>
+    <iframe src='https://www.youtube.com/embed/Pf3ia04xFVA?rel=0' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' allowfullscreen seamless frameBorder='0'></iframe>
+</div>
+
+<h5 id="decalmachine">DECALmachine</h5>
+<p>The <em>BevelShader</em> toggle supports <a href="https://machin3.io/DECALmachine/docs/slice/">Panel Decals</a> of DECALmachine.<br />
+Conveniently, adjusting the bevel with on the panel decal's parent object, will then automatically set it for separate panel decal object as well.</p>
+<p><img alt="ShadingPieBevelShader" src="img/pie_shading/bevel_shader_panel_decal.gif" />
+<em>Bevel Shader on DECALmachine's panel decals, with different per-object width modulations</em></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="pie_save.html" class="btn btn-neutral float-left" title="Save"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="pie_views.html" class="btn btn-neutral float-right" title="Views">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="pie_save.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="pie_views.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme_extra.js" defer></script>
+    <script src="js/theme.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

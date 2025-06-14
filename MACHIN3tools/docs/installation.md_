@@ -1,0 +1,58 @@
+#
+## Requirements
+
+* Windows, MacOS or Linux
+* 3.6 LTS, 4.1 Stable
+
+!!! danger "Experimental Builds"
+    [Experimental](https://builder.blender.org/download/daily/) Blender builds such as 4.1-alpha are **not supported**, and fixing any issues related to them, will not be a priority.
+
+
+## Latest {{ addon }}
+
+The latest version is 1.9, available on [Blender Market]({{ superhive_deusex }}) and [Gumroad]({{ gumroad_deusex }}).
+
+
+## Installation
+
+There are two ways to install {{ addon }}
+
+### From inside Blender
+
+This approach is a bit more convenient, but if you update from an older version of the addon, it leads to a loss of previously saved [addon preferences](preferences.md).
+
+![InstallationFromInsideBlender](img/installation/inside_blender.png)
+*installation from the Addons tab of Blender's preferences, by selecting the addon's **.zip** file*
+
+
+### Using the System's File Browser
+
+The approach is recommended, especially if you update from an older version to a newer one, as all previous addon preferences will be kept.
+
+![InstallationUsingFileBrowser](img/installation/file_browser1.png)
+*with Blender closed, find your downloaded .zip file*
+
+![InstallationUsingFileBrowser](img/installation/file_browser2.png)
+*extract it, you need the {{ addon }} folder - the one without the version*
+
+![InstallationUsingFileBrowser](img/installation/file_browser3.png)
+*it contains the `__init\__.py` file*
+
+![InstallationUsingFileBrowser](img/installation/file_browser4.png)
+*copy the {{ addon }} folder to Blender's addons directory*
+
+!!! danger "Attention"
+    If you have a pre-existing {{ addon }} folder in the *addons directory*, remove it first, before pasting the new version!
+
+!!! warning "Blender's Addons Directory"
+    **Linux**: `/home/name/.config/blender/3.6/scripts/addons`
+    **MacOS**: `/Users/name/Library/Application Support/Blender/3.6/scripts/addons`
+    **Windows**: `C:\Users\name\AppData\Roaming\Blender Foundation\Blender\3.6\scripts\addons`
+
+    *Depending on your Blender version, replace `3.6` accordingly.*
+
+![InstallationUsingFileBrowser](img/installation/file_browser5.png)
+*start Blender, open the preferences, switch to the Addons tab and search for machin3*
+
+![InstallationUsingFileBrowser](img/installation/file_browser6.png)
+*activate {{ addon }} and unfold the [addon preferences](preferences.md)*

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://machin3.io/MACHIN3tools/docs/edge_constrained_transform.html" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Edge Constrained Transform <sup>Deus Ex</sup> - MACHIN3tools</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Edge Constrained Transform \u003csup\u003eDeus Ex\u003c/sup\u003e";
+        var mkdocs_page_input_path = "edge_constrained_transform.md";
+        var mkdocs_page_url = "/MACHIN3tools/docs/edge_constrained_transform.html";
+      </script>
+    
+    <script src="js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> MACHIN3tools
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Get Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="index.html">MACHIN3tools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="whatsnew.html">What's new?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Objects</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="quad_sphere.html">Quad Sphere</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tools</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="smart_vert.html">Smart Vert</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="smart_edge.html">Smart Edge</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="smart_face.html">Smart Face</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="clean_up.html">Clean Up</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="edge_constrained_transform.html">Edge Constrained Transform <sup>Deus Ex</sup></a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#rotation">Rotation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#scaling">Scaling</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#zero-scaling">Zero Scaling</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#selection">Selection</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#using-edge-constrained-transform">Using Edge Constrained Transform</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="extrude.html">Extrude <sup>partly Deus Ex</sup></a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="focus.html">Focus</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="mirror.html">Mirror</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="align.html">Align</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="group_tools.html">Group Tools <sup>partly Deus Ex</sup></a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="smart_drive.html">Smart Drive</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="assetbrowser_tools.html">Assetbrowser Tools<sup>partly Deus Ex</sup></a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="filebrowser_tools.html">Filebrowser Tools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="toggle_region.html">Toggle Region</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="render.html">Render</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="smooth.html">Smooth</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="clipping_toggle.html">Clipping Toggle</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="surface_slide.html">Surface Slide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="material_picker.html">Material Picker</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="apply_transformation.html">Apply Transform</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="select.html">Select</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="mesh_cut.html">Mesh Cut</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="thread.html">Thread</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="unity.html">Unity</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="customize.html">Customize</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Pie Menus</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_modes.html">Modes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_save.html">Save</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_shading.html">Shading</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_views.html">Views</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_align.html">Align</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_cursor_origin.html">Cursor and Origin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_transform.html">Transform</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_snapping.html">Snapping</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_collections.html">Collections</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_workspace.html">Workspace</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="pie_tools.html">Tools</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Development</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">MACHIN3tools</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Tools &raquo;</li>
+      <li>Edge Constrained Transform <sup>Deus Ex</sup></li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="edge-constrained-transform">Edge Constrained Transform</h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only available in the <a href="whatsnew.html#deus-ex">Deus Ex</a> version</p>
+</div>
+<p><strong>shortcut</strong> <code>ALT + R</code> <em>edit mode</em></p>
+<p><strong>Edge Constrained Transform</strong> is a tool capable of rotating and scaling an edit mesh selection while keeping it constrained to the connected, unselected edges.
+It's primarily used to adjust existing topology, without affecting the form significantly or at all.</p>
+<div class="admonition warning">
+<p class="admonition-title">What this isn't</p>
+<p>This is a dedicated transform tool implementation with edge constraints.
+It's not a scene or mesh level constraint setting, that you can enable, and then have various blender tools behave in an edge constrained manner.   </p>
+</div>
+<h4 id="rotation">Rotation</h4>
+<p>A generalized solution for edge constrained <em>rotation</em> that behaves great in all topological conditions, seems very hard.<br />
+So the tool provides different constraint modes to scroll through - each with various benefits and drawbacks.<br />
+Some modes have a tendency to bend the selection the more you rotate.<br />
+The default mode <em>Direct Plane Intersection</em> does generally not do that, but can instead introduce some jittering, depending on the selection and transform origin.<br />
+<em>Proximity</em> mode, which is the most robost due to it's simplicity, will introduce bending and is generally best used as a fallback and for small rotation amounts.</p>
+<h4 id="scaling">Scaling</h4>
+<p>Edge constrained Scaling does not require the choice of a constraint mode.<br />
+It is scaling <em>directionally</em>, which means how the mouse is positioned relative to the transform origin matters and will affect the scaling, unlike when rotating.</p>
+<p>When scaling down, and so when one approaches the transform origin, it tends to get increasingly hard to maintain the initial scaling direction. 
+This is why you can <em>lock</em> it using the <code>ALT</code> key, as indicated in the statusbar.</p>
+<h5 id="zero-scaling">Zero Scaling</h5>
+<p>Since a lot of the time you will want to scale to 0, there is a quick way to do that - even in rotate mode - by simply holding down the <code>SHIFT</code> key.</p>
+<h3 id="selection">Selection</h3>
+<ul>
+<li>edges and edge loops</li>
+<li>cyclic and non-cyclic alike</li>
+<li>multiple, separate edge loops are supported</li>
+<li>avoid edge selections that cross each other, as well as multi-face selections, which tend to do the same</li>
+</ul>
+<p><img alt="ValidSelection" src="img/selection/edge_constrained_transform_valid.jpg" />
+<em>single and multiple edges, edge loops or cyclic loops</em></p>
+<p><img alt="InvalidSelection" src="img/selection/edge_constrained_transform_invalid.jpg" />
+<em>avoid crossing edges</em></p>
+<h3 id="using-edge-constrained-transform">Using Edge Constrained Transform</h3>
+<!--![GifBlank](img/gif/blank.gif)-->
+
+<div class="video">
+  <iframe src="https://www.youtube.com/embed/9H_gjtJ8J5s?rel=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen seamless frameBorder="0"></iframe>
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="clean_up.html" class="btn btn-neutral float-left" title="Clean Up"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="extrude.html" class="btn btn-neutral float-right" title="Extrude <sup>partly Deus Ex</sup>">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="clean_up.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="extrude.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme_extra.js" defer></script>
+    <script src="js/theme.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
